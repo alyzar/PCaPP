@@ -4104,6 +4104,10 @@
 	<!-- Bindings allowed: PauldronL, Pauldron, LeatherLow, Leather, LeatherHigh, LeatherHeavy -->
 		<binding>
 			<identifier>Leather</identifier>
+			<substring>Hunter-Archer</substring><!-- Hunter Archer Armor -->
+		</binding>
+		<binding>
+			<identifier>Leather</identifier>
 			<substring>Dark Cowl</substring>
 		</binding>
 		<binding>
