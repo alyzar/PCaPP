@@ -827,6 +827,10 @@
 	<!-- Advanced bindings start -->
 		<binding>
 			<identifier>Advanced</identifier>
+			<substring>Forged Bow</substring>
+		</binding>
+		<binding>
+			<identifier>Advanced</identifier>
 			<substring>Corundrum</substring>
 		</binding>
 		<binding>
@@ -931,6 +935,14 @@
 	<!-- Chitin bindings end -->
 
 	<!-- Daedric bindings start -->
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Bloodcursed Bow</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>MageLight Daedric Bow</substring>
+		</binding>
 		<binding>
 			<identifier>Daedric</identifier>
 			<substring>BiPolar Blade</substring>
@@ -2163,6 +2175,22 @@
 	<!-- Elven bindings start -->
 		<binding>
 			<identifier>Elven</identifier>
+			<substring>Elven Dragonbone Bow</substring>
+		</binding>
+		<binding>
+			<identifier>Elven</identifier>
+			<substring>Dark Dragonbone Bow</substring>
+		</binding>
+		<binding>
+			<identifier>Elven</identifier>
+			<substring>White Falmer</substring>
+		</binding>
+		<binding>
+			<identifier>Elven</identifier>
+			<substring>Dark Falmer</substring>
+		</binding>
+		<binding>
+			<identifier>Elven</identifier>
 			<substring>Elf</substring>
 		</binding>
 		<binding>
@@ -2454,6 +2482,10 @@
 	<!-- Giant Weapon bindings end -->
 
 	<!-- Glass bindings start -->
+		<binding>
+			<identifier>Glass</identifier>
+			<substring>Emerald Bow</substring>
+		</binding>
 		<binding>
 			<identifier>Glass</identifier>
 			<substring>Ceymallari</substring>
@@ -6831,6 +6863,39 @@
 	
 	<!-- Longbow bindings start -->
 		<binding>
+			<substring>Emerald Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Forged Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>White Falmer Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Dark Falmer Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>MageLight Daedric Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Elven Dragonbone Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Dark Dragonbone Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Bloodcursed Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+		<binding>
 			<substring>War Bow</substring>
 			<identifier>Longbow</identifier>
 		</binding>
@@ -6989,6 +7054,14 @@
 	<!-- Longbow bindings end -->
 	
 	<!-- Shortbow bindings start -->
+		<binding>
+			<substring>Argonian Bow</substring>
+			<identifier>Shortbow</identifier>
+		</binding>
+		<binding>
+			<substring>WhiteWood Bow</substring>
+			<identifier>Shortbow</identifier>
+		</binding>
 		<binding>
 			<substring>Zephyr</substring>
 			<identifier>Shortbow</identifier>
