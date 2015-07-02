@@ -3576,6 +3576,11 @@
 				<type>EQUALS</type>
 			</exclusion>
 		<!-- Twilight Guild Wars 2 Legendary GreatSword -->
+			<exclusion>
+      				<text>dnn</text>
+      				<target>EDID</target>
+      				<type>STARTSWITH</type>
+			</exclusion>
 		</distribution_exclusions_weapon_regular>
 
 		<distribution_exclusions_list_regular>
