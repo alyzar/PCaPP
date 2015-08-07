@@ -18,6 +18,21 @@
 			</exclusion>
 		<!-- Blanket excluder end -->
 			<exclusion>
+				<text>doom</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>PowerKhajiitNightEye</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>Race</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
 				<text>DLC1</text>
 				<target>EDID</target>
 				<type>STARTSWITH</type>
@@ -76,11 +91,6 @@
 				<text>Focus Lense - Frost</text>
 				<target>NAME</target>
 				<type>EQUALS</type>
-			</exclusion>
-			<exclusion>
-				<text>SOT_</text>
-				<target>EDID</target>
-				<type>STARTSWITH</type>
 			</exclusion>
 			<exclusion>
 				<text>Quest</text>
@@ -205,6 +215,11 @@
 		<!-- 3DNPC/Interesting NPCs end -->
 		<!-- Sands of Time start -->
 			<exclusion>
+				<text>SOT_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
 				<text>ISS_ConjureSkeleton</text>
 				<target>EDID</target>
 				<type>STARTSWITH</type>
@@ -297,11 +312,6 @@
 				<target>EDID</target>
 				<type>STARTSWITH</type>
 			</exclusion>
-			<exclusion>
-				<text>xMAILL</text>
-				<target>EDID</target>
-				<type>STARTSWITH</type>
-			</exclusion>
 		<!-- Apocalypse - The Spell Package end -->
 		<!-- Hearthfire multiple adoptions start -->
 			<exclusion>
@@ -310,14 +320,7 @@
 				<type>STARTSWITH</type>
 			</exclusion>
 		<!-- Hearthfire multiple adoptions end -->
-		<!-- Brhuce: Legacy -->
-			<exclusion>
-				<text>_tw_</text>
-				<target>EDID</target>
-				<type>STARTSWITH</type>
-			</exclusion>
-		<!-- Brhuce: Legacy -->
-		<!-- World Eater Beater -->
+		<!-- World Eater Beater and Bhruce Legacy -->
 			<exclusion>
 				<text>_tw_</text>
 				<target>EDID</target>
@@ -333,7 +336,7 @@
 				<target>EDID</target>
 				<type>STARTSWITH</type>
 			</exclusion>
-		<!-- World Eater Beater -->
+		<!-- World Eater Beater and Bhruce Legacy -->
 		<!-- Lost Wonders of Mzark -->
 			<exclusion>
 				<text>_lw_</text>
@@ -544,13 +547,589 @@
 				<type>STARTSWITH</type>
 			</exclusion>
 		<!--  Death Alternative -->
-	<!-- EggOver -->
+		<!-- EggOver -->
 			<exclusion>
 				<text>MidasSPEntangleHazard</text>
 				<target>EDID</target>
 				<type>CONTAINS</type>
 			</exclusion>
-	<!-- EggOver -->
+		<!-- EggOver -->
+		<!-- Dynamic Loot -->
+			<exclusion>
+				<text>DLArea</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>DLCha</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>DLDebug</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>DLPass</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>DLHeal</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>DLPoi</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>DLSkill</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Dynamic Loot -->
+		<!-- SkyRe Races -->
+			<exclusion>
+				<text>xxxRacial</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- SkyRe Races -->
+		<!-- Vampiric Thirst - Dawnguard Edition -->
+			<exclusion>
+				<text>mslVT</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Vampiric Thirst - Dawnguard Edition -->
+		<!-- Daedric Artifacts Improved Dawnguard -->
+			<exclusion>
+				<text>ZAERTEST</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>ZAeR_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>ZDR0</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>ZDR1</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>ZDRH</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>ZDR_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Daedric Artifacts Improved Dawnguard -->
+		<!-- Forgotten Magic Redone -->
+			<exclusion>
+				<text>abDeathguard</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>abDoppelganger</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>abLich</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>abLoot</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>abSpawn</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>vAncientLich</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>vArcaneWeapon</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>vArea</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>vAWPN</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vBCRS</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>vBCRS</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vBlessedWeapon</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>vBWPN</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vConflagrate</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>vConflagrate</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vCursed</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vDeathguard</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>vDGRDSacrCD</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>vDiscord</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vDivine</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vDLT</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vDPAL</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vDPNG</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vDRMR</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vEarthbound</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vEBW</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vECH</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vEOS</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vFBMB</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vFireblast</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vFireCloak</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vFRMR</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vFrostArmor</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>vFrostBomb</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>vFuriousCurse</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>vGlacialFort</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vHBLT</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vHealingTouch</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>vHJST</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>vHolybolt</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>vHTCH</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vIceLance</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>vICEL</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vLightningStrike</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vLSTRjoltCD</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>vMIMG</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vMSWR</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vNECR</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vPACK</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vPanicCurse</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>vPhantomShroud</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>vPHOE</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vPhoenix</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>vPSWR</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>vRift</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vRIFTCD</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>vSalamander</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vSeedoflife</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>vSGT</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vShieldbreaker</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>vSMS</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vSOL</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vSRMR</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vStorm</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vSTRK</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vSwordbreaker</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>vTinder</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>vVOID</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vVoid</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vVON</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vVOT</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vWildMushrooms</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>vWinter</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vWMS</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>vWoe</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Forgotten Magic Redone -->
+		<!-- More Interesting Loot start-->
+			<exclusion>
+				<text>aaaML</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>aaML</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>aaML_Spell</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- More Interesting Loot end -->
+		<!-- Torch Arrow start-->
+			<exclusion>
+				<text>JooFireBoltHazardSpell</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>JooFireArrowHazardSpell</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+		<!-- Torch Arrow end-->
+		<!-- Tembtra Thief Armor -->
+			<exclusion>
+				<text>DX_MAC_TembtraThief04</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+		<!-- Tembtra Thief Armor -->
+		<!-- Draconic Bloodline -->
+			<exclusion>
+				<text>DBL</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Draconic Bloodline -->
+		<!-- Much Ado about Snow Elves – A Tragedy! Act I -->
+			<exclusion>
+				<text>LB_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Much Ado about Snow Elves – A Tragedy! Act I -->
+		<!-- The Hanging Gardens -->
+			<exclusion>
+				<text>Bhabhilon</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_bh</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+		<!-- The Hanging Gardens -->
+		<!-- Moon and Star -->
+			<exclusion>
+				<text>MAS</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>AbShieldMassCastBodyFXDUPLICATE001</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+		<!-- Moon and Star -->
+		<!-- Osare Culort Outfit - UNP -->
+			<exclusion>
+				<text>Culort</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Osare Culort Outfit - UNP -->
+		<!-- Sofia - The Funny Fully Voiced Follower -->
+			<exclusion>
+				<text>Sofia</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+		<!-- Sofia - The Funny Fully Voiced Follower -->
+		<!-- The Grey Cowl of Nocturnal -->
+			<exclusion>
+				<text>manny_GF_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- The Grey Cowl of Nocturnal -->
+		<!-- Rigmor of Bruma -->
+			<exclusion>
+				<text>Rigmor_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Rigmor of Bruma -->
+		<!-- Campfire -->
+			<exclusion>
+				<text>_Camp_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Campfire -->
+		<!-- Wrath of Nature -Path of the Druid & Champion of Kynareth -->
+			<exclusion>
+				<text>NW_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Wrath of Nature -Path of the Druid & Champion of Kynareth -->
 		</distribution_exclusions_spell>
 
 		<distribution_exclusions_book>
@@ -599,22 +1178,52 @@
 				<type>CONTAINS</type>
 			</exclusion>
 			<exclusion>
-				<text>DLC1</text>
+				<text>Elder Scroll</text>
+				<target>NAME</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>Jiub's Opus</text>
+				<target>NAME</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>Recipe</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>Recipe</text>
+				<target>NAME</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>Recipe</text>
 				<target>EDID</target>
 				<type>STARTSWITH</type>
 			</exclusion>
 			<exclusion>
-				<text>DLC2</text>
-				<target>EDID</target>
+				<text>Recipe</text>
+				<target>NAME</target>
 				<type>STARTSWITH</type>
 			</exclusion>
 			<exclusion>
-				<text>dlc2</text>
+				<text>Orders</text>
 				<target>EDID</target>
-				<type>STARTSWITH</type>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>Book</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
 			</exclusion>
 			<exclusion>
 				<text>BYOH</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>HouseDecorate</text>
 				<target>EDID</target>
 				<type>STARTSWITH</type>
 			</exclusion>
@@ -1028,6 +1637,265 @@
 				<type>CONTAINS</type>
 			</exclusion>
 	<!-- EggOver -->
+		<!-- Daedric Artifacts Improved Dawnguard -->
+			<exclusion>
+				<text>ZAERTESTTOME</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>ZDR04</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>ZDRSeer</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Daedric Artifacts Improved Dawnguard -->
+		<!-- Forgotten Magic Redone -->
+			<exclusion>
+				<text>vTome</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Forgotten Magic Redone -->
+		<!-- Skyrim Sewers 4 -->
+			<exclusion>
+				<text>SSewersBanditNote</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>SSewersDarmokJournal</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>SSewersUlvigNotes</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>SSewersFrostVaultLog</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>SSewersVindicatorRant</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>SSewersJsasheBook</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>SSewersAnnouncement</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>SSewersSongOfUlvaak</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>SSewersLoveLetter5thEra</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>SSewersThalmorNote</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>SSewersMadanach</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>SSewersBookTGBrynjolfMap</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Skyrim Sewers 4 -->
+		<!-- Tembtra Thief Armor -->
+			<exclusion>
+				<text>DX_MAC_Tembtra</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Tembtra Thief Armor -->
+		<!-- Draconic Bloodline -->
+			<exclusion>
+				<text>DBL</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Draconic Bloodline -->
+		<!-- Much Ado about Snow Elves – A Tragedy! Act I -->
+			<exclusion>
+				<text>LB_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Much Ado about Snow Elves – A Tragedy! Act I -->
+		<!-- The Hanging Gardens -->
+			<exclusion>
+				<text>_bh</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>BhaBhilon</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>Bhabhilon</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>bhabhilon</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- The Hanging Gardens -->
+		<!-- Moon and Star -->
+			<exclusion>
+				<text>MAS</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Moon and Star -->
+		<!-- Sulfuras - The Reclaimed Hand -->
+			<exclusion>
+				<text>Sulfuras</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Sulfuras - The Reclaimed Hand -->
+		<!-- The Grey Cowl of Nocturnal -->
+			<exclusion>
+				<text>manny_GF_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- The Grey Cowl of Nocturnal -->
+		<!-- Rigmor of Bruma -->
+			<exclusion>
+				<text>Rigmor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Rigmor of Bruma -->
+		<!-- Campfire -->
+			<exclusion>
+				<text>_Camp_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Campfire -->
+		<!-- Dwemer Spectres -->
+			<exclusion>
+				<text>_tw_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Dwemer Spectres -->
+		<!-- Black Horse Courier Reborn -->
+			<exclusion>
+				<text>_SAG_BlackHorse</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_SAG_BHC</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Black Horse Courier Reborn -->
+		<!-- Gangs of Skyrim -->
+			<exclusion>
+				<text>NBBook</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>pLetter</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>PandoraL</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>MysticBook</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>SolitudeL</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>KingsBook</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>CrimsonBook</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>MythicBook</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>ValeriaL</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>RABook</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>NordicL</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+		<!-- Gangs of Skyrim -->
+		<!-- Unexpected Blades -->
+			<exclusion>
+				<text>Halenzeinotes1</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>MoonsugarForging</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Unexpected Blades -->
+		<!-- Wrath of Nature -Path of the Druid -->
+			<exclusion>
+				<text>NW_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Wrath of Nature -Path of the Druid -->
 		</distribution_exclusions_book>
 
 		<distribution_exclusions_list>
@@ -1146,6 +2014,18 @@
 				<type>CONTAINS</type>
 			</exclusion>
 		<!-- EggOver -->
+		<!-- Forgotten Magic Redone -->
+			<exclusion>
+				<text>fmrBasicSpells</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>fmrAdvSpells</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+		<!-- Forgotten Magic Redone -->
 		</distribution_exclusions_list>
 	</distribution_exclusions_spell_tome>
 
@@ -1154,6 +2034,26 @@
 		<!-- Target = NAME/EDID/FORMID Type = EQUALS/EQUALS_IGNORECASE/CONTAINS -->
 		<!-- Target = Unenchanted Items in this list will not be distributed to LLs by PaMa -->
 		<!-- Faction Exclusions start -->
+			<exclusion>
+				<text>MJB_Bow</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>aaIS3</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>Noldor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>CBC_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
 			<exclusion>
 				<text>Akaviri</text>
 				<target>EDID</target>
@@ -1254,6 +2154,11 @@
 		<!-- Civil War Exclusions end -->
 		<!-- Quest Items start -->
 			<exclusion>
+				<text>Gharol's Iron Sword</text>
+				<target>NAME</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
 				<text>Nettlebane</text>
 				<target>NAME</target>
 				<type>CONTAINS</type>
@@ -1329,7 +2234,7 @@
 				<type>CONTAINS</type>
 			</exclusion>
 			<exclusion>
-				<text>Dragon Priest Staff</text>
+				<text>Dragon Priest</text>
 				<target>NAME</target>
 				<type>CONTAINS</type>
 			</exclusion>
@@ -1354,6 +2259,16 @@
 				<type>CONTAINS</type>
 			</exclusion>
 	<!-- Quest Items end -->
+			<exclusion>
+				<text>Scamp's Hammer</text>
+				<target>NAME</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>PotW Wig</text>
+				<target>NAME</target>
+				<type>CONTAINS</type>
+			</exclusion>
 			<exclusion>
 				<text>Horripilation</text>
 				<target>NAME</target>
@@ -1559,11 +2474,23 @@
 				<target>EDID</target>
 				<type>STARTSWITH</type>
 			</exclusion>
+		<!-- LotR -->
 			<exclusion>
 				<text>Sting</text>
 				<target>NAME</target>
 				<type>CONTAINS</type>
 			</exclusion>
+			<exclusion>
+				<text>Narsil</text>
+				<target>NAME</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>Sauron</text>
+				<target>NAME</target>
+				<type>CONTAINS</type>
+			</exclusion>
+		<!-- LotR -->
 		<!-- Inigo-->
 			<exclusion>
 				<text>Inigo</text>
@@ -1585,6 +2512,13 @@
 				<type>STARTSWITH</type>
 			</exclusion>
 		<!-- Immersive Weapons end -->
+		<!-- More Interesting Loot start-->
+			<exclusion>
+				<text>aaML</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- More Interesting Loot end -->
 		<!-- Jaysus Swords start -->
 			<exclusion>
 				<text>JSwords</text>
@@ -1702,9 +2636,9 @@
 		<!-- Wheels Of Lull-->
 		<!-- Falskaar-->
 			<exclusion>
-				<text>Vanvir</text>
-				<target>NAME</target>
-				<type>CONTAINS</type>
+				<text>FS</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
 			</exclusion>
 		<!-- Falskaar-->
 		<!-- Thunderchild - Epic Shout Package start -->
@@ -1844,6 +2778,26 @@
 				<text>_DS_WEAP_</text>
 				<target>EDID</target>
 				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>_DS_HuntingKnife_Iron</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>_DS_HuntingKnife_Steel</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>_DS_HuntingKnife_Stone</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>_DS_HuntingKnife_Bone</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
 			</exclusion>
 		<!-- Hunterborn -->
 		<!-- Nicoroshi Creations -->
@@ -2238,6 +3192,390 @@
 				<type>CONTAINS</type>
 			</exclusion>
 		<!-- SkyMoMod -->
+		<!-- Dynamic Loot -->
+			<exclusion>
+				<text>03Crossbow</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>03DwarvenCrossbow</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>05DragonboneBow</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Dynamic Loot -->
+		<!-- Merta -->
+			<exclusion>
+				<text>Merta</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Merta -->
+		<!-- Dovahkiin Mercenary -->
+			<exclusion>
+				<text>Dovahkiin Mercenary</text>
+				<target>NAME</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Dovahkiin Mercenary -->
+		<!-- Warglaives and Silverlight Armor -->
+			<exclusion>
+				<text>Warglaive</text>
+				<target>NAME</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Warglaives and Silverlight Armor -->
+		<!-- Lilith -->
+			<exclusion>
+				<text>Lilith</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Lilith -->
+		<!-- Bosmer Armor -->
+			<exclusion>
+				<text>Bosmer</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Bosmer Armor -->
+		<!-- Vampiric Thirst - Dawnguard Edition -->
+			<exclusion>
+				<text>mslVTPwMagShaARendingClawsWPN</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+		<!-- Vampiric Thirst - Dawnguard Edition -->
+		<!-- Daedric Artifacts Improved Dawnguard -->
+			<exclusion>
+				<text>ZAeR_0</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>ZDR</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Daedric Artifacts Improved Dawnguard -->
+		<!-- OBIS Loot -->
+			<exclusion>
+				<text>JVD_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>FZ</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- OBIS Loot -->
+		<!-- Genesis Rhapsodos Rapier -->
+			<exclusion>
+				<text>Genesis' Rapier</text>
+				<target>NAME</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Genesis Rhapsodos Rapier -->
+		<!-- Spears By Soolie -->
+			<exclusion>
+				<text>Throw Javelins</text>
+				<target>NAME</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Spears By Soolie -->
+		<!-- Konahriks Accoutrements - Dragon Priest Armory -->
+			<exclusion>
+				<text>KA_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Konahriks Accoutrements - Dragon Priest Armory -->
+		<!-- Skyrim Sewers 4 -->
+			<exclusion>
+				<text>SSewers</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Skyrim Sewers 4 -->
+		<!-- Diverse Bows -->
+			<exclusion>
+				<text>Emeraldbow</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>ArgonianBow</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>WhiteWoodBow</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>ForgedBow</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>WhiteElvenBow</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>DarkElvenBow</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>MageLightDaedricBow</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>ElvenDragonboneBow</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>DarkDragonboneBow</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>BloodCursedBow</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+		<!-- Diverse Bows -->
+		<!-- Knight of Thorns Armor and Spear of Thorns -->
+			<exclusion>
+				<text>ThornsSpear</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Knight of Thorns Armor and Spear of Thorns -->
+		<!-- Sovereign Slayer Armor -->
+			<exclusion>
+				<text>yuricaSovereign</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Sovereign Slayer Armor -->
+		<!-- Much Ado about Snow Elves – A Tragedy! Act I -->
+			<exclusion>
+				<text>LB_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Much Ado about Snow Elves – A Tragedy! Act I -->
+		<!-- Conan Hyborian Age -->
+			<exclusion>
+				<text>PROM_Atlantean</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>PROM_Cimmerian</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>PROM_Hyborian</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>PROM_Rexor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>PROM_Thorgrim</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>PROM_Thulsa</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Conan Hyborian Age -->
+		<!-- Breton Knight -->
+			<exclusion>
+				<text>xxxBretonKnight</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Breton Knight -->
+		<!-- The Hanging Gardens -->
+			<exclusion>
+				<text>_bh</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+		<!-- The Hanging Gardens -->
+		<!-- Moon and Star -->
+			<exclusion>
+				<text>MAS</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Moon and Star -->
+		<!-- Companion Valfar -->
+			<exclusion>
+				<text>OS_CV</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Companion Valfar -->
+		<!-- The Grey Cowl of Nocturnal -->
+			<exclusion>
+				<text>manny_GF_Weapon</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- The Grey Cowl of Nocturnal -->
+		<!-- Rigmor of Bruma -->
+			<exclusion>
+				<text>Rigmor_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>CasiusVaron</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Rigmor of Bruma -->
+		<!-- Sword Of the Ancient Tongue -->
+			<exclusion>
+				<text>AncientTongues</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Sword Of the Ancient Tongue -->
+		<!-- Campfire -->
+			<exclusion>
+				<text>_Camp_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Campfire -->
+		<!-- VanNord -->
+			<exclusion>
+				<text>AnewVanNord</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>AnewNordic</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- VanNord -->
+		<!-- Isilmeriel LOTR Weapons Collection -->
+			<exclusion>
+				<text>isil</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Isilmeriel LOTR Weapons Collection -->
+		<!-- Mystic Elven -->
+			<exclusion>
+				<text>MysticElven</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Mystic Elven -->
+		<!-- Divine Aegis -->
+			<exclusion>
+				<text>xxGreatTemplar</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Divine Aegis -->
+		<!-- Gifts of Akatosh -->
+			<exclusion>
+				<text>Akatosh</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Gifts of Akatosh -->
+		<!-- Firelink Implements -->
+			<exclusion>
+				<text>FirelinkGreat</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Firelink Implements -->
+		<!-- Terra -->
+			<exclusion>
+				<text>DTerra</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+		<!-- Terra -->
+		<!-- Yharnyam Set -->
+			<exclusion>
+				<text>zzzWeapYham</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Yharnyam Set -->
+		<!-- Unexpected Blades -->
+			<exclusion>
+				<text>KhajiitLongDagger</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>ArgonianKindjal</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>AkaviriDha</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>AnXileelCleaver</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>KhajiitYatagan</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Unexpected Blades -->
+		<!-- Immersive Jewelry -->
+			<exclusion>
+				<text>IJ</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>01dam</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Immersive Jewelry -->
+		<!-- Twilight Guild Wars 2 Legendary GreatSword -->
+			<exclusion>
+				<text>00LegendaryTwilightGreatSword</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+		<!-- Twilight Guild Wars 2 Legendary GreatSword -->
 		</distribution_exclusions_weapon_regular>
 
 		<distribution_exclusions_list_regular>
@@ -2273,6 +3611,11 @@
 				<text>Dawnguard</text>
 				<target>EDID</target>
 				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>Courier</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
 			</exclusion>
 		<!-- Faction Exclusions end -->
 		<!-- Civil War Exclusions start -->
@@ -2433,6 +3776,14 @@
 				<target>EDID</target>
 				<type>CONTAINS</type>
 			</exclusion>
+		<!-- Some 'USE ALL' LLs that otherwise can overload an NPCs inventory -->
+		<!-- Some LLs that can get overloaded by PaMa's Similarity system-->
+			<exclusion>
+				<text>LItemWeaponDaggerTown</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+		<!-- Some LLs that can get overloaded by PaMa's Similarity system-->
 		<!-- Skyrim Immersive Creatures start -->
 			<exclusion>
 				<text>_00</text>
@@ -2501,12 +3852,29 @@
 				<type>CONTAINS</type>
 			</exclusion>
 		<!-- EggOver -->
+		<!-- Spears By Soolie -->
+			<exclusion>
+				<text>LItemSpearOr</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>LItemJavelin</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Spears By Soolie -->
 		</distribution_exclusions_list_regular>
 
 		<distribution_exclusions_weapon_enchanted>
 		<!-- Target = NAME/EDID/FORMID Type = EQUALS/EQUALS_IGNORECASE/CONTAINS -->
 		<!-- Target = Enchanted Items in this list will not be distributed to LLs by PaMa -->
 		<!-- Faction Exclusions start -->
+			<exclusion>
+				<text>MJB_Bow</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
 			<exclusion>
 				<text>Akaviri</text>
 				<target>EDID</target>
@@ -2663,8 +4031,13 @@
 			</exclusion>
 		<!-- Daedric Artifacts end -->
 		<!-- Quest Items start -->
+ 			<exclusion>
+				<text>Blade of the Wicked</text>
+				<target>NAME</target>
+				<type>CONTAINS</type>
+			</exclusion>
 			<exclusion>
-				<text>Dragon Priest Staff</text>
+				<text>Dragon Priest</text>
 				<target>NAME</target>
 				<type>CONTAINS</type>
 			</exclusion>
@@ -2824,6 +4197,20 @@
 				<target>EDID</target>
 				<type>STARTSWITH</type>
 			</exclusion>
+		<!-- LotR -->
+			<exclusion>
+				<text>Sauron</text>
+				<target>NAME</target>
+				<type>CONTAINS</type>
+			</exclusion>
+		<!-- LotR -->
+		<!-- Falskaar-->
+			<exclusion>
+				<text>FS</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Falskaar-->
 		<!-- Skyrim Immersive Creatures start -->
 			<exclusion>
 				<text>_00</text>
@@ -2831,13 +4218,6 @@
 				<type>STARTSWITH</type>
 			</exclusion>
 		<!-- Skyrim Immersive Creatures end -->
-		<!-- Immersive Weapons start -->
-			<exclusion>
-				<text>IW</text>
-				<target>EDID</target>
-				<type>STARTSWITH</type>
-			</exclusion>
-		<!-- Immersive Weapons end -->
 		<!-- Jaysus Swords start -->
 			<exclusion>
 				<text>JSwords</text>
@@ -3051,6 +4431,11 @@
 				<target>NAME</target>
 				<type>CONTAINS</type>
 			</exclusion>
+			<exclusion>
+				<text>Divining Knife</text>
+				<target>NAME</target>
+				<type>CONTAINS</type>
+			</exclusion>
 		<!-- Hunterborn  -->
 		<!-- Helgen Reborn -->
 			<exclusion>
@@ -3259,6 +4644,264 @@
 				<type>CONTAINS</type>
 			</exclusion>
 		<!-- Dovamaar and Dovahfaas -->
+		<!-- Dynamic Loot -->
+			<exclusion>
+				<text>03Crossbow</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>03DwarvenCrossbow</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>05DragonboneBow</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Dynamic Loot -->
+		<!-- Merta -->
+			<exclusion>
+				<text>Merta</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Merta -->
+		<!-- Warglaives and Silverlight Armor  -->
+			<exclusion>
+				<text>SilverChillGreatsword</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Warglaives and Silverlight Armor  -->
+		<!-- Dovahkiin Mercenary -->
+			<exclusion>
+				<text>Dovahkiin Mercenary</text>
+				<target>NAME</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Dovahkiin Mercenary -->
+		<!-- Lilith -->
+			<exclusion>
+				<text>Lilith</text>
+				<target>NAME</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Lilith -->
+		<!-- SkyRe Races -->
+			<exclusion>
+				<text>xxxRacialDarkElfAncestorSword</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+		<!-- SkyRe Races -->
+		<!-- OBIS Loot -->
+			<exclusion>
+				<text>JVD_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>FZ</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- OBIS Loot -->
+		<!-- Spears By Soolie -->
+			<exclusion>
+				<text>Throw Javelins</text>
+				<target>NAME</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Spears By Soolie -->
+		<!-- Konahriks Accoutrements - Dragon Priest Armory -->
+			<exclusion>
+				<text>KA_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Konahriks Accoutrements - Dragon Priest Armory -->
+		<!-- Skyrim Sewers 4 -->
+			<exclusion>
+				<text>SSewers</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Skyrim Sewers 4 -->
+		<!-- Much Ado about Snow Elves – A Tragedy! Act I -->
+			<exclusion>
+				<text>LB_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Much Ado about Snow Elves – A Tragedy! Act I -->
+		<!-- Conan Hyborian Age -->
+			<exclusion>
+				<text>PROM_Atlantean</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>PROM_Cimmerian</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>PROM_Hyborian</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>PROM_Rexor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>PROM_Thorgrim</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>PROM_Thulsa</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Conan Hyborian Age -->
+		<!-- The Hanging Gardens -->
+			<exclusion>
+				<text>_bh</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+		<!-- The Hanging Gardens -->
+		<!-- Moon and Star -->
+			<exclusion>
+				<text>MAS</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Moon and Star -->
+		<!-- Sulfuras - The Reclaimed Hand -->
+			<exclusion>
+				<text>Sulfuras</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Sulfuras - The Reclaimed Hand -->
+		<!-- The Grey Cowl of Nocturnal -->
+			<exclusion>
+				<text>manny_GF_Weapon</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- The Grey Cowl of Nocturnal -->
+		<!-- Rigmor of Bruma -->
+			<exclusion>
+				<text>Rigmor_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Rigmor of Bruma -->
+		<!-- Sword Of the Ancient Tongue -->
+			<exclusion>
+				<text>AncientTongues</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Sword Of the Ancient Tongue -->
+		<!-- VanNord -->
+			<exclusion>
+				<text>AnewVanNord</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>AnewNordic</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- VanNord -->
+		<!-- Isilmeriel LOTR Weapons Collection -->
+			<exclusion>
+				<text>isil</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Isilmeriel LOTR Weapons Collection -->
+		<!-- Mystic Elven -->
+			<exclusion>
+				<text>MysticElven</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Mystic Elven -->
+		<!-- Divine Aegis -->
+			<exclusion>
+				<text>xxGreatTemplar</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Divine Aegis -->
+		<!-- Gifts of Akatosh -->
+			<exclusion>
+				<text>Akatosh</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Gifts of Akatosh -->
+		<!-- Firelink Implements -->
+			<exclusion>
+				<text>FirelinkGreat</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Firelink Implements -->
+		<!-- SOL -->
+			<exclusion>
+				<text>Sol</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>SolII</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+		<!-- SOL -->
+		<!-- Yharnyam Set -->
+			<exclusion>
+				<text>zzzWeapYham</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Yharnyam Set -->
+		<!-- Dwemer Spectres -->
+			<exclusion>
+				<text>_tw_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Dwemer Spectres -->
+		<!-- The Ashbringers -->
+			<exclusion>
+				<text>Ashbringer</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+			<exclusion>
+				<text>CorruptedAshbringer</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+		<!-- The Ashbringers -->
+		<!-- Immersive Jewelry -->
+			<exclusion>
+				<text>IJ</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Immersive Jewelry -->
 		</distribution_exclusions_weapon_enchanted>
 
 		<distribution_exclusions_list_enchanted>
@@ -3328,6 +4971,11 @@
 				<text>Skyforge</text>
 				<target>EDID</target>
 				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>Courier</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
 			</exclusion>
 		<!-- Some 'USE ALL' LLs that otherwise can overload an NPCs inventory -->
 			<exclusion>
@@ -3429,6 +5077,65 @@
 				<type>CONTAINS</type>
 			</exclusion>
 		<!-- EggOver -->
+		<!-- Skyrim Knights -->
+			<exclusion>
+				<text>SkyforgeSteelSwordReforged</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+		<!-- Skyrim Knights -->
+		<!-- Diverse Bows -->
+			<exclusion>
+				<text>Emeraldbow</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>ArgonianBow</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>WhiteWoodBow</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>ForgedBow</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>WhiteElvenBow</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>DarkElvenBow</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>MageLightDaedricBow</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>ElvenDragonboneBow</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>DarkDragonboneBow</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>BloodCursedBow</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+		<!-- Diverse Bows -->
 		</distribution_exclusions_list_enchanted>
 	</distribution_exclusions_weapon>
 
@@ -3437,6 +5144,11 @@
 		<!-- Target = NAME/EDID/FORMID Type = EQUALS/EQUALS_IGNORECASE/CONTAINS -->
 		<!-- Target = Enchanted Items in this list will not be distributed to LLs by PaMa -->
 		<!-- Faction Exclusions start -->
+			<exclusion>
+				<text>sample</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
 			<exclusion>
 				<text>Akaviri</text>
 				<target>EDID</target>
@@ -3464,6 +5176,21 @@
 			</exclusion>
 			<exclusion>
 				<text>ThievesGuild</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>Aela's</text>
+				<target>NAME</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>DLC1ClothesVampireLordArmor</text> <!-- Vampire Lord Skin -->
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>DLC1ClothesVampireLordRoyalArmor</text> <!-- Vampire Lord Skin -->
 				<target>EDID</target>
 				<type>CONTAINS</type>
 			</exclusion>
@@ -3508,11 +5235,6 @@
 		<!-- Quest Items start -->
 			<exclusion>
 				<text>of the Old Gods</text>
-				<target>NAME</target>
-				<type>CONTAINS</type>
-			</exclusion>
-			<exclusion>
-				<text>Aela's Shield</text>
 				<target>NAME</target>
 				<type>CONTAINS</type>
 			</exclusion>
@@ -3607,6 +5329,38 @@
 				<type>CONTAINS</type>
 			</exclusion>
 		<!-- Quest Items end -->
+		<!-- Dragonborn Gallery start -->
+			<exclusion>
+				<text>DBM</text> 
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+		<!-- Dragonborn Gallery end -->	
+			<exclusion>
+				<text>dnn</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>xMAEasterEggMaskNerjal</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>xMASNEArmorDarkCowl</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>DLC01Reaper</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>DLC01SoulCairn</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
 			<exclusion>
 				<text>Archmage</text>
 				<target>EDID</target>
@@ -3751,6 +5505,13 @@
 				<type>STARTSWITH</type>
 			</exclusion>
 		<!-- Immersive Armors end -->
+		<!-- More Interesting Loot start-->
+			<exclusion>
+				<text>aaML</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- More Interesting Loot end -->
 		<!-- OBIS start -->
 			<exclusion>
 				<text>Bounty</text>
@@ -4142,13 +5903,13 @@
 				<type>STARTSWITH</type>
 			</exclusion>
 		<!-- Nock to Tip end -->
-		<!--  Death Alternative -->
+		<!-- Death Alternative -->
 			<exclusion>
 				<text>daymoyl_</text>
 				<target>EDID</target>
 				<type>STARTSWITH</type>
 			</exclusion>
-		<!--  Death Alternative -->
+		<!-- Death Alternative -->
 		<!-- Ghosus Weapon Pack -->
 			<exclusion>
 				<text>Aegis of Champions</text>
@@ -4167,25 +5928,13 @@
 				<target>EDID</target>
 				<type>STARTSWITH</type>
 			</exclusion>
-					<!-- For the follower mod "Hoth" -->
+				<!-- For the follower mod "Hoth" -->
 			<exclusion>
 				<text>Hoth</text>
 				<target>EDID</target>
 				<type>STARTSWITH</type>
 			</exclusion>
 			<!-- EggOver -->
-		<!-- Contractor and Mavari armors -->
-			<exclusion>
-				<text>Contractor</text>
-				<target>NAME</target>
-				<type>CONTAINS</type>
-			</exclusion>
-			<exclusion>
-				<text>Mavari</text>
-				<target>NAME</target>
-				<type>CONTAINS</type>
-			</exclusion>
-		<!-- Contractor and Mavari armors -->
 		<!-- Contractor and Mavari armors -->
 			<exclusion>
 				<text>Contractor</text>
@@ -4306,6 +6055,645 @@
 				<type>CONTAINS</type>
 			</exclusion>
 		<!-- Gwelda -->
+		<!-- Dynamic Loot -->
+			<exclusion>
+				<text>000Armor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>00Armor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>01Armor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_01Telvani</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_01Clothes</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>02Armor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_02Armor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_03Armor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_03Ivory</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>04Armor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_04Armor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>05Armor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_05Armor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_05Miraak</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_00Template</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_01Cloths</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_02Cloths</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_03Cloths</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_04Cloths</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_05Cloths</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Dynamic Loot -->
+		<!-- Merta -->
+			<exclusion>
+				<text>Merta</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Merta -->
+		<!-- Dovahkiin Mercenary -->
+			<exclusion>
+				<text>Dovahkiin Mercenary</text>
+				<target>NAME</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Dovahkiin Mercenary -->
+		<!-- Elven Sniper -->
+			<exclusion>
+				<text>Elven Sniper</text>
+				<target>NAME</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Elven Sniper -->
+		<!-- Warglaives and Silverlight Armor -->
+			<exclusion>
+				<text>Warglaive Shield</text>
+				<target>NAME</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>Silverlight</text>
+				<target>NAME</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Warglaives and Silverlight Armor -->
+		<!-- Ursine -->
+			<exclusion>
+				<text>Ursine</text>
+				<target>NAME</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Ursine -->
+		<!-- Arissa the Wandering Rogue -->
+			<exclusion>
+				<text>_Arissa_Armor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Arissa the Wandering Rogue -->
+		<!-- Conan Hyborian Age -->
+			<exclusion>
+				<text>PROM_ArmorConan</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>PROM_Doom</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>PROM_Draugr</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>PROM_Hyborian</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>PROM_Rexor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>PROM_Skin</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Conan Hyborian Age -->
+		<!-- Bosmer Armor -->
+			<exclusion>
+				<text>BosmerArmor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Bosmer Armor -->
+		<!-- Vampiric Thirst - Dawnguard Edition -->
+			<exclusion>
+				<text>DLC1nVampireNightPowerNecklaceGargoyle</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusion>
+		<!-- Vampiric Thirst - Dawnguard Edition -->
+		<!-- EotW Dovahkiins Journeyman Armor -->
+			<exclusion>
+				<text>01ERADJ</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- EotW Dovahkiins Journeyman Armor -->
+		<!-- Daedric Artifacts Improved Dawnguard -->
+			<exclusion>
+				<text>ZAeR_0</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>ZDR</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Daedric Artifacts Improved Dawnguard -->
+		<!-- Forgotten Magic Redone -->
+			<exclusion>
+				<text>ArmorPhantomFX</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Forgotten Magic Redone -->
+		<!-- OBIS Loot -->
+			<exclusion>
+				<text>JVD_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>FZ</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- OBIS Loot -->
+		<!-- Dragonbone Barbarian Armor -->
+			<exclusion>
+				<text>Shockero_Cloth_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>Shockero_Heavy_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>Shockero_Light_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Dragonbone Barbarian Armor -->
+		<!-- Skaal Heavy Armor -->
+			<exclusion>
+				<text>Skaal Heavy</text>
+				<target>NAME</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Skaal Heavy Armor -->
+		<!-- Luddemanns Armory -->
+			<exclusion>
+				<text>ludBard</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Luddemanns Armory -->
+		<!-- Evil Mastermind Armor -->
+			<exclusion>
+				<text>EvilMasterArmor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Evil Mastermind Armor -->
+		<!-- Konahriks Accoutrements - Dragon Priest Armory -->
+			<exclusion>
+				<text>KA_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Konahriks Accoutrements - Dragon Priest Armory -->
+		<!-- S7B Lady Draak BBP -->
+			<exclusion>
+				<text>ArmorLadyDraak</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- S7B Lady Draak BBP -->
+		<!-- Skyrim Knights -->
+			<exclusion>
+				<text>ArmorDragonscaleHelmetDragonthanereforged</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>ArmorReforgedSteelPlateDragonthane</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>ArmorSteelPlateBootsReforgedDragonthane</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>ArmorSteelPlateGauntletsreforgedDragonthane</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Skyrim Knights -->
+		<!-- Falskaar-->
+			<exclusion>
+				<text>FS</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Falskaar-->
+		<!-- Avatar Of Grenth -->
+			<exclusion>
+				<text>Avatar Of Grenth</text>
+				<target>NAME</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Avatar Of Grenth -->
+		<!-- Lord Marshal and Steel Falcon -->
+			<exclusion>
+				<text>Lord Marshal</text>
+				<target>NAME</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>Steel Falcon</text>
+				<target>NAME</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Lord Marshal and Steel Falcon -->
+		<!-- Common Clothes -->
+			<exclusion>
+				<text>002BeltedRobe</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>002CommonRobe</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>002QuiltedRobes</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>002TravelClothes</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Common Clothes -->
+		<!-- B-D-Y-E-B -->
+			<exclusion>
+				<text>BDYEB</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- B-D-Y-E-B -->
+		<!-- Medusa Drakul armors -->
+			<exclusion>
+				<text>Medusa</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>Drakul</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+		<!-- Medusa Drakul armors -->
+		<!-- Schwertleite set -->
+			<exclusion>
+				<text>Schwertleite</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+		<!-- Schwertleite set -->
+		<!-- Tembtra theif armor -->
+			<exclusion>
+				<text>DX_MAC_Tembtra</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Tembtra theif armor -->
+		<!-- Demon Hunter Armor v3? by Jojjo -->
+			<exclusion>
+				<text>GDDH</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Demon Hunter Armor v3? by Jojjo -->
+		<!-- Jethead Armors -->
+			<exclusion>
+				<text>JH</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Jethead Armors -->
+		<!-- Everybodys Different -->
+			<exclusion>
+				<text>EBDRing</text>
+				<target>NAME</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Everybodys Different -->
+		<!-- Grace Darklings Ranger Armor -->
+			<exclusion>
+				<text>GDRARanger</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Grace Darklings Ranger Armor -->
+		<!-- Deadly Trio -->
+			<exclusion>
+				<text>xxxSwordMaster</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>xxxWitchHunter</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>xxxVampireHunter</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Deadly Trio -->
+		<!-- Knight of Thorns Armor and Spear of Thorns -->
+			<exclusion>
+				<text>ArmorThorns</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Knight of Thorns Armor and Spear of Thorns -->
+		<!-- Mord Sith Cara Armor -->
+			<exclusion>
+				<text>xxxMordSith</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Mord Sith Cara Armor -->
+		<!-- Draconic Bloodline -->
+			<exclusion>
+				<text>DBL</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Draconic Bloodline -->
+		<!-- Omegared99 - Gallery of Armor -->
+			<exclusion>
+				<text>099</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Omegared99 - Gallery of Armor -->
+		<!-- aMidianBorn_ContentAddon -->
+			<exclusion>
+				<text>Blacksmith's Tribute Iron</text>
+				<target>NAME</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- aMidianBorn_ContentAddon -->
+		<!-- Sovereign Slayer Armor -->
+			<exclusion>
+				<text>yuricaSovereign</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Sovereign Slayer Armor -->
+		<!-- True Thief Armor -->
+			<exclusion>
+				<text>xxxthief</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- True Thief Armor -->
+		<!-- Much Ado about Snow Elves – A Tragedy! Act I -->
+			<exclusion>
+				<text>LB_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Much Ado about Snow Elves – A Tragedy! Act I -->
+		<!-- Breton Knight -->
+			<exclusion>
+				<text>xxxBretonKnight</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Breton Knight -->
+		<!-- The Hanging Gardens -->
+			<exclusion>
+				<text>Bhabhilon</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_bh</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+		<!-- The Hanging Gardens -->
+		<!-- Moon and Star -->
+			<exclusion>
+				<text>MAS</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Moon and Star -->
+		<!-- Osare Culort Outfit - UNP -->
+			<exclusion>
+				<text>Culort</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Osare Culort Outfit - UNP -->
+		<!-- Companion Valfar -->
+			<exclusion>
+				<text>OS_CV</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Companion Valfar -->
+		<!-- The Grey Cowl of Nocturnal -->
+			<exclusion>
+				<text>manny_GF_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- The Grey Cowl of Nocturnal -->
+		<!-- Armor Of Intrigue -->
+			<exclusion>
+				<text>ArmorOfIntrigue</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+		<!-- Armor Of Intrigue -->
+		<!-- Rigmor of Bruma -->
+			<exclusion>
+				<text>Rigmor_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Rigmor of Bruma -->
+		<!-- Campfire -->
+			<exclusion>
+				<text>_Camp_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Campfire -->
+		<!-- Vayan Armor -->
+			<exclusion>
+				<text>001Vayan</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Vayan Armor -->
+		<!-- Belko Follower -->
+			<exclusion>
+				<text>aaaBelko</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Belko Follower -->
+		<!-- VanNord -->
+			<exclusion>
+				<text>AnewArmorNordic</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- VanNord -->
+		<!-- Mystic Elven -->
+			<exclusion>
+				<text>MysticElven</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Mystic Elven -->
+		<!-- Divine Aegis -->
+			<exclusion>
+				<text>DivineAegis</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>AegisCloak</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Divine Aegis -->
+		<!-- Gifts of Akatosh -->
+			<exclusion>
+				<text>ArmorAkatosh</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Gifts of Akatosh -->
+		<!-- Firelink Implements -->
+			<exclusion>
+				<text>ArmorFirelink</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Firelink Implements -->
+		<!-- Yharnyam Set -->
+			<exclusion>
+				<text>zzzArmorYham</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Yharnyam Set -->
+		<!-- ESO Altmer Armor by NewerMind43 RELOAD -->
+			<exclusion>
+				<text>xxxESOAltmer</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- ESO Altmer Armor by NewerMind43 RELOAD -->
+		<!-- Immersive Jewelry -->
+			<exclusion>
+				<text>IJ</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Immersive Jewelry -->
+		<!-- Blades Hakama -->
+			<exclusion>
+				<text>Blades Shihan</text>
+				<target>NAME</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Blades Hakama -->
 		</distribution_exclusions_armor_regular>
 
 		<distribution_exclusions_list_regular>
@@ -4559,11 +6947,95 @@
 				<type>CONTAINS</type>
 			</exclusion>
 		<!-- EggOver -->
+		<!-- Dragonbone Barbarian Armor -->
+			<exclusion>
+				<text>Shockero_LL_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Dragonbone Barbarian Armor -->
 		</distribution_exclusions_list_regular>
 
 		<distribution_exclusions_armor_enchanted>
 		<!-- Target = NAME/EDID/FORMID Type = EQUALS/EQUALS_IGNORECASE/CONTAINS -->
 		<!-- Target = Enchanted Items in this list will not be distributed to LLs by PaMa -->
+		<!-- Dragon Priest Masks end -->
+			<exclusion>
+				<text>Ahzidal</text>
+				<target>NAME</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>Dukaan</text>
+				<target>NAME</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>Hevnoraak</text>
+				<target>NAME</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>Konahrik</text>
+				<target>NAME</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>Krosis</text>
+				<target>NAME</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>Miraak</text>
+				<target>NAME</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>Morokei</text>
+				<target>NAME</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>Nahkriin</text>
+				<target>NAME</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>Otar</text>
+				<target>NAME</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>Rahgot</text>
+				<target>NAME</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>Vokun</text>
+				<target>NAME</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>Volsung</text>
+				<target>NAME</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>Zahkriisos</text>
+				<target>NAME</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>DLC1ClothesVampireLordArmor</text> <!-- Vampire Lord Skin -->
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>DLC1ClothesVampireLordRoyalArmor</text> <!-- Vampire Lord Skin -->
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+		<!-- Dragon Priest Masks end -->
 		<!-- Faction Exclusions start -->
 			<exclusion>
 				<text>Akaviri</text>
@@ -4593,6 +7065,11 @@
 			<exclusion>
 				<text>ThievesGuild</text>
 				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+			<exclusion>
+				<text>Aela's</text>
+				<target>NAME</target>
 				<type>CONTAINS</type>
 			</exclusion>
 		<!-- Faction Exclusions end -->
@@ -4719,11 +7196,6 @@
 			</exclusion>
 			<exclusion>
 				<text>Linwe's</text>
-				<target>NAME</target>
-				<type>CONTAINS</type>
-			</exclusion>
-			<exclusion>
-				<text>Aela's Shield</text>
 				<target>NAME</target>
 				<type>CONTAINS</type>
 			</exclusion>
@@ -5343,6 +7815,439 @@
 				<type>CONTAINS</type>
 			</exclusion>
 		<!-- Gwelda -->
+		<!-- Dynamic Loot -->
+			<exclusion>
+				<text>000Armor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>00Armor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>01Armor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_01Telvani</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_01Clothes</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>02Armor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_02Armor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_03Armor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_03Ivory</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>04Armor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_04Armor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>05Armor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_05Armor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_05Miraak</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_00Template</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_01Cloths</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_02Cloths</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_03Cloths</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_04Cloths</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>_05Cloths</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Dynamic Loot -->
+		<!-- Merta -->
+			<exclusion>
+				<text>Merta</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Merta -->
+		<!-- Dovahkiin Mercenary -->
+			<exclusion>
+				<text>Dovahkiin Mercenary</text>
+				<target>NAME</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Dovahkiin Mercenary -->
+		<!-- Ursine -->
+			<exclusion>
+				<text>Ursine</text>
+				<target>NAME</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Ursine -->
+		<!-- Conan Hyborian Age -->
+			<exclusion>
+				<text>PROM_ArmorConan</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>PROM_Doom</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>PROM_Draugr</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>PROM_Hyborian</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>PROM_Rexor</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>PROM_Skin</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Conan Hyborian Age -->
+		<!-- Daedric Artifacts Improved Dawnguard -->
+			<exclusion>
+				<text>ZAeR_0</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>ZDR</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Daedric Artifacts Improved Dawnguard -->
+		<!-- Forgotten Magic Redone -->
+			<exclusion>
+				<text>jDivRing</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>jFireRing</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>jIceRing</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>jMysticRing</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>jNatureRing</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>jStormRing</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>jWarRing</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Forgotten Magic Redone -->
+		<!-- OBIS Loot -->
+			<exclusion>
+				<text>JVD_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>FZ</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- OBIS Loot -->
+		<!-- Dragonbone Barbarian Armor -->
+			<exclusion>
+				<text>Shockero_Cloth_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>Shockero_Heavy_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>Shockero_Light_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Dragonbone Barbarian Armor -->
+		<!-- Skaal Heavy Armor -->
+			<exclusion>
+				<text>Skaal Heavy</text>
+				<target>NAME</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Skaal Heavy Armor -->
+		<!-- Konahriks Accoutrements - Dragon Priest Armory -->
+			<exclusion>
+				<text>KA_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Konahriks Accoutrements - Dragon Priest Armory -->
+		<!-- Falskaar -->
+			<exclusion>
+				<text>FS</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Falskaar -->
+		<!-- Tembtra theif armor -->
+			<exclusion>
+				<text>DX_MAC_Tembtra</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Tembtra theif armor -->
+		<!-- Jethead Armors -->
+			<exclusion>
+				<text>JH</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Jethead Armors -->
+		<!-- Everybodys Different -->
+			<exclusion>
+				<text>EBDRing</text>
+				<target>NAME</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Everybodys Different -->
+		<!-- Lord's Mail -->
+			<exclusion>
+				<text>LM</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Lord's Mail -->
+		<!-- Draconic Bloodline -->
+			<exclusion>
+				<text>DBL</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Draconic Bloodline -->
+		<!-- Wind Destruction -->
+			<exclusion>
+				<text>WDM_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Wind Destruction -->
+		<!-- Much Ado about Snow Elves – A Tragedy! Act I -->
+			<exclusion>
+				<text>LB_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Much Ado about Snow Elves – A Tragedy! Act I -->
+		<!-- Moon and Star -->
+			<exclusion>
+				<text>MAS</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Moon and Star -->
+		<!-- Osare Culort Outfit - UNP -->
+			<exclusion>
+				<text>Culort</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Osare Culort Outfit - UNP -->
+		<!-- The Grey Cowl of Nocturnal -->
+			<exclusion>
+				<text>manny_GF_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- The Grey Cowl of Nocturnal -->
+		<!-- Armor Of Intrigue -->
+			<exclusion>
+				<text>ArmorOfIntrigue</text>
+				<target>EDID</target>
+				<type>CONTAINS</type>
+			</exclusion>
+		<!-- Armor Of Intrigue -->
+		<!-- Rigmor of Bruma -->
+			<exclusion>
+				<text>Rigmor_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Rigmor of Bruma -->
+		<!-- Vayan Armor -->
+			<exclusion>
+				<text>001Vayan</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Vayan Armor -->
+		<!-- Belko Follower -->
+			<exclusion>
+				<text>aaaBelko</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Belko Follower -->
+		<!-- VanNord -->
+			<exclusion>
+				<text>AnewArmorNordic</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- VanNord -->
+		<!-- Mystic Elven -->
+			<exclusion>
+				<text>MysticElven</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Mystic Elven -->
+		<!-- Divine Aegis -->
+			<exclusion>
+				<text>DivineAegis</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+			<exclusion>
+				<text>AegisCloak</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Divine Aegis -->
+		<!-- Gifts of Akatosh -->
+			<exclusion>
+				<text>ArmorAkatosh</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Gifts of Akatosh -->
+		<!-- Firelink Implements -->
+			<exclusion>
+				<text>ArmorFirelink</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Firelink Implements -->
+		<!-- Tribunal Masks - Judgement Day -->
+			<exclusion>
+				<text>ArmorTribunalMask</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Tribunal Masks - Judgement Day -->
+		<!-- Gangs Of Skyrim -->
+			<exclusions>
+				<text>ShadowA</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusions>
+			<exclusions>
+				<text>ShadowG</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusions>
+			<exclusions>
+				<text>ShadowH</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusions>
+			<exclusions>
+				<text>ShadowB</text>
+				<target>EDID</target>
+				<type>EQUALS</type>
+			</exclusions>
+			<exclusions>
+				<text>Wolf Pack</text>
+				<target>NAME</target>
+				<type>STARTSWITH</type>
+			</exclusions>
+		<!-- Gangs Of Skyrim -->
+		<!-- Immersive Jewelry -->
+			<exclusion>
+				<text>IJ</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Immersive Jewelry -->
 		</distribution_exclusions_armor_enchanted>
 
 		<distribution_exclusions_list_enchanted>
@@ -5647,6 +8552,13 @@
 				<type>STARTSWITH</type>
 			</exclusion>
 		<!--Aethernautics-->
+		<!-- Dragonbone Barbarian Armor -->
+			<exclusion>
+				<text>Shockero_LL_</text>
+				<target>EDID</target>
+				<type>STARTSWITH</type>
+			</exclusion>
+		<!-- Dragonbone Barbarian Armor -->
 		</distribution_exclusions_list_enchanted>
 	</distribution_exclusions_armor>
 </ns2:leveledLists>

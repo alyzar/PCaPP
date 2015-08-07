@@ -3,9 +3,9 @@
 
 	<weapon_settings>
 		<appendTypeToName>true</appendTypeToName>
-		<baseDamageLightWeaponry>0</baseDamageLightWeaponry>
-		<baseDamageRangedWeaponry>0</baseDamageRangedWeaponry>
-		<baseDamageHeavyWeaponry>0</baseDamageHeavyWeaponry>
+		<baseDamageLightWeaponry>2.0</baseDamageLightWeaponry>
+		<baseDamageRangedWeaponry>0.0</baseDamageRangedWeaponry>
+		<baseDamageHeavyWeaponry>0.0</baseDamageHeavyWeaponry>
 		<damageFactorLightWeaponry>1.0</damageFactorLightWeaponry><!-- No longer used -->
 		<damageFactorRangedWeaponry>1.0</damageFactorRangedWeaponry><!-- No longer used -->
 		<damageFactorHeavyWeaponry>1.0</damageFactorHeavyWeaponry><!-- No longer used -->
@@ -32,11 +32,19 @@
 			<identifier>ancient</identifier>
 		</binding>
 		<binding>
-			<substring>Light </substring>
+			<substring>Antique</substring>
+			<identifier>ancient</identifier>
+		</binding>
+		<binding>
+			<substring>Light</substring>
 			<identifier>light</identifier>
 		</binding>
 	<!-- Bindings that lower the quality of weapons end-->
 	<!-- Bindings that increase the quality of weapons start-->	
+		<binding>
+			<substring>Enhanced</substring>
+			<identifier>enhanced</identifier>
+		</binding>
 		<binding>
 			<substring>Scoped</substring>
 			<identifier>scoped</identifier>
@@ -46,7 +54,11 @@
 			<identifier>hero</identifier>
 		</binding>
 		<binding>
-			<substring>Legend</substring>
+			<substring> Legend</substring>
+			<identifier>legendary</identifier>
+		</binding>
+		<binding>
+			<substring>Legend </substring>
 			<identifier>legendary</identifier>
 		</binding>
 		<binding>
@@ -93,6 +105,10 @@
 			<substring>Eastern</substring>
 			<identifier>fine</identifier>
 		</binding>
+		<binding>
+			<substring>Corrupted</substring>
+			<identifier>fine</identifier>
+		</binding>
 	<!-- Bindings that increase the quality of weapons end-->
 	<!-- PerMa modifiers (do not change) start-->
 		<binding>
@@ -126,22 +142,48 @@
 	<!-- PerMa modifiers (do not change) end-->
 	<!-- Nock to Tip start -->
 		<binding>
-			<substring> (Improved)</substring>
+			<substring>(Improved)</substring>
 			<identifier>80</identifier>
 		</binding>
 		<binding>
-			<substring> (Legendary)</substring>
+			<substring>(Legendary)</substring>
 			<identifier>120</identifier>
 		</binding>
 		<binding>
-			<substring> (High Speed)</substring>
+			<substring>(High Speed)</substring>
 			<identifier>speed</identifier>
 		</binding>
 		<binding>
-			<substring> (High Tension)</substring>
+			<substring>(High Tension)</substring>
 			<identifier>tension</identifier>
 		</binding>
 	<!-- Nock to Tip end -->
+	<!-- Frostfall start-->
+		<binding>
+			<substring>(Used)</substring>
+			<identifier>used</identifier>
+		</binding>
+		<binding>
+			<substring>(Worn)</substring>
+			<identifier>worn</identifier>
+		</binding>
+		<binding>
+			<substring>(Reliable)</substring>
+			<identifier>reliable</identifier>
+		</binding>
+		<binding>
+			<substring>(Solid)</substring>
+			<identifier>solid</identifier>
+		</binding>
+		<binding>
+			<substring>(Damaged)</substring>
+			<identifier>damaged</identifier>
+		</binding>
+		<binding>
+			<substring>(Broken)</substring>
+			<identifier>broken</identifier>
+		</binding>
+	<!-- Frostfall end-->
 	</weapon_modifier_bindings>
 
 	<weapon_modifiers>
@@ -175,12 +217,6 @@
 			<factorAttackSpeed>1.1</factorAttackSpeed>
 			<factorValue>0.75</factorValue>
 		</weapon_modifier>
-		<armor_modifier>
-			<identifier>old</identifier>
-			<factorArmor>0.95</factorArmor>
-			<factorValue>0.95</factorValue>
-			<factorWeight>1.05</factorWeight>
-		</armor_modifier>
 		<weapon_modifier>
 			<identifier>light</identifier>
 			<factorDamage>0.9</factorDamage>
@@ -192,6 +228,15 @@
 		</weapon_modifier>
 	<!-- Bindings that lower the quality of weapons end-->
 	<!-- Bindings that increase the quality of weapons start-->
+		<weapon_modifier>
+			<identifier>enhanced</identifier>
+			<factorDamage>1.1</factorDamage>
+			<factorCritDamage>1.1</factorCritDamage>
+			<factorWeight>0.95</factorWeight>
+			<factorReach>1.0</factorReach>
+			<factorAttackSpeed>0.95</factorAttackSpeed>
+			<factorValue>1.1</factorValue>
+		</weapon_modifier>
 		<weapon_modifier>
 			<identifier>scoped</identifier>
 			<factorDamage>1.0</factorDamage>
@@ -275,12 +320,12 @@
 		</weapon_modifier>
 		<weapon_modifier>
 			<identifier>heavy</identifier>
-			<factorDamage>1.3</factorDamage>
-			<factorCritDamage>1.1</factorCritDamage>
-			<factorWeight>1.3</factorWeight>
+			<factorDamage>1.1</factorDamage>
+			<factorCritDamage>0.9</factorCritDamage>
+			<factorWeight>1.2</factorWeight>
 			<factorReach>1.0</factorReach>
 			<factorAttackSpeed>0.8</factorAttackSpeed>
-			<factorValue>0.8</factorValue>
+			<factorValue>0.9</factorValue>
 		</weapon_modifier>
 	<!-- Bindings that increase the quality of weapons end-->
 	<!-- PerMa modifiers (do not change) start-->
@@ -291,7 +336,7 @@
 			<factorWeight>0.6</factorWeight>
 			<factorReach>1.1</factorReach>
 			<factorAttackSpeed>1.2</factorAttackSpeed>
-			<factorValue>2</factorValue>
+			<factorValue>2.0</factorValue>
 		</weapon_modifier>
 		<weapon_modifier>
 			<identifier>reforged</identifier>
@@ -386,6 +431,62 @@
 			<factorValue>1</factorValue>
 		</weapon_modifier>
 	<!-- Nock to Tip end -->
+	<!-- Frostfall start-->
+		<weapon_modifier>
+			<identifier>broken</identifier>
+			<factorDamage>0.1</factorDamage>
+			<factorCritDamage>1.1</factorCritDamage>
+			<factorWeight>0.8</factorWeight>
+			<factorReach>1.0</factorReach>
+			<factorAttackSpeed>1.1</factorAttackSpeed>
+			<factorValue>0.2</factorValue>
+		</weapon_modifier>
+		<weapon_modifier>
+			<identifier>damaged</identifier>
+			<factorDamage>0.6</factorDamage>
+			<factorCritDamage>1.1</factorCritDamage>
+			<factorWeight>0.9</factorWeight>
+			<factorReach>1.0</factorReach>
+			<factorAttackSpeed>1.0</factorAttackSpeed>
+			<factorValue>0.5</factorValue>
+		</weapon_modifier>
+		<weapon_modifier>
+			<identifier>worn</identifier>
+			<factorDamage>0.7</factorDamage>
+			<factorCritDamage>1.1</factorCritDamage>
+			<factorWeight>1.0</factorWeight>
+			<factorReach>1.0</factorReach>
+			<factorAttackSpeed>1.0</factorAttackSpeed>
+			<factorValue>0.7</factorValue>
+		</weapon_modifier>
+		<weapon_modifier>
+			<identifier>used</identifier>
+			<factorDamage>0.9</factorDamage>
+			<factorCritDamage>1.1</factorCritDamage>
+			<factorWeight>1.0</factorWeight>
+			<factorReach>1.0</factorReach>
+			<factorAttackSpeed>1.0</factorAttackSpeed>
+			<factorValue>1.0</factorValue>
+		</weapon_modifier>
+		<weapon_modifier>
+			<identifier>solid</identifier>
+			<factorDamage>1.1</factorDamage>
+			<factorCritDamage>1.1</factorCritDamage>
+			<factorWeight>1.0</factorWeight>
+			<factorReach>1.0</factorReach>
+			<factorAttackSpeed>1.0</factorAttackSpeed>
+			<factorValue>1.5</factorValue>
+		</weapon_modifier>
+		<weapon_modifier>
+			<identifier>reliable</identifier>
+			<factorDamage>1.2</factorDamage>
+			<factorCritDamage>1.1</factorCritDamage>
+			<factorWeight>1.0</factorWeight>
+			<factorReach>1.0</factorReach>
+			<factorAttackSpeed>1.0</factorAttackSpeed>
+			<factorValue>2.0</factorValue>
+		</weapon_modifier>
+	<!-- Frostfall end-->
 	</weapon_modifiers>
 
 	<weapon_material_bindings>
@@ -554,7 +655,7 @@
 	<!-- Civil War material_Bindings Start -->
 		<binding>
 			<identifier>Imperial</identifier>
-			<substring>Rikke</substring>
+			<substring>Rikke's</substring>
 		</binding>
 		<binding>
 			<identifier>Imperial</identifier>
@@ -655,9 +756,25 @@
 			<identifier>Steel</identifier>
 			<substring>Winterhold</substring>
 		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Windhelm sword</substring>
+		</binding>
 	<!-- City/Guard end -->
 
 	<!-- Racial material_Bindings Start -->
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Argonian</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Khajiit</substring>
+		</binding>
+		<binding>
+			<identifier>Glass</identifier>
+			<substring>Dunmer</substring>
+		</binding>
 		<binding>
 			<identifier>Elven</identifier>
 			<substring>Bosmer</substring>
@@ -722,6 +839,34 @@
 			<identifier>Daedric</identifier>
 			<substring>Dremora</substring>
 		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Atmoran</substring>
+		</binding>
+		<binding>
+			<identifier>Elven</identifier>
+			<substring>Breton</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Breton Knight</substring>
+		</binding>
+		<binding>
+			<identifier>Elven</identifier>
+			<substring>Altmer</substring>
+		</binding>
+		<binding>
+			<identifier>Elven</identifier>
+			<substring>Altmeri</substring>
+		</binding>
+		<binding>
+			<identifier>Elven</identifier>
+			<substring>Aldmer</substring>
+		</binding>
+		<binding>
+			<identifier>Elven</identifier>
+			<substring>Aldmeri</substring>
+		</binding>
 	<!-- Racial material_Bindings end -->
 
 	<!-- Advanced bindings start -->
@@ -738,10 +883,6 @@
 			<substring>Rayek's Blade</substring>
 		</binding>
 		<binding>
-			<identifier>Advanced</identifier>
-			<substring>Srosh</substring>
-		</binding>
-		<binding>
 			<identifier>Nord</identifier>
 			<substring>Nord</substring>
 		</binding>
@@ -754,6 +895,10 @@
 			<substring>Norse</substring>
 		</binding>
 		<binding>
+			<identifier>Nord</identifier>
+			<substring>VanNord</substring>
+		</binding>
+		<binding>
 			<identifier>Advanced</identifier>
 			<substring>Regent's</substring>
 		</binding>
@@ -763,18 +908,47 @@
 		</binding>
 		<binding>
 			<identifier>Advanced</identifier>
-			<substring>Sigvatson's</substring>
+			<substring>Sigvatson</substring>
 		</binding>
 		<binding>
 			<identifier>AdvancedHigh</identifier>
 			<substring>Bolar's</substring>
 		</binding>
+		<binding>
+			<identifier>AdvancedHigh</identifier>
+			<substring>Nibenay kama</substring>
+		</binding>
+		<binding>
+			<identifier>AdvancedHigh</identifier>
+			<substring>Nobleman's sword</substring>
+		</binding>
+		<binding>
+			<identifier>AdvancedHigh</identifier>
+			<substring>Nobleman's claymore</substring>
+		</binding>
 	<!-- Advance bindings end -->
 
 	<!-- Bonemold bindings start -->
+	<!-- Bindings allowed: Bone, Mammoth Bone, Bonemold, BonemoldHigh -->
 		<binding>
 			<identifier>Mammoth Bone</identifier>
-			<substring>Bone</substring>
+			<substring>Mammoth Bone</substring>
+		</binding>
+		<binding>
+			<identifier>Mammoth BoneHigh</identifier>
+			<substring>Bone Axe (Masterwork)</substring>
+		</binding>
+		<binding>
+			<identifier>Mammoth BoneHigh</identifier>
+			<substring>Bone Bow (Masterwork)</substring>
+		</binding>
+		<binding>
+			<identifier>Mammoth BoneHigh</identifier>
+			<substring>Bone Sword (Masterwork)</substring>
+		</binding>
+		<binding>
+			<identifier>Mammoth BoneHigh</identifier>
+			<substring>Mammoth Bone Club (Masterwork)</substring>
 		</binding>
 		<binding>
 			<identifier>Bone</identifier>
@@ -791,13 +965,18 @@
 	<!-- Bonemold bindings end -->
 	
 	<!-- Bound Weapon bindings start -->
+	<!-- Bindings allowed: BoundLow, Bound, BoundHigh -->
 		<binding>
-			<identifier>Bound</identifier>
+			<identifier>BoundLow</identifier>
 			<substring>Hammer of Justice</substring>
 		</binding>
 		<binding>
-			<identifier>Bound</identifier>
+			<identifier>BoundLow</identifier>
 			<substring>Divine Hammer</substring>
+		</binding>
+		<binding>
+			<identifier>BoundLow</identifier>
+			<substring>Bow of Shadows</substring>
 		</binding>
 	<!-- Bound Weapon bindings end -->
 
@@ -805,6 +984,26 @@
 	<!-- Chitin bindings end -->
 
 	<!-- Daedric bindings start -->
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Nerveshatter</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Duskfang</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Dawnfang</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Bloodcursed Bow</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>MageLight Daedric Bow</substring>
+		</binding>
 		<binding>
 			<identifier>Daedric</identifier>
 			<substring>BiPolar Blade</substring>
@@ -826,8 +1025,8 @@
 			<substring>Molag Bal</substring>
 		</binding>
 		<binding>
-			<identifier>Daedric</identifier>
-			<substring>Rusty Mace</substring>
+			<identifier>DaedricLow</identifier>
+			<substring>Daedric Rusty</substring>
 		</binding>
 		<binding>
 			<identifier>DaedricHigh</identifier>
@@ -887,7 +1086,7 @@
 		</binding>
 		<binding>
 			<identifier>Daedric</identifier>
-			<substring> Zahkrii Do Dovahkiin</substring><!-- the leading space is intended do not remove it -->
+			<substring>Zahkrii Do Dovahkiin</substring> <!-- the leading space is intended do not remove it -->
 		</binding>
 		<binding>
 			<identifier>Daedric</identifier>
@@ -896,6 +1095,10 @@
 		<binding>
 			<identifier>Daedric</identifier>
 			<substring>Wabba</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Wabba Jaxe</substring>
 		</binding>
 		<binding>
 			<identifier>DaedricHigh</identifier>
@@ -910,15 +1113,15 @@
 			<substring>Volendrung</substring>
 		</binding>
 		<binding>
-			<identifier>Daedric</identifier> 
+			<identifier>Daedric</identifier>
 			<substring>Rune</substring>
 		</binding>
 		<binding>
 			<identifier>Daedric</identifier>
-			<substring>Stormbringer Rune</substring> 
+			<substring>Stormbringer Rune</substring>
 		</binding>
 		<binding>
-			<identifier>Daedric</identifier> 
+			<identifier>Daedric</identifier>
 			<substring>Shadowsting</substring>
 		</binding>
 		<binding>
@@ -946,15 +1149,15 @@
 			<substring>Lustmord Crossbow</substring>
 		</binding>
 		<binding>
-			<identifier>Daedric</identifier> 
+			<identifier>Daedric</identifier>
 			<substring>Black Hands Dagger</substring>
 		</binding>
 		<binding>
-			<identifier>Daedric</identifier> 
+			<identifier>Daedric</identifier>
 			<substring>Soul Drinker</substring>
 		</binding>
 		<binding>
-			<identifier>Daedric</identifier> 
+			<identifier>Daedric</identifier>
 			<substring>Veloth's Judgement</substring>
 		</binding>
 		<binding>
@@ -962,27 +1165,27 @@
 			<substring>El'druin</substring>
 		</binding>
 		<binding>
-			<identifier>Daedric</identifier> 
+			<identifier>Daedric</identifier>
 			<substring>Cursed Dagger</substring>
 		</binding>
 		<binding>
-			<identifier>Daedric</identifier> 
+			<identifier>Daedric</identifier>
 			<substring>DarkOne Bow</substring>
 		</binding>
 		<binding>
-			<identifier>Daedric</identifier> 
+			<identifier>Daedric</identifier>
 			<substring>Scempio</substring>
 		</binding>
 		<binding>
-			<identifier>Daedric</identifier> 
+			<identifier>Daedric</identifier>
 			<substring>Strazio</substring>
 		</binding>
 		<binding>
-			<identifier>Daedric</identifier> 
+			<identifier>Daedric</identifier>
 			<substring>Shadowsting</substring>
 		</binding>
 		<binding>
-			<identifier>Daedric</identifier> 
+			<identifier>Daedric</identifier>
 			<substring>Memodermic</substring>
 		</binding>
 		<binding>
@@ -1000,10 +1203,6 @@
 		<binding>
 			<identifier>Daedric</identifier>
 			<substring>Stendarr's Hammer</substring>
-		</binding>
-		<binding>
-			<identifier>Daedric</identifier>
-			<substring>Hopesfire</substring>
 		</binding>
 		<binding>
 			<identifier>Daedric</identifier>
@@ -1031,7 +1230,7 @@
 		</binding>
 		<binding>
 			<identifier>Daedric</identifier>
-			<substring>Hatred's Heart</substring>
+			<substring>Hatred's</substring>
 		</binding>
 		<binding>
 			<identifier>Daedric</identifier>
@@ -1060,6 +1259,138 @@
 		<binding>
 			<identifier>Daedric</identifier>
 			<substring>Dark Hammer</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Merta Dagger</substring>
+		</binding>
+		<binding>
+			<identifier>DaedricHigh</identifier>
+			<substring>Lilith's Imbued Scythe</substring>
+		</binding>
+		<binding>
+			<identifier>DaedricHigh</identifier>
+			<substring>Lilith's Imbued Sickle</substring>
+		</binding>
+		<binding>
+			<identifier>DaedricHigh</identifier>
+			<substring>Lilith's Imbued Dagger</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Lilith's Scythe</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Lilith's Sickle</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Lilith's Dagger</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Lilith's Dagger</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Ancestor's Sword</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Gravedigger</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Penobscot War Bow IV</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Sovereign's Slayer</substring>
+		</binding>
+		<binding>
+			<identifier>DaedricHigh</identifier>
+			<substring>Sulfuras</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Ancient Tongue</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Mystic Elven</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Divine Aegis</substring>
+		</binding>
+		<binding>
+			<identifier>DaedricHigh</identifier>
+			<substring>Aspect of Strength</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Akatosh</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Firelink</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Lilith's Obliterator</substring>
+		</binding>'
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Lilith's Evening Star</substring>
+		</binding>
+		<binding>
+			<identifier>DaedricHigh</identifier>
+			<substring>Lilith's Ancient Obliterator</substring>
+		</binding>
+		<binding>
+			<identifier>DaedricHigh</identifier>
+			<substring>Lilith's Ancient Evening Star</substring>
+		</binding>
+		<binding>
+			<identifier>DaedricHigh</identifier>
+			<substring>The Ashbringer</substring>
+		</binding>
+		<binding>
+			<identifier>DaedricHigh</identifier>
+			<substring>The Corrupted Ashbringer</substring>
+		</binding>
+		<binding>
+			<identifier>DaedricHigh</identifier>
+			<substring>Twilight</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Ancient Dagger of The Vampire</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Ornate Deathgiver</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Reaper</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Acuity</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Graceshed</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Phonic</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Unraveler</substring>
 		</binding>
 	<!-- Daedric bindings end -->
 	
@@ -1092,6 +1423,10 @@
 			<identifier>Dragonplate</identifier>
 			<substring>Dragon's Fang</substring>
 		</binding>
+		<binding>
+			<identifier>Dragonplate</identifier>
+			<substring>Uznahgaar</substring>
+		</binding>
 	<!-- Dragonplate bindings end -->
 	
 	<!-- Dragonscale bindings start -->
@@ -1122,6 +1457,38 @@
 	<!-- Dragonscale bindings end -->
 	
 	<!-- Drauger bindings start -->
+		<binding>
+			<identifier>Draugr Honed</identifier>
+			<substring>Akaviri Shockblade of the guardian</substring>
+		</binding>
+		<binding>
+			<identifier>Draugr Honed</identifier>
+			<substring>Akaviri Frostblade of the guardian</substring>
+		</binding>
+		<binding>
+			<identifier>Draugr</identifier>
+			<substring>Ancient Nord</substring>
+		</binding>
+		<binding>
+			<identifier>Draugr</identifier>
+			<substring>Gunnar Bow</substring>
+		</binding>
+		<binding>
+			<identifier>Draugr Honed</identifier>
+			<substring>Honed Ancient Nord</substring>
+		</binding>
+		<binding>
+			<identifier>Draugr Honed</identifier>
+			<substring>Ancient Nord Honed</substring>
+		</binding>
+		<binding>
+			<identifier>Draugr Honed</identifier>
+			<substring>Nordic Honed</substring>
+		</binding>
+		<binding>
+			<identifier>Draugr</identifier>
+			<substring>Forged Bow</substring>
+		</binding>
 		<binding>
 			<identifier>DraugrHigh</identifier>
 			<substring>Gauldur</substring>
@@ -1216,10 +1583,10 @@
 		</binding>
 		<binding>
 			<identifier>Draugr</identifier>
-			<substring>Cavalry Broadsword</substring> 
+			<substring>Cavalry Broadsword</substring>
 		</binding>
 		<binding>
-			<identifier>Draugr</identifier> 
+			<identifier>Draugr</identifier>
 			<substring>Nordic War Pick</substring>
 		</binding>
 		<binding>
@@ -1228,7 +1595,11 @@
 		</binding>
 		<binding>
 			<identifier>Draugr</identifier>
-			<substring>Riders Blade</substring> 
+			<substring>Wolf Daito</substring>
+		</binding>
+		<binding>
+			<identifier>Draugr</identifier>
+			<substring>Riders Blade</substring>
 		</binding>
 		<binding>
 			<identifier>Draugr</identifier>
@@ -1310,9 +1681,37 @@
 			<identifier>Draugr Honed</identifier>
 			<substring>Embercoil Sword</substring>
 		</binding>
+		<binding>
+			<identifier>Draugr</identifier>
+			<substring>Merethic</substring>
+		</binding>
+		<binding>
+			<identifier>Draugr</identifier>
+			<substring>Ash Spawn</substring>
+		</binding>
+		<binding>
+			<identifier>Draugr Honed</identifier>
+			<substring>Bow of the Forgotten Chaos</substring>
+		</binding>
+		<binding>
+			<identifier>DraugrHigh</identifier>
+			<substring>The Giant's Downfall</substring>
+		</binding>
+		<binding>
+			<identifier>DraugrHigh</identifier>
+			<substring>The Giant Slayer</substring>
+		</binding>
 	<!-- Drauger bindings end -->
 	
 	<!-- Dwarven bindings start -->
+		<binding>
+			<identifier>Dwarven</identifier>
+			<substring>Ongar's Kegbreaker</substring>
+		</binding>
+		<binding>
+			<identifier>Dwarven</identifier>
+			<substring>Debaser</substring>
+		</binding>
 		<binding>
 			<identifier>Dwarven</identifier>
 			<substring>Trident Blade</substring>
@@ -1395,7 +1794,7 @@
 		</binding>
 		<binding>
 			<identifier>Dwarven</identifier>
-			<substring>Force Bow</substring> 
+			<substring>Force Bow</substring>
 		</binding>
 		<binding>
 			<identifier>DwarvenHigh</identifier>
@@ -1497,9 +1896,77 @@
 			<identifier>Dwarven</identifier>
 			<substring>Hologram Sword</substring>
 		</binding>
+		<binding>
+			<identifier>Dwarven</identifier>
+			<substring>Metal Compound Bow</substring>
+		</binding>
+		<binding>
+			<identifier>Dwarven</identifier>
+			<substring>Dwemer Recurve Bow</substring>
+		</binding>
+		<binding>
+			<identifier>DwarvenHigh</identifier>
+			<substring>Blade of the Rourken</substring>
+		</binding>
+		<binding>
+			<identifier>Dwarven</identifier>
+			<substring>Staff of Automaton Mastery</substring>
+		</binding>
+		<binding>
+			<identifier>Dwarven</identifier>
+			<substring>Dorana's Hammer</substring>
+		</binding>
+		<binding>
+			<identifier>Dwarven</identifier>
+			<substring>Atulg's Edge</substring>
+		</binding>
+		<binding>
+			<identifier>Dwarven</identifier>
+			<substring>Nullsprocket</substring>
+		</binding>
+		<binding>
+			<identifier>Dwarven</identifier>
+			<substring>Clutterbane</substring>
+		</binding>
+		<binding>
+			<identifier>Dwarven</identifier>
+			<substring>Dwemer Tool No.457</substring>
+		</binding>
+		<binding>
+			<identifier>Dwarven</identifier>
+			<substring>Rockshatter</substring>
+		</binding>
+		<binding>
+			<identifier>Dwarven</identifier>
+			<substring>Norsteel</substring>
+		</binding>
+		<binding>
+			<identifier>Dwarven</identifier>
+			<substring>Shadsteel</substring>
+		</binding>
+		<binding>
+			<identifier>Dwarven</identifier>
+			<substring>Vaunting</substring>
+		</binding>
+		<binding>
+			<identifier>Dwarven</identifier>
+			<substring>Westonia</substring>
+		</binding>
 	<!-- Dwarven bindings end -->
 	
 	<!-- Ebony bindings start -->
+		<binding>
+			<identifier>Ebony</identifier>
+			<substring>Honorblade of Chorrol</substring>
+		</binding>
+		<binding>
+			<identifier>Ebony</identifier>
+			<substring>Kilvur</substring>
+		</binding>
+		<binding>
+			<identifier>Ebony</identifier>
+			<substring>Shadowrend</substring>
+		</binding>
 		<binding>
 			<identifier>Ebony</identifier>
 			<substring>Ebon</substring>
@@ -1621,7 +2088,7 @@
 			<substring>Bone Hilt</substring>
 		</binding>
 		<binding>
-			<identifier>Ebony</identifier> 
+			<identifier>Ebony</identifier>
 			<substring>Assassin</substring>
 		</binding>
 		<binding>
@@ -1806,7 +2273,7 @@
 		</binding>
 		<binding>
 			<identifier>Ebony</identifier>
-			<substring>Cluny </substring>
+			<substring>Cluny</substring>
 		</binding>
 		<binding>
 			<identifier>Ebony</identifier>
@@ -1932,9 +2399,93 @@
 			<identifier>EbonyHigh</identifier>
 			<substring>Yataghan</substring>
 		</binding>
+		<binding>
+			<identifier>Ebony</identifier>
+			<substring>Indoril mace</substring>
+		</binding>
+		<binding>
+			<identifier>Ebony</identifier>
+			<substring>Umbra</substring>
+		</binding>
+		<binding>
+			<identifier>Ebony</identifier>
+			<substring>Penobscot War Bow III</substring>
+		</binding>
+		<binding>
+			<identifier>Ebony</identifier>
+			<substring>Ebony Compound Bow</substring>
+		</binding>
+		<binding>
+			<identifier>EbonyHigh</identifier>
+			<substring>Elder Compound Bow</substring>
+		</binding>
+		<binding>
+			<identifier>Ebony</identifier>
+			<substring>Ebonsteel</substring>
+		</binding>
+		<binding>
+			<identifier>EbonyHigh</identifier>
+			<substring>Spear of Thorns</substring>
+		</binding>
+		<binding>
+			<identifier>EbonyHigh</identifier>
+			<substring>Hopesfire</substring>
+		</binding>
+		<binding>
+			<identifier>EbonyHigh</identifier>
+			<substring>Trueflame</substring>
+		</binding>
+		<binding>
+			<identifier>Ebony</identifier>
+			<substring>Dragonborn Terra</substring>
+		</binding>
+		<binding>
+			<identifier>Ebony</identifier>
+			<substring>Khajiit Long Dagger</substring>
+		</binding>
+		<binding>
+			<identifier>Ebony</identifier>
+			<substring>Argonian Kindjal</substring>
+		</binding>
+		<binding>
+			<identifier>Ebony</identifier>
+			<substring>An - Xileel Cleaver</substring>
+		</binding>
+		<binding>
+			<identifier>Ebony</identifier>
+			<substring>Khajiit Yatagan</substring>
+		</binding>
+		<binding>
+			<identifier>Ebony</identifier>
+			<substring>Conqueror</substring>
+		</binding>
+		<binding>
+			<identifier>Ebony</identifier>
+			<substring>Restless</substring>
+		</binding>
+		<binding>
+			<identifier>Ebony</identifier>
+			<substring>Xersteel</substring>
+		</binding>
 	<!-- Ebony bindings end -->
 	
 	<!-- Elven bindings start -->
+		<binding>
+			<identifier>Elven</identifier>
+			<substring>Elven Dragonbone Bow</substring>
+		</binding>
+		<binding>
+			<identifier>Elven</identifier>
+			<substring>Dark Dragonbone Bow</substring>
+		</binding>
+		<binding>
+			<identifier>Elven</identifier>
+			<substring>White Falmer</substring>
+		</binding>
+		<binding>
+			<identifier>Elven</identifier>
+			<substring>Dark Falmer</substring>
+		</binding>
 		<binding>
 			<identifier>Elven</identifier>
 			<substring>Elf</substring>
@@ -1962,10 +2513,6 @@
 		<binding>
 			<identifier>Elven</identifier>
 			<substring>Farah's Bow</substring>
-		</binding>
-		<binding>
-			<identifier>ElvenHigh</identifier>
-			<substring>Colovian</substring>
 		</binding>
 		<binding>
 			<identifier>ElvenHigh</identifier>
@@ -2139,9 +2686,61 @@
 			<identifier>ElvenHigh</identifier>
 			<substring>Emfy Mace</substring>
 		</binding>
+		<binding>
+			<identifier>ElvenHigh</identifier>
+			<substring>Warglaive</substring>
+		</binding>
+		<binding>
+			<identifier>ElvenHigh</identifier>
+			<substring>Silver Chill</substring>
+		</binding>
+		<binding>
+			<identifier>ElvenHigh</identifier>
+			<substring>Penobscot War Bow II</substring>
+		</binding>
+		<binding>
+			<identifier>ElvenHigh</identifier>
+			<substring>Bow Zingler</substring>
+		</binding>
+		<binding>
+			<identifier>ElvenHigh</identifier>
+			<substring>Predator Bow</substring>
+		</binding>
+		<binding>
+			<identifier>ElvenHigh</identifier>
+			<substring>Recurve Elven Bow</substring>
+		</binding>
+		<binding>
+			<identifier>Elven</identifier>
+			<substring>Gibson's Dagger</substring>
+		</binding>
+		<binding>
+			<identifier>Elven</identifier>
+			<substring>Bombard</substring>
+		</binding>
+		<binding>
+			<identifier>Elven</identifier>
+			<substring>Elenium</substring>
+		</binding>
+		<binding>
+			<identifier>Elven</identifier>
+			<substring>Palrada</substring>
+		</binding>
+		<binding>
+			<identifier>Elven</identifier>
+			<substring>Webrend</substring>
+		</binding>
 	<!-- Elven bindings end -->
 	
 	<!-- Falmer/Forsworn bindings start -->
+		<binding>
+			<identifier>FalmerHigh</identifier>
+			<substring>Falmer Honed</substring>
+		</binding>
+		<binding>
+			<identifier>FalmerHigh</identifier>
+			<substring>Honed Falmer</substring>
+		</binding>
 		<binding>
 			<identifier>Forsworn</identifier>
 			<substring>Goblin</substring>
@@ -2154,9 +2753,72 @@
 			<identifier>ForswornHigh</identifier>
 			<substring>Briarheart Geis</substring>
 		</binding>
+		<binding>
+			<identifier>Ancient Falmer</identifier>
+			<substring>Ancient Falmer</substring>
+		</binding>
 	<!-- Falmer/Forsworn bindings end -->
-	
+
+	<!-- Giant Weapon bindings start -->
+		<binding>
+			<identifier>Death</identifier>
+			<substring>Giant Club</substring>
+		</binding>
+		<binding>
+			<identifier>Death</identifier>
+			<substring>Giant Brute</substring>
+		</binding>
+		<binding>
+			<identifier>Death</identifier>
+			<substring>Giant Fishman</substring>
+		</binding>
+		<binding>
+			<identifier>Death</identifier>
+			<substring>Giant Fire</substring>
+		</binding>
+		<binding>
+			<identifier>Death</identifier>
+			<substring>Giant Executioner Axe</substring>
+		</binding>
+		<binding>
+			<identifier>Death</identifier>
+			<substring>Giant Skull Club</substring>
+		</binding>
+		<binding>
+			<identifier>Death</identifier>
+			<substring>Giant Double</substring>
+		</binding>
+		<binding>
+			<identifier>Death</identifier>
+			<substring>Giant Old Dwemer Axe</substring>
+		</binding>
+		<binding>
+			<identifier>Death</identifier>
+			<substring>Giant Steel Club</substring>
+		</binding>
+		<binding>
+			<identifier>Death</identifier>
+			<substring>Giant Iron Club</substring>
+		</binding>
+		<binding>
+			<identifier>Death</identifier>
+			<substring>Giant Double Axe</substring>
+		</binding>
+		<binding>
+			<identifier>Death</identifier>
+			<substring>Giant Double Skull</substring>
+		</binding>
+	<!-- Giant Weapon bindings end -->
+
 	<!-- Glass bindings start -->
+		<binding>
+			<identifier>Glass</identifier>
+			<substring>Bow of Paralysis</substring>
+		</binding>
+		<binding>
+			<identifier>Glass</identifier>
+			<substring>Emerald Bow</substring>
+		</binding>
 		<binding>
 			<identifier>Glass</identifier>
 			<substring>Ceymallari</substring>
@@ -2195,7 +2857,7 @@
 		</binding>
 		<binding>
 			<identifier>Glass</identifier>
-			<substring>Mephala Battleaxe</substring> 
+			<substring>Mephala Battleaxe</substring>
 		</binding>
 		<binding>
 			<identifier>Glass</identifier>
@@ -2261,6 +2923,70 @@
 			<identifier>Glass</identifier>
 			<substring>Redeemer's Sword</substring>
 		</binding>
+		<binding>
+			<identifier>Glass</identifier>
+			<substring>Dagger of Symmachus</substring>
+		</binding>
+		<binding>
+			<identifier>Glass</identifier>
+			<substring>Electrum Elven</substring>
+		</binding>
+		<binding>
+			<identifier>Glass</identifier>
+			<substring>Dragon Skin Compound Bow</substring>
+		</binding>
+		<binding>
+			<identifier>Glass</identifier>
+			<substring>Seadog Cutlass</substring>
+		</binding>
+		<binding>
+			<identifier>Glass</identifier>
+			<substring>Blood Sword</substring>
+		</binding>
+		<binding>
+			<identifier>Glass</identifier>
+			<substring>Blood Dagger</substring>
+		</binding>
+		<binding>
+			<identifier>Glass</identifier>
+			<substring>Blood Greatsword</substring>
+		</binding>
+		<binding>
+			<identifier>Glass</identifier>
+			<substring>Blood War Axe</substring>
+		</binding>
+		<binding>
+			<identifier>Glass</identifier>
+			<substring>Blood Bow</substring>
+		</binding>
+		<binding>
+			<identifier>Glass</identifier>
+			<substring>Blood Mace</substring>
+		</binding>
+		<binding>
+			<identifier>Glass</identifier>
+			<substring>Blood Battleaxe</substring>
+		</binding>
+		<binding>
+			<identifier>Glass</identifier>
+			<substring>Blood Warhammer</substring>
+		</binding>
+		<binding>
+			<identifier>Glass</identifier>
+			<substring>Cauterus</substring>
+		</binding>
+		<binding>
+			<identifier>Glass</identifier>
+			<substring>Reprisal</substring>
+		</binding>
+		<binding>
+			<identifier>Glass</identifier>
+			<substring>Sunder</substring><!--TERA Weapons binding overridden by Dwarven binding -->
+		</binding>
+		<binding>
+			<identifier>Glass</identifier>
+			<substring>Umbra</substring><!--TERA Weapons binding overridden by Ebony binding -->
+		</binding>
 	<!-- Glass bindings end -->
 	
 	<!-- Gold bindings start -->
@@ -2293,11 +3019,7 @@
 		</binding>
 		<binding>
 			<identifier>Iron</identifier>
-			<substring>Spider </substring>
-		</binding>
-		<binding>
-			<identifier>Iron</identifier>
-			<substring>Haoma</substring>
+			<substring>Spider</substring>
 		</binding>
 		<binding>
 			<identifier>Iron</identifier>
@@ -2419,6 +3141,50 @@
 			<identifier>Iron</identifier>
 			<substring>Bow of Betrothal</substring>
 		</binding>
+		<binding>
+			<identifier>Iron</identifier>
+			<substring>Scamp's Hammer</substring>
+		</binding>
+		<binding>
+			<identifier>Iron</identifier>
+			<substring>The Spider</substring>
+		</binding>
+		<binding>
+			<identifier>Iron</identifier>
+			<substring>Haoma</substring>
+		</binding>
+		<binding>
+			<identifier>Iron</identifier>
+			<substring>Farmer's cleaver</substring>
+		</binding>
+		<binding>
+			<identifier>Iron</identifier>
+			<substring>Heavy spiked mace</substring>
+		</binding>
+		<binding>
+			<identifier>Iron</identifier>
+			<substring>Dragon Priest Dagger</substring>
+		</binding>
+		<binding>
+			<identifier>Iron</identifier>
+			<substring>Wood Compound Bow</substring>
+		</binding>
+		<binding>
+			<identifier>Iron</identifier>
+			<substring>Valfar's Battleaxe</substring>
+		</binding>
+		<binding>
+			<identifier>Iron</identifier>
+			<substring>The Withdrawal</substring>
+		</binding>
+		<binding>
+			<identifier>Iron</identifier>
+			<substring>The Crab Slayer</substring>
+		</binding>
+		<binding>
+			<identifier>Iron</identifier>
+			<substring>Hunter's Saw</substring>
+		</binding>
 	<!-- Iron bindings end -->
 	
 	<!-- Iron/Wood Clutter bindings start -->
@@ -2498,36 +3264,20 @@
 			<substring>NO TEXT</substring>
 		</binding>
 		<binding>
-			<identifier>Death</identifier>
-			<substring>Giant Club</substring>
-		</binding>
-		<binding>
-			<identifier>Death</identifier>
-			<substring>Giant Brute</substring>
-		</binding>
-		<binding>
-			<identifier>Death</identifier>
-			<substring>Giant Fishman</substring>
-		</binding>
-		<binding>
-			<identifier>Death</identifier>
-			<substring>Giant Fire</substring>
-		</binding>
-		<binding>
-			<identifier>Death</identifier>
-			<substring>Giant Double</substring>
-		</binding>
-		<binding>
-			<identifier>Death</identifier>
-			<substring>Giant Executioner Axe</substring>
-		</binding>
-		<binding>
-			<identifier>Death</identifier>
-			<substring>Giant Skull Club</substring>
+			<identifier>None</identifier>
+			<substring>Throw Javelins</substring>
 		</binding>
 	<!-- None bindings end -->
 	
 	<!-- Nord bindings start -->
+		<binding>
+			<identifier>NordHigh</identifier>
+			<substring>Ysgramor Battle Axe</substring>
+		</binding>
+		<binding>
+			<identifier>NordHigh</identifier>
+			<substring>Marshborn Blight</substring>
+		</binding>
 		<binding>
 			<identifier>NordHigh</identifier>
 			<substring>Shadow Bite</substring>
@@ -2537,7 +3287,7 @@
 			<substring>Marshborn Blight</substring>
 		</binding>
 		<binding>
-			<identifier>NordHigh</identifier> 
+			<identifier>NordHigh</identifier>
 			<substring>Noroknos</substring>
 		</binding>
 		<binding>
@@ -2546,7 +3296,7 @@
 		</binding>
 		<binding>
 			<identifier>NordHigh</identifier>
-			<substring>Hrothmund's Battleaxe Replica</substring>
+			<substring>Hrothmund's</substring>
 		</binding>
 	<!-- Nord bindings end -->
 	
@@ -2595,12 +3345,61 @@
 			<identifier>Orcish</identifier>
 			<substring>Praetorian</substring>
 		</binding>
+		<binding>
+			<identifier>Orcish</identifier>
+			<substring>Carbon Fiber Compound Bow</substring>
+		</binding>
+		<binding>
+			<identifier>Orcish</identifier>
+			<substring>Arcadian</substring>
+		</binding>
+		<binding>
+			<identifier>Orcish</identifier>
+			<substring>Expedition</substring>
+		</binding>
+		<binding>
+			<identifier>Orcish</identifier>
+			<substring>Krysteel</substring>
+		</binding>
+		<binding>
+			<identifier>Orcish</identifier>
+			<substring>Linsteel</substring>
+		</binding>
+		<binding>
+			<identifier>Orcish</identifier>
+			<substring>Ostgarath</substring>
+		</binding>
 	<!-- Orcish bindings end -->
 	
 	<!-- Silver bindings start -->
+	<!-- Silver items should have a matching Refined binding -->
+		<binding>
+			<identifier>Silver</identifier>
+			<substring>Hagram's Light</substring>
+		</binding>
+		<binding>
+			<identifier>SilverHigh</identifier>
+			<substring>Honed Silver</substring>
+		</binding>
+		<binding>
+			<identifier>RSilverHigh</identifier>
+			<substring>Refined Honed Silver</substring>
+		</binding>
+		<binding>
+			<identifier>SilverHigh</identifier>
+			<substring>Silver Honed</substring>
+		</binding>
+		<binding>
+			<identifier>RSilverHigh</identifier>
+			<substring>Refined Silver Honed</substring>
+		</binding>
 		<binding>
 			<identifier>Silver</identifier>
 			<substring>Silver Orcish</substring>
+		</binding>
+		<binding>
+			<identifier>RSilver</identifier>
+			<substring>Refined Silver Orcish</substring>
 		</binding>
 		<binding>
 			<identifier>SilverHigh</identifier>
@@ -2611,6 +3410,10 @@
 			<substring>Bloodskal</substring>
 		</binding>
 		<binding>
+			<identifier>RSilver</identifier>
+			<substring>Refined Bloodskal</substring>
+		</binding>
+		<binding>
 			<identifier>Silver</identifier>
 			<substring>Axe of Wolves</substring>
 		</binding>
@@ -2619,27 +3422,103 @@
 			<substring>Luna</substring>
 		</binding>
 		<binding>
-			<identifier>SilverHigh</identifier>
-			<substring>Luna II</substring>
+			<identifier>RSilver</identifier>
+			<substring>Refined Luna</substring>
+		</binding>
+		<binding>
+			<identifier>RSilver</identifier>
+			<substring>Refined Luna II</substring>
 		</binding>
 		<binding>
 			<identifier>SilverHigh</identifier>
 			<substring>Deep-Rout</substring>
 		</binding>
 		<binding>
+			<identifier>RSilverHigh</identifier>
+			<substring>Refined Deep-Rout</substring>
+		</binding>
+		<binding>
 			<identifier>SilverHigh</identifier>
 			<substring>Goveri's Unwinder</substring>
 		</binding>
 		<binding>
+			<identifier>RSilverHigh</identifier>
+			<substring>Refined Goveri's Unwinder</substring>
+		</binding>
+		<binding>
 			<identifier>SilverHigh</identifier>
 			<substring>Cyrodiilic Silver</substring>
+		</binding>
+		<binding>
+			<identifier>RSilverHigh</identifier>
+			<substring>Refined Cyrodiilic Silver</substring>
+		</binding>
+		<binding>
+			<identifier>SilverHigh</identifier>
+			<substring>Eltonbrand</substring>
+		</binding>
+		<binding>
+			<identifier>RSilverHigh</identifier>
+			<substring>Refined Eltonbrand</substring>
+		</binding>
+		<binding>
+			<identifier>SilverHigh</identifier>
+			<substring>Thornblade</substring>
+		</binding>
+		<binding>
+			<identifier>RSilverHigh</identifier>
+			<substring>Refined Thornblade</substring>
+		</binding>
+		<binding>
+			<identifier>SilverHigh</identifier>
+			<substring>Noble Silver</substring>
+		</binding>
+		<binding>
+			<identifier>RSilverHigh</identifier>
+			<substring>Refined Noble Silver</substring>
+		</binding>
+		<binding>
+			<identifier>SilverHigh</identifier>
+			<substring>Mournbringer</substring>
+		</binding>
+		<binding>
+			<identifier>SilverHigh</identifier>
+			<substring>Mithrodin</substring>
+		</binding>
+		<binding>
+			<identifier>RSilverHigh</identifier>
+			<substring>Refined Mithrodin</substring>
+		</binding>
+		<binding>
+			<identifier>SilverHigh</identifier>
+			<substring>Merblight</substring>
+		</binding>
+		<binding>
+			<identifier>RSilverHigh</identifier>
+			<substring>Refined Merblight</substring>
+		</binding>
+		<binding>
+			<identifier>SilverHigh</identifier>
+			<substring>Blessed Blade of Stendarr</substring>
+		</binding>
+		<binding>
+			<identifier>RSilverHigh</identifier>
+			<substring>Refined Blessed Blade of Stendarr</substring>
 		</binding>
 	<!-- Silver bindings end -->
 	
 	<!-- Stalhrim bindings start -->
 		<binding>
 			<identifier>Stalhrim</identifier>
+			<substring>Ice's Stalhrim Spoon of Assassination</substring>
+		</binding>
+		<binding>
+			<identifier>Stalhrim</identifier>
 			<substring>Ice Blade of the Monarch</substring>
+		</binding>
+		<binding>
+			<identifier>Stalhrim</identifier>
+			<substring>Ice blade of the Monarch</substring>
 		</binding>
 		<binding>
 			<identifier>Stalhrim</identifier>
@@ -2673,9 +3552,49 @@
 			<identifier>Stalhrim</identifier>
 			<substring>Darkshade Blade</substring>
 		</binding>
+		<binding>
+			<identifier>Stalhrim</identifier>
+			<substring>Mace of Aevar Stone-Singer</substring>
+		</binding>
 	<!-- Stalhrim bindings end -->
 	
 	<!-- Steel bindings start -->
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Scout Bow</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Scout Dagger</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Scout Reversed Dagger</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Scout Sword</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Ongar's Hammer</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>The Spear of Bitter Mercy</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Sai</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Spear of the Snow Prince</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Legion Sword</substring>
+		</binding>
 		<binding>
 			<identifier>Steel</identifier>
 			<substring>Afterslash</substring>
@@ -2702,6 +3621,10 @@
 		</binding>
 		<binding>
 			<identifier>Steel</identifier>
+			<substring>Srosh</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
 			<substring>Natat</substring>
 		</binding>
 		<binding>
@@ -2718,7 +3641,7 @@
 		</binding>
 		<binding>
 			<identifier>Steel</identifier>
-			<substring>Ash</substring>
+			<substring>Ash</substring> <!-- a dagger added by something I can't find anymore -->
 		</binding>
 		<binding>
 			<identifier>Steel</identifier>
@@ -2798,6 +3721,10 @@
 		</binding>
 		<binding>
 			<identifier>Steel</identifier>
+			<substring>Artisan's Bow</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
 			<substring>Sizaan</substring>
 		</binding>
 		<binding>
@@ -2834,10 +3761,6 @@
 		</binding>
 		<binding>
 			<identifier>Steel</identifier>
-			<substring>Champion</substring>
-		</binding>
-		<binding>
-			<identifier>Steel</identifier>
 			<substring>Bronze</substring>
 		</binding>
 		<binding>
@@ -2855,14 +3778,6 @@
 		<binding>
 			<identifier>Steel</identifier>
 			<substring>Boarding</substring>
-		</binding>
-		<binding>
-			<identifier>Steel</identifier>
-			<substring>Argonian</substring>
-		</binding>
-		<binding>
-			<identifier>Steel</identifier>
-			<substring>Khajiit</substring>
 		</binding>
 		<binding>
 			<identifier>Steel</identifier>
@@ -2886,15 +3801,7 @@
 		</binding>
 		<binding>
 			<identifier>Steel</identifier>
-			<substring>Enhanced Crossbow</substring>
-		</binding>
-		<binding>
-			<identifier>Steel</identifier>
 			<substring>Sol</substring>
-		</binding>
-		<binding>
-			<identifier>Steel</identifier>
-			<substring>Sol Greatsword</substring>
 		</binding>
 		<binding>
 			<identifier>Steel</identifier>
@@ -3220,6 +4127,150 @@
 			<identifier>SteelHigh</identifier>
 			<substring>Rysh</substring>
 		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Dovahkiin Mercenary Axe</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Dovahkiin Mercenary Blade</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Dovahkiin Mercenary Bow</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Dovahkiin Mercenary Dagger</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Dovahkiin Mercenary Sword</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Penobscot War Bow</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Vilja's Bow</substring>
+		</binding>
+		<binding>
+			<identifier>SteelHigh</identifier>
+			<substring>Genesis' Rapier</substring>
+		</binding>
+		<binding>
+			<identifier>SteelHigh</identifier>
+			<substring>Simple Compound Bow</substring>
+		</binding>
+		<binding>
+			<identifier>SteelHigh</identifier>
+			<substring>Honorblade of Whiterun</substring>
+		</binding>
+		<binding>
+			<identifier>SteelHigh</identifier>
+			<substring>Shardslayer</substring>
+		</binding>
+ 		<binding>
+			<identifier>Steel</identifier>
+			<substring>The Baron</substring>
+		</binding>
+ 		<binding>
+			<identifier>Steel</identifier>
+			<substring>The Great Baron</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>The Cluny</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>The Vassal</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>The Sherwood</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>The Chieftain</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Blade of the Wicked</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Great Sherwood</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Great Cluny</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Loner's Sword</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Loner's Greatsword</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Rigmors Bastard Sword</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Replica Heirloom Sword</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Sorrow</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Cloudcleaver</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Dragon's Strength</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Dragon's Grace</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Blessed Dagger</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Luna 1h</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Luna 2h</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Mars</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Venus</substring>
+		</binding>
+		<bindings>
+			<identifier>SteelHigh</identifier>
+			<substring>Ancient Akaviri Dha</substring>
+		</bindings>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Ritual Dagger</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Winterwound</substring>
+		</binding>
 	<!-- Steel bindings end -->
 
 	<!-- Skyforge bindings start -->
@@ -3360,24 +4411,24 @@
 			<substring>The Khajiit's</substring>
 		</binding>
 		<binding>
-			<identifier>Wood</identifier>
-			<substring>Ash</substring>
+			<identifier>Ashwood</identifier>
+			<substring>Ash Longbow</substring>
 		</binding>
 		<binding>
 			<identifier>Wood</identifier>
 			<substring>Fire</substring>
 		</binding>
 		<binding>
-			<identifier>Wood</identifier>
-			<substring>Vindskjær</substring>
+			<identifier>Strongwood</identifier>
+			<substring>Vindskjær</substring> <!-- æ is not supported by UTF-8 encoding will need OEM 861 or OEM 865 -->
+		</binding>
+		<binding>
+			<identifier>Strongwood</identifier>
+			<substring>Vindskjaer</substring>
 		</binding>
 		<binding>
 			<identifier>Wood</identifier>
 			<substring>Fire</substring>
-		</binding>
-		<binding>
-			<identifier>Wood</identifier>
-			<substring>Vindskjær</substring>
 		</binding>
 		<binding>
 			<identifier>Oakwood</identifier>
@@ -3407,696 +4458,756 @@
 			<identifier>Ashwood</identifier>
 			<substring>Ash Wood</substring>
 		</binding>
+		<binding>
+			<identifier>Oakwood</identifier>
+			<substring>Colovian Composite Bow</substring>
+		</binding>
+		<binding>
+			<identifier>Steelwood</identifier>
+			<substring>Colovian Dark Composite Bow</substring>
+		</binding>
+		<binding>
+			<identifier>Steelwood</identifier>
+			<substring>Ashlander's Bow</substring>
+		</binding>
 	<!-- Wood bindings end -->
 	</weapon_material_bindings>
 
 	<weapon_materials>
 	<!-- Advanced Material Listings start -->
-        <weapon_material>
-            <damageModifier>1.2</damageModifier>
-            <identifier>AdvancedLow</identifier>
-            <materialMeltdown>ADVANCED</materialMeltdown>
-            <materialTemper>ADVANCED</materialTemper>
-            <reachModifier>0.01</reachModifier>
-            <speedModifier>0.02</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.25</damageModifier>
-            <identifier>Advanced</identifier>
-            <materialMeltdown>ADVANCED</materialMeltdown>
-            <materialTemper>ADVANCED</materialTemper>
-            <reachModifier>0.01</reachModifier>
-            <speedModifier>0.02</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.3</damageModifier>
-            <identifier>AdvancedHigh</identifier>
-            <materialMeltdown>ADVANCED</materialMeltdown>
-            <materialTemper>ADVANCED</materialTemper>
-            <reachModifier>0.01</reachModifier>
-            <speedModifier>0.02</speedModifier>
-        </weapon_material>
+		<weapon_material>
+			<damageModifier>1.2</damageModifier>
+			<identifier>AdvancedLow</identifier>
+			<materialMeltdown>ADVANCED</materialMeltdown>
+			<materialTemper>ADVANCED</materialTemper>
+			<reachModifier>0.01</reachModifier>
+			<speedModifier>-0.04</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.25</damageModifier>
+			<identifier>Advanced</identifier>
+			<materialMeltdown>ADVANCED</materialMeltdown>
+			<materialTemper>ADVANCED</materialTemper>
+			<reachModifier>0.01</reachModifier>
+			<speedModifier>-0.04</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.3</damageModifier>
+			<identifier>AdvancedHigh</identifier>
+			<materialMeltdown>ADVANCED</materialMeltdown>
+			<materialTemper>ADVANCED</materialTemper>
+			<reachModifier>0.01</reachModifier>
+			<speedModifier>-0.04</speedModifier>
+		</weapon_material>
 	<!-- Advanced Material Listings end -->
 
+	<!-- Bonemold Material Listings start -->
+		<weapon_material>
+			<damageModifier>0.9</damageModifier>
+			<identifier>Bone</identifier>
+			<materialMeltdown>BONEMOLD_HEAVY</materialMeltdown>
+			<materialTemper>BONEMOLD_HEAVY</materialTemper>
+			<reachModifier>0.01</reachModifier>
+			<speedModifier>0.02</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>0.95</damageModifier>
+			<identifier>BoneHigh</identifier>
+			<materialMeltdown>BONEMOLD_HEAVY</materialMeltdown>
+			<materialTemper>BONEMOLD_HEAVY</materialTemper>
+			<reachModifier>0.01</reachModifier>
+			<speedModifier>0.02</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.2</damageModifier>
+			<identifier>Mammoth Bone</identifier>
+			<materialMeltdown>BONEMOLD_HEAVY</materialMeltdown>
+			<materialTemper>BONEMOLD_HEAVY</materialTemper>
+			<reachModifier>0.01</reachModifier>
+			<speedModifier>-0.02</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.5</damageModifier>
+			<identifier>Mammoth BoneHigh</identifier>
+			<materialMeltdown>BONEMOLD_HEAVY</materialMeltdown>
+			<materialTemper>BONEMOLD_HEAVY</materialTemper>
+			<reachModifier>0.01</reachModifier>
+			<speedModifier>-0.02</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.05</damageModifier> <!-- SteelHigh -->
+			<identifier>Bonemold</identifier>
+			<materialMeltdown>BONEMOLD_HEAVY</materialMeltdown>
+			<materialTemper>BONEMOLD_HEAVY</materialTemper>
+			<reachModifier>0.01</reachModifier>
+			<speedModifier>0.02</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.1</damageModifier> <!-- Dwarven -->
+			<identifier>BonemoldHigh</identifier>
+			<materialMeltdown>BONEMOLD_HEAVY</materialMeltdown>
+			<materialTemper>BONEMOLD_HEAVY</materialTemper>
+			<reachModifier>0.01</reachModifier>
+			<speedModifier>0.02</speedModifier>
+		</weapon_material>
 	<!-- Bonemold Material Listings end -->
-        <weapon_material>
-            <damageModifier>0.25</damageModifier>
-            <identifier>Bone</identifier>
-            <materialMeltdown>BONEMOLD_HEAVY</materialMeltdown>
-            <materialTemper>BONEMOLD_HEAVY</materialTemper>
-            <reachModifier>0.01</reachModifier>
-            <speedModifier>-0.02</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>0.5</damageModifier>
-            <identifier>Mammoth Bone</identifier>
-            <materialMeltdown>BONEMOLD_HEAVY</materialMeltdown>
-            <materialTemper>BONEMOLD_HEAVY</materialTemper>
-            <reachModifier>0.01</reachModifier>
-            <speedModifier>-0.02</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.05</damageModifier>
-            <identifier>Bonemold</identifier>
-            <materialMeltdown>BONEMOLD_HEAVY</materialMeltdown>
-            <materialTemper>BONEMOLD_HEAVY</materialTemper>
-            <reachModifier>0.01</reachModifier>
-            <speedModifier>-0.02</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.1</damageModifier>
-            <identifier>BonemoldHigh</identifier>
-            <materialMeltdown>BONEMOLD_HEAVY</materialMeltdown>
-            <materialTemper>BONEMOLD_HEAVY</materialTemper>
-            <reachModifier>0.01</reachModifier>
-            <speedModifier>-0.02</speedModifier>
-        </weapon_material>
-	<!-- Bonemold Material Listings end -->
 
-	<!-- Bound Material Listings end -->
-        <weapon_material>
-            <damageModifier>2</damageModifier>
-            <identifier>Bound</identifier>
-            <materialMeltdown>NONE</materialMeltdown>
-            <materialTemper>NONE</materialTemper>
-            <reachModifier>0.00</reachModifier>
-            <speedModifier>0.05</speedModifier>
-        </weapon_material>
+	<!-- Bound Material Listings start -->
+		<weapon_material>
+			<damageModifier>1.284</damageModifier>
+			<identifier>BoundLow</identifier>
+			<materialMeltdown>NONE</materialMeltdown>
+			<materialTemper>NONE</materialTemper>
+			<reachModifier>0.00</reachModifier>
+			<speedModifier>0.05</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.334</damageModifier>
+			<identifier>Bound</identifier>
+			<materialMeltdown>NONE</materialMeltdown>
+			<materialTemper>NONE</materialTemper>
+			<reachModifier>0.00</reachModifier>
+			<speedModifier>0.05</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.384</damageModifier>
+			<identifier>BoundHigh</identifier>
+			<materialMeltdown>NONE</materialMeltdown>
+			<materialTemper>NONE</materialTemper>
+			<reachModifier>0.00</reachModifier>
+			<speedModifier>0.05</speedModifier>
+		</weapon_material>
 	<!-- Bound Material Listings end -->
 
+	<!-- Chitin Material Listings start -->
+		<weapon_material>
+			<damageModifier>1.2</damageModifier>
+			<identifier>ChitinLow</identifier>
+			<materialMeltdown>CHITIN</materialMeltdown>
+			<materialTemper>CHITIN</materialTemper>
+			<reachModifier>0.01</reachModifier>
+			<speedModifier>0.02</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.25</damageModifier>
+			<identifier>Chitin</identifier>
+			<materialMeltdown>CHITIN</materialMeltdown>
+			<materialTemper>CHITIN</materialTemper>
+			<reachModifier>0.01</reachModifier>
+			<speedModifier>0.02</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.3</damageModifier>
+			<identifier>ChitinHigh</identifier>
+			<materialMeltdown>CHITIN</materialMeltdown>
+			<materialTemper>CHITIN</materialTemper>
+			<reachModifier>0.01</reachModifier>
+			<speedModifier>0.02</speedModifier>
+		</weapon_material>
 	<!-- Chitin Material Listings end -->
-        <weapon_material>
-            <damageModifier>1.2</damageModifier>
-            <identifier>ChitinLow</identifier>
-            <materialMeltdown>CHITIN</materialMeltdown>
-            <materialTemper>CHITIN</materialTemper>
-            <reachModifier>0.01</reachModifier>
-            <speedModifier>0.02</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.25</damageModifier>
-            <identifier>Chitin</identifier>
-            <materialMeltdown>CHITIN</materialMeltdown>
-            <materialTemper>CHITIN</materialTemper>
-            <reachModifier>0.01</reachModifier>
-            <speedModifier>0.02</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.3</damageModifier>
-            <identifier>ChitinHigh</identifier>
-            <materialMeltdown>CHITIN</materialMeltdown>
-            <materialTemper>CHITIN</materialTemper>
-            <reachModifier>0.01</reachModifier>
-            <speedModifier>0.02</speedModifier>
-        </weapon_material>
-	<!-- Chitin Material Listings end -->
 
-	<!-- Daedric Material Listings end -->
-        <weapon_material>
-            <damageModifier>1.95</damageModifier>
-            <identifier>DaedricLow</identifier>
-            <materialMeltdown>DAEDRIC</materialMeltdown>
-            <materialTemper>DAEDRIC</materialTemper>
-            <reachModifier>0.03</reachModifier>
-            <speedModifier>-0.08</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>2</damageModifier>
-            <identifier>Daedric</identifier>
-            <materialMeltdown>DAEDRIC</materialMeltdown>
-            <materialTemper>DAEDRIC</materialTemper>
-            <reachModifier>0.03</reachModifier>
-            <speedModifier>-0.08</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>2.05</damageModifier>
-            <identifier>DaedricHigh</identifier>
-            <materialMeltdown>DAEDRIC</materialMeltdown>
-            <materialTemper>DAEDRIC</materialTemper>
-            <reachModifier>0.03</reachModifier>
-            <speedModifier>-0.08</speedModifier>
-        </weapon_material>
+	<!-- Daedric Material Listings start -->
+		<weapon_material>
+			<damageModifier>1.95</damageModifier>
+			<identifier>DaedricLow</identifier>
+			<materialMeltdown>DAEDRIC</materialMeltdown>
+			<materialTemper>DAEDRIC</materialTemper>
+			<reachModifier>0.03</reachModifier>
+			<speedModifier>-0.06</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>2</damageModifier>
+			<identifier>Daedric</identifier>
+			<materialMeltdown>DAEDRIC</materialMeltdown>
+			<materialTemper>DAEDRIC</materialTemper>
+			<reachModifier>0.03</reachModifier>
+			<speedModifier>-0.06</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>2.05</damageModifier>
+			<identifier>DaedricHigh</identifier>
+			<materialMeltdown>DAEDRIC</materialMeltdown>
+			<materialTemper>DAEDRIC</materialTemper>
+			<reachModifier>0.03</reachModifier>
+			<speedModifier>-0.06</speedModifier>
+		</weapon_material>
 	<!-- Daedric Material Listings end -->
 
+	<!-- Dragon Material Listings start -->
+		<weapon_material>
+			<damageModifier>1.7</damageModifier>
+			<identifier>Dragonscale</identifier>
+			<materialMeltdown>DRAGONSCALE</materialMeltdown>
+			<materialTemper>DRAGONSCALE</materialTemper>
+			<reachModifier>0.04</reachModifier>
+			<speedModifier>0.05</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.75</damageModifier>
+			<identifier>DragonscaleHigh</identifier>
+			<materialMeltdown>DRAGONSCALE</materialMeltdown>
+			<materialTemper>DRAGONSCALE</materialTemper>
+			<reachModifier>0.04</reachModifier>
+			<speedModifier>0.05</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.9</damageModifier>
+			<identifier>Dragonplate</identifier>
+			<materialMeltdown>DRAGONPLATE</materialMeltdown>
+			<materialTemper>DRAGONPLATE</materialTemper>
+			<reachModifier>0.04</reachModifier>
+			<speedModifier>-0.05</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.95</damageModifier>
+			<identifier>DragonplateHigh</identifier>
+			<materialMeltdown>DRAGONPLATE</materialMeltdown>
+			<materialTemper>DRAGONPLATE</materialTemper>
+			<reachModifier>0.04</reachModifier>
+			<speedModifier>-0.05</speedModifier>
+		</weapon_material>
 	<!-- Dragon Material Listings end -->
-        <weapon_material>
-            <damageModifier>1.7</damageModifier>
-            <identifier>Dragonscale</identifier>
-            <materialMeltdown>DRAGONSCALE</materialMeltdown>
-            <materialTemper>DRAGONSCALE</materialTemper>
-            <reachModifier>0.04</reachModifier>
-            <speedModifier>0.06</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.75</damageModifier>
-            <identifier>DragonscaleHigh</identifier>
-            <materialMeltdown>DRAGONSCALE</materialMeltdown>
-            <materialTemper>DRAGONSCALE</materialTemper>
-            <reachModifier>0.04</reachModifier>
-            <speedModifier>0.06</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.9</damageModifier>
-            <identifier>Dragonplate</identifier>
-            <materialMeltdown>DRAGONPLATE</materialMeltdown>
-            <materialTemper>DRAGONPLATE</materialTemper>
-            <reachModifier>0.04</reachModifier>
-            <speedModifier>-0.07</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.95</damageModifier>
-            <identifier>DragonplateHigh</identifier>
-            <materialMeltdown>DRAGONPLATE</materialMeltdown>
-            <materialTemper>DRAGONPLATE</materialTemper>
-            <reachModifier>0.04</reachModifier>
-            <speedModifier>-0.07</speedModifier>
-        </weapon_material>
-	<!-- Dragon Material Listings end -->
 
-	<!-- Draugr Material Listings end -->
-        <weapon_material>
-            <damageModifier>1.3</damageModifier>
-            <identifier>Draugr</identifier>
-            <materialMeltdown>DRAUGR</materialMeltdown>
-            <materialTemper>DRAUGR</materialTemper>
-            <reachModifier>-0.1</reachModifier>
-            <speedModifier>-0.05</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.35</damageModifier>
-            <identifier>DraugrHigh</identifier>
-            <materialMeltdown>DRAUGR</materialMeltdown>
-            <materialTemper>DRAUGR</materialTemper>
-            <reachModifier>-0.1</reachModifier>
-            <speedModifier>-0.05</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.4</damageModifier>
-            <identifier>Draugr Honed</identifier>
-            <materialMeltdown>DRAUGR</materialMeltdown>
-            <materialTemper>DRAUGR</materialTemper>
-            <reachModifier>-0.1</reachModifier>
-            <speedModifier>-0.05</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.45</damageModifier>
-            <identifier>Draugr HonedHigh</identifier>
-            <materialMeltdown>DRAUGR</materialMeltdown>
-            <materialTemper>DRAUGR</materialTemper>
-            <reachModifier>-0.1</reachModifier>
-            <speedModifier>-0.05</speedModifier>
-        </weapon_material>
+	<!-- Draugr Material Listings start -->
+		<weapon_material>
+			<damageModifier>1.3</damageModifier>
+			<identifier>Draugr</identifier>
+			<materialMeltdown>DRAUGR</materialMeltdown>
+			<materialTemper>DRAUGR</materialTemper>
+			<reachModifier>-0.1</reachModifier>
+			<speedModifier>-0.05</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.35</damageModifier>
+			<identifier>DraugrHigh</identifier>
+			<materialMeltdown>DRAUGR</materialMeltdown>
+			<materialTemper>DRAUGR</materialTemper>
+			<reachModifier>-0.1</reachModifier>
+			<speedModifier>-0.05</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.4</damageModifier>
+			<identifier>Draugr Honed</identifier>
+			<materialMeltdown>DRAUGR</materialMeltdown>
+			<materialTemper>DRAUGR</materialTemper>
+			<reachModifier>-0.1</reachModifier>
+			<speedModifier>-0.05</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.45</damageModifier>
+			<identifier>Draugr HonedHigh</identifier>
+			<materialMeltdown>DRAUGR</materialMeltdown>
+			<materialTemper>DRAUGR</materialTemper>
+			<reachModifier>-0.1</reachModifier>
+			<speedModifier>-0.05</speedModifier>
+		</weapon_material>
 	<!-- Draugr Material Listings end -->
 
+	<!-- Dwarven Material Listings start -->
+		<weapon_material>
+			<damageModifier>1.05</damageModifier>
+			<identifier>DwarvenLow</identifier>
+			<materialMeltdown>DWARVEN</materialMeltdown>
+			<materialTemper>DWARVEN</materialTemper>
+			<reachModifier>0.00</reachModifier>
+			<speedModifier>-0.03</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.1</damageModifier>
+			<identifier>Dwarven</identifier>
+			<materialMeltdown>DWARVEN</materialMeltdown>
+			<materialTemper>DWARVEN</materialTemper>
+			<reachModifier>0.00</reachModifier>
+			<speedModifier>-0.03</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.15</damageModifier>
+			<identifier>DwarvenHigh</identifier>
+			<materialMeltdown>DWARVEN</materialMeltdown>
+			<materialTemper>DWARVEN</materialTemper>
+			<reachModifier>0.00</reachModifier>
+			<speedModifier>-0.03</speedModifier>
+		</weapon_material>
 	<!-- Dwarven Material Listings end -->
-        <weapon_material>
-            <damageModifier>1.05</damageModifier>
-            <identifier>DwarvenLow</identifier>
-            <materialMeltdown>DWARVEN</materialMeltdown>
-            <materialTemper>DWARVEN</materialTemper>
-            <reachModifier>0.00</reachModifier>
-            <speedModifier>-0.04</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.1</damageModifier>
-            <identifier>Dwarven</identifier>
-            <materialMeltdown>DWARVEN</materialMeltdown>
-            <materialTemper>DWARVEN</materialTemper>
-            <reachModifier>0.00</reachModifier>
-            <speedModifier>-0.04</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.15</damageModifier>
-            <identifier>DwarvenHigh</identifier>
-            <materialMeltdown>DWARVEN</materialMeltdown>
-            <materialTemper>DWARVEN</materialTemper>
-            <reachModifier>0.00</reachModifier>
-            <speedModifier>-0.04</speedModifier>
-        </weapon_material>
-	<!-- Dwarven Material Listings end -->
 
-	<!-- Ebony Material Listings end -->
-        <weapon_material>
-            <damageModifier>1.65</damageModifier>
-            <identifier>EbonyLow</identifier>
-            <materialMeltdown>EBONY</materialMeltdown>
-            <materialTemper>EBONY</materialTemper>
-            <reachModifier>0.01</reachModifier>
-            <speedModifier>-0.06</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.7</damageModifier>
-            <identifier>Ebony</identifier>
-            <materialMeltdown>EBONY</materialMeltdown>
-            <materialTemper>EBONY</materialTemper>
-            <reachModifier>0.01</reachModifier>
-            <speedModifier>-0.06</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.75</damageModifier>
-            <identifier>EbonyHigh</identifier>
-            <materialMeltdown>EBONY</materialMeltdown>
-            <materialTemper>EBONY</materialTemper>
-            <reachModifier>0.03</reachModifier>
-            <speedModifier>-0.08</speedModifier>
-        </weapon_material>
+	<!-- Ebony Material Listings start -->
+		<weapon_material>
+			<damageModifier>1.65</damageModifier>
+			<identifier>EbonyLow</identifier>
+			<materialMeltdown>EBONY</materialMeltdown>
+			<materialTemper>EBONY</materialTemper>
+			<reachModifier>0.01</reachModifier>
+			<speedModifier>-0.05</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.7</damageModifier>
+			<identifier>Ebony</identifier>
+			<materialMeltdown>EBONY</materialMeltdown>
+			<materialTemper>EBONY</materialTemper>
+			<reachModifier>0.01</reachModifier>
+			<speedModifier>-0.05</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.75</damageModifier>
+			<identifier>EbonyHigh</identifier>
+			<materialMeltdown>EBONY</materialMeltdown>
+			<materialTemper>EBONY</materialTemper>
+			<reachModifier>0.01</reachModifier>
+			<speedModifier>-0.05</speedModifier>
+		</weapon_material>
 	<!-- Ebony Material Listings end -->
 
+	<!-- Elven Material Listings start -->
+		<weapon_material>
+			<damageModifier>1.15</damageModifier>
+			<identifier>ElvenLow</identifier>
+			<materialMeltdown>ELVEN</materialMeltdown>
+			<materialTemper>ELVEN</materialTemper>
+			<reachModifier>0</reachModifier>
+			<speedModifier>0.03</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.2</damageModifier>
+			<identifier>Elven</identifier>
+			<materialMeltdown>ELVEN</materialMeltdown>
+			<materialTemper>ELVEN</materialTemper>
+			<reachModifier>0</reachModifier>
+			<speedModifier>0.03</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.25</damageModifier>
+			<identifier>ElvenHigh</identifier>
+			<materialMeltdown>ELVEN</materialMeltdown>
+			<materialTemper>ELVEN</materialTemper>
+			<reachModifier>0</reachModifier>
+			<speedModifier>0.03</speedModifier>
+		</weapon_material>
 	<!-- Elven Material Listings end -->
-        <weapon_material>
-            <damageModifier>1.15</damageModifier>
-            <identifier>ElvenLow</identifier>
-            <materialMeltdown>ELVEN</materialMeltdown>
-            <materialTemper>ELVEN</materialTemper>
-            <reachModifier>0</reachModifier>
-            <speedModifier>-0.03</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.2</damageModifier>
-            <identifier>Elven</identifier>
-            <materialMeltdown>ELVEN</materialMeltdown>
-            <materialTemper>ELVEN</materialTemper>
-            <reachModifier>0</reachModifier>
-            <speedModifier>-0.03</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.25</damageModifier>
-            <identifier>ElvenHigh</identifier>
-            <materialMeltdown>ELVEN</materialMeltdown>
-            <materialTemper>ELVEN</materialTemper>
-            <reachModifier>0</reachModifier>
-            <speedModifier>-0.03</speedModifier>
-        </weapon_material>
-	<!-- Elven Material Listings end -->
 
-	<!-- Faction Material Listings end -->
-        <weapon_material>
-            <damageModifier>1.1</damageModifier>
-            <identifier>Stormcloak</identifier>
-            <materialMeltdown>STEEL</materialMeltdown>
-            <materialTemper>STEEL</materialTemper>
-            <reachModifier>0</reachModifier>
-            <speedModifier>0.01</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.1</damageModifier>
-            <identifier>Imperial</identifier>
-            <materialMeltdown>STEEL</materialMeltdown>
-            <materialTemper>STEEL</materialTemper>
-            <reachModifier>0.1</reachModifier>
-            <speedModifier>-0.1</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.25</damageModifier>
-            <identifier>Dawnguard</identifier>
-            <materialMeltdown>STEEL</materialMeltdown>
-            <materialTemper>STEEL</materialTemper>
-            <reachModifier>0</reachModifier>
-            <speedModifier>-0.1</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.25</damageModifier>
-            <identifier>Dawnguard Rune</identifier>
-            <materialMeltdown>STEEL</materialMeltdown>
-            <materialTemper>STEEL</materialTemper>
-            <reachModifier>0</reachModifier>
-            <speedModifier>-0.1</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.4</damageModifier>
-            <identifier>Blades</identifier>
-            <materialMeltdown>ADVANCED</materialMeltdown>
-            <materialTemper>ADVANCED</materialTemper>
-            <reachModifier>0.01</reachModifier>
-            <speedModifier>0.02</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.4</damageModifier>
-            <identifier>Skyforge</identifier>
-            <materialMeltdown>STEEL</materialMeltdown>
-            <materialTemper>STEEL</materialTemper>
-            <reachModifier>0</reachModifier>
-            <speedModifier>0</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.9</damageModifier>
-            <identifier>Nightingale</identifier>
-            <materialMeltdown>DAEDRIC</materialMeltdown>
-            <materialTemper>DAEDRIC</materialTemper>
-            <reachModifier>0.03</reachModifier>
-            <speedModifier>0.05</speedModifier>
-        </weapon_material>
+	<!-- Faction Material Listings start -->
+		<weapon_material>
+			<damageModifier>1.1</damageModifier>
+			<identifier>Stormcloak</identifier>
+			<materialMeltdown>STEEL</materialMeltdown>
+			<materialTemper>STEEL</materialTemper>
+			<reachModifier>0.0</reachModifier>
+			<speedModifier>-0.02</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.1</damageModifier>
+			<identifier>Imperial</identifier>
+			<materialMeltdown>STEEL</materialMeltdown>
+			<materialTemper>STEEL</materialTemper>
+			<reachModifier>0.01</reachModifier>
+			<speedModifier>0.01</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.25</damageModifier>
+			<identifier>Dawnguard</identifier>
+			<materialMeltdown>STEEL</materialMeltdown>
+			<materialTemper>STEEL</materialTemper>
+			<reachModifier>0.0</reachModifier>
+			<speedModifier>-0.03</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.25</damageModifier>
+			<identifier>Dawnguard Rune</identifier>
+			<materialMeltdown>STEEL</materialMeltdown>
+			<materialTemper>STEEL</materialTemper>
+			<reachModifier>0.0</reachModifier>
+			<speedModifier>-0.03</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.4</damageModifier>
+			<identifier>Blades</identifier>
+			<materialMeltdown>ADVANCED</materialMeltdown>
+			<materialTemper>ADVANCED</materialTemper>
+			<reachModifier>0.01</reachModifier>
+			<speedModifier>0.02</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.4</damageModifier>
+			<identifier>Skyforge</identifier>
+			<materialMeltdown>STEEL</materialMeltdown>
+			<materialTemper>STEEL</materialTemper>
+			<reachModifier>0.0</reachModifier>
+			<speedModifier>0.02</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.9</damageModifier>
+			<identifier>Nightingale</identifier>
+			<materialMeltdown>DAEDRIC</materialMeltdown>
+			<materialTemper>DAEDRIC</materialTemper>
+			<reachModifier>0.03</reachModifier>
+			<speedModifier>0.05</speedModifier>
+		</weapon_material>
 	<!-- Faction Material Listings end -->
 
+	<!-- Falmer Material Listings start -->
+		<weapon_material>
+			<damageModifier>1.2</damageModifier>
+			<identifier>Falmer</identifier>
+			<materialMeltdown>FALMER</materialMeltdown><!-- chaurusChitin -->
+			<materialTemper>FALMER</materialTemper>
+			<reachModifier>-0.08</reachModifier>
+			<speedModifier>-0.03</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.25</damageModifier>
+			<identifier>FalmerHigh</identifier>
+			<materialMeltdown>FALMER</materialMeltdown>
+			<materialTemper>FALMER</materialTemper>
+			<reachModifier>-0.08</reachModifier>
+			<speedModifier>-0.0</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.6</damageModifier> <!-- 1.44 after Ancient binding-->
+			<identifier>Ancient Falmer</identifier>
+			<materialMeltdown>ELVEN</materialMeltdown>
+			<materialTemper>ELVEN</materialTemper>
+			<reachModifier>0.00</reachModifier>
+			<speedModifier>-0.03</speedModifier>
+		</weapon_material>
 	<!-- Falmer Material Listings end -->
-        <weapon_material>
-            <damageModifier>1.2</damageModifier>
-            <identifier>Falmer</identifier>
-            <materialMeltdown>FALMER</materialMeltdown><!-- chaurusChitin -->
-            <materialTemper>FALMER</materialTemper>
-            <reachModifier>-0.08</reachModifier>
-            <speedModifier>-0.1</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.25</damageModifier>
-            <identifier>FalmerHigh</identifier>
-            <materialMeltdown>FALMER</materialMeltdown>
-            <materialTemper>FALMER</materialTemper>
-            <reachModifier>-0.08</reachModifier>
-            <speedModifier>-0.1</speedModifier>
-        </weapon_material>
-	<!-- Falmer Material Listings end -->
 
-	<!-- Forsworn Material Listings end -->
-        <weapon_material>
-            <damageModifier>1.1</damageModifier>
-            <identifier>Forsworn</identifier>
-            <materialMeltdown>BONEMOLD_HEAVY</materialMeltdown>
-            <materialTemper>BONEMOLD_HEAVY</materialTemper>
-            <reachModifier>0</reachModifier>
-            <speedModifier>-0.03</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.15</damageModifier>
-            <identifier>ForswornHigh</identifier>
-            <materialMeltdown>BONEMOLD_HEAVY</materialMeltdown>
-            <materialTemper>BONEMOLD_HEAVY</materialTemper>
-            <reachModifier>0</reachModifier>
-            <speedModifier>-0.03</speedModifier>
-        </weapon_material>
+	<!-- Forsworn Material Listings start -->
+		<weapon_material>
+			<damageModifier>1.1</damageModifier>
+			<identifier>Forsworn</identifier>
+			<materialMeltdown>BONEMOLD_HEAVY</materialMeltdown>
+			<materialTemper>BONEMOLD_HEAVY</materialTemper>
+			<reachModifier>0.0</reachModifier>
+			<speedModifier>-0.03</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.15</damageModifier>
+			<identifier>ForswornHigh</identifier>
+			<materialMeltdown>BONEMOLD_HEAVY</materialMeltdown>
+			<materialTemper>BONEMOLD_HEAVY</materialTemper>
+			<reachModifier>0.0</reachModifier>
+			<speedModifier>-0.03</speedModifier>
+		</weapon_material>
 	<!-- Forsworn Material Listings end -->
 
-	<!-- Glass Material Listings end -->
-        <weapon_material>
-            <damageModifier>1.45</damageModifier>
-            <identifier>GlassLow</identifier>
-            <materialMeltdown>GLASS</materialMeltdown>
-            <materialTemper>GLASS</materialTemper>
-            <reachModifier>0.01</reachModifier>
-            <speedModifier>-0.03</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.5</damageModifier>
-            <identifier>Glass</identifier>
-            <materialMeltdown>GLASS</materialMeltdown>
-            <materialTemper>GLASS</materialTemper>
-            <reachModifier>0.01</reachModifier>
-            <speedModifier>-0.03</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.55</damageModifier>
-            <identifier>GlassHigh</identifier>
-            <materialMeltdown>GLASS</materialMeltdown>
-            <materialTemper>GLASS</materialTemper>
-            <reachModifier>0.05</reachModifier>
-            <speedModifier>0.08</speedModifier>
-        </weapon_material>
+	<!-- Glass Material Listings start -->
+		<weapon_material>
+			<damageModifier>1.45</damageModifier>
+			<identifier>GlassLow</identifier>
+			<materialMeltdown>GLASS</materialMeltdown>
+			<materialTemper>GLASS</materialTemper>
+			<reachModifier>0.01</reachModifier>
+			<speedModifier>0.03</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.5</damageModifier>
+			<identifier>Glass</identifier>
+			<materialMeltdown>GLASS</materialMeltdown>
+			<materialTemper>GLASS</materialTemper>
+			<reachModifier>0.01</reachModifier>
+			<speedModifier>0.03</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.55</damageModifier>
+			<identifier>GlassHigh</identifier>
+			<materialMeltdown>GLASS</materialMeltdown>
+			<materialTemper>GLASS</materialTemper>
+			<reachModifier>0.05</reachModifier>
+			<speedModifier>0.03</speedModifier>
+		</weapon_material>
 	<!-- Glass Material Listings end -->
 
-	<!-- Gold Material Listings end -->
-        <weapon_material>
-            <damageModifier>1</damageModifier>
-            <identifier>Gold</identifier>
-            <materialMeltdown>GOLD</materialMeltdown>
-            <materialTemper>GOLD</materialTemper>
-            <reachModifier>0.03</reachModifier>
-            <speedModifier>0.05</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.05</damageModifier>
-            <identifier>GoldHigh</identifier>
-            <materialMeltdown>GOLD</materialMeltdown>
-            <materialTemper>GOLD</materialTemper>
-            <reachModifier>0.03</reachModifier>
-            <speedModifier>0.05</speedModifier>
-        </weapon_material>
+	<!-- Gold Material Listings start -->
+		<weapon_material>
+			<damageModifier>1</damageModifier>
+			<identifier>Gold</identifier>
+			<materialMeltdown>GOLD</materialMeltdown>
+			<materialTemper>GOLD</materialTemper>
+			<reachModifier>0.03</reachModifier>
+			<speedModifier>0.04</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.05</damageModifier>
+			<identifier>GoldHigh</identifier>
+			<materialMeltdown>GOLD</materialMeltdown>
+			<materialTemper>GOLD</materialTemper>
+			<reachModifier>0.03</reachModifier>
+			<speedModifier>0.04</speedModifier>
+		</weapon_material>
 	<!-- Gold Material Listings end -->
 
-	<!-- Horker -->
-        <weapon_material>
-            <damageModifier>0.95</damageModifier>
-            <identifier>HorkerL</identifier>
-            <materialMeltdown>BONEMOLD_HEAVY</materialMeltdown>
-            <materialTemper>BONEMOLD_HEAVY</materialTemper>
-            <reachModifier>0.02</reachModifier>
-            <speedModifier>-0.02</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1</damageModifier>
-            <identifier>HorkerH</identifier>
-            <materialMeltdown>BONEMOLD_HEAVY</materialMeltdown>
-            <materialTemper>BONEMOLD_HEAVY</materialTemper>
-            <reachModifier>0.02</reachModifier>
-            <speedModifier>-0.02</speedModifier>
-        </weapon_material>
-	<!-- Horker -->
+	<!-- Horker Material Listings start -->
+		<weapon_material>
+			<damageModifier>0.95</damageModifier>
+			<identifier>HorkerL</identifier>
+			<materialMeltdown>BONEMOLD_HEAVY</materialMeltdown>
+			<materialTemper>BONEMOLD_HEAVY</materialTemper>
+			<reachModifier>0.02</reachModifier>
+			<speedModifier>0.02</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1</damageModifier>
+			<identifier>HorkerH</identifier>
+			<materialMeltdown>BONEMOLD_HEAVY</materialMeltdown>
+			<materialTemper>BONEMOLD_HEAVY</materialTemper>
+			<reachModifier>0.02</reachModifier>
+			<speedModifier>0.02</speedModifier>
+		</weapon_material>
+	<!-- Horker Material Listings end -->
 	
-	<!-- Iron Material Listings end -->
-        <weapon_material>
-            <damageModifier>0.2</damageModifier>
-            <identifier>IronClutter</identifier>
-            <materialMeltdown>IRON</materialMeltdown>
-            <materialTemper>IRON</materialTemper>
-            <reachModifier>0</reachModifier>
-            <speedModifier>0</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>0.85</damageModifier>
-            <identifier>IronLow</identifier>
-            <materialMeltdown>IRON</materialMeltdown>
-            <materialTemper>IRON</materialTemper>
-            <reachModifier>0.02</reachModifier>
-            <speedModifier>-0.02</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>0.9</damageModifier>
-            <identifier>Iron</identifier>
-            <materialMeltdown>IRON</materialMeltdown>
-            <materialTemper>IRON</materialTemper>
-            <reachModifier>0.02</reachModifier>
-            <speedModifier>-0.02</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>0.95</damageModifier>
-            <identifier>IronHigh</identifier>
-            <materialMeltdown>IRON</materialMeltdown>
-            <materialTemper>IRON</materialTemper>
-            <reachModifier>0.02</reachModifier>
-            <speedModifier>-0.02</speedModifier>
-        </weapon_material>
+	<!-- Iron Material Listings start -->
+		<weapon_material>
+			<damageModifier>0.2</damageModifier>
+			<identifier>IronClutter</identifier>
+			<materialMeltdown>IRON</materialMeltdown>
+			<materialTemper>IRON</materialTemper>
+			<reachModifier>0.0</reachModifier>
+			<speedModifier>0.0</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>0.85</damageModifier>
+			<identifier>IronLow</identifier>
+			<materialMeltdown>IRON</materialMeltdown>
+			<materialTemper>IRON</materialTemper>
+			<reachModifier>0.0</reachModifier>
+			<speedModifier>-0.01</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>0.9</damageModifier>
+			<identifier>Iron</identifier>
+			<materialMeltdown>IRON</materialMeltdown>
+			<materialTemper>IRON</materialTemper>
+			<reachModifier>0.0</reachModifier>
+			<speedModifier>-0.01</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>0.95</damageModifier>
+			<identifier>IronHigh</identifier>
+			<materialMeltdown>IRON</materialMeltdown>
+			<materialTemper>IRON</materialTemper>
+			<reachModifier>0.0</reachModifier>
+			<speedModifier>-0.01</speedModifier>
+		</weapon_material>
 	<!-- Iron Material Listings end -->
 
-	<!-- Orcish Material Listings end -->
+	<!-- Orcish Material Listings start -->
 		<weapon_material>
 			<damageModifier>1.25</damageModifier>
 			<identifier>OrcishLow</identifier>
-            <materialMeltdown>ORCISH</materialMeltdown>
-            <materialTemper>ORCISH</materialTemper>
-            <reachModifier>-0.03</reachModifier>
-            <speedModifier>-0.06</speedModifier>
+			<materialMeltdown>ORCISH</materialMeltdown>
+			<materialTemper>ORCISH</materialTemper>
+			<reachModifier>-0.03</reachModifier>
+			<speedModifier>-0.04</speedModifier>
 		</weapon_material>
 		<weapon_material>
 			<damageModifier>1.3</damageModifier>
 			<identifier>Orcish</identifier>
-            <materialMeltdown>ORCISH</materialMeltdown>
-            <materialTemper>ORCISH</materialTemper>
-            <reachModifier>-0.03</reachModifier>
-            <speedModifier>-0.06</speedModifier>
+			<materialMeltdown>ORCISH</materialMeltdown>
+			<materialTemper>ORCISH</materialTemper>
+			<reachModifier>-0.03</reachModifier>
+			<speedModifier>-0.04</speedModifier>
 		</weapon_material>
 		<weapon_material>
 			<damageModifier>1.35</damageModifier>
 			<identifier>OrcishHigh</identifier>
-            <materialMeltdown>ORCISH</materialMeltdown>
-            <materialTemper>ORCISH</materialTemper>
-            <reachModifier>-0.03</reachModifier>
-            <speedModifier>-0.06</speedModifier>
+			<materialMeltdown>ORCISH</materialMeltdown>
+			<materialTemper>ORCISH</materialTemper>
+			<reachModifier>-0.03</reachModifier>
+			<speedModifier>-0.04</speedModifier>
 		</weapon_material>
 	<!-- Orcish Material Listings end -->
 
-	<!-- None Material Listings end -->
-        <weapon_material>
-            <damageModifier>0.5</damageModifier>
-            <identifier>None</identifier>
-            <materialMeltdown>NONE</materialMeltdown>
-            <materialTemper>NONE</materialTemper>
-            <reachModifier>0.00</reachModifier>
-            <speedModifier>0.05</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>0.55</damageModifier>
-            <identifier>NoneHigh</identifier>
-            <materialMeltdown>NONE</materialMeltdown>
-            <materialTemper>NONE</materialTemper>
-            <reachModifier>0.00</reachModifier>
-            <speedModifier>0.05</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>2</damageModifier>
-            <identifier>Death</identifier>
-            <materialMeltdown>NONE</materialMeltdown>
-            <materialTemper>NONE</materialTemper>
-            <reachModifier>0.00</reachModifier>
-            <speedModifier>0.00</speedModifier>
-        </weapon_material>
-	<!-- None Material Listings end -->
-
-	<!-- Nord Material Listings end -->
-        <weapon_material>
-            <damageModifier>1.25</damageModifier>
-            <identifier>NordLow</identifier>
-            <materialMeltdown>ADVANCED</materialMeltdown>
-            <materialTemper>ADVANCED</materialTemper>
-            <reachModifier>0.01</reachModifier>
-            <speedModifier>0.02</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.3</damageModifier>
-            <identifier>Nord</identifier>
-            <materialMeltdown>ADVANCED</materialMeltdown>
-            <materialTemper>ADVANCED</materialTemper>
-            <reachModifier>0.01</reachModifier>
-            <speedModifier>0.02</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.35</damageModifier>
-            <identifier>NordHigh</identifier>
-            <materialMeltdown>ADVANCED</materialMeltdown>
-            <materialTemper>ADVANCED</materialTemper>
-            <reachModifier>0.01</reachModifier>
-            <speedModifier>0.02</speedModifier>
-        </weapon_material>
-	<!-- Nord Material Listings end -->
-
-	<!-- Silver Material Listings end -->
-        <weapon_material>
-            <damageModifier>1</damageModifier>
-            <identifier>Silver</identifier>
-            <materialMeltdown>SILVER</materialMeltdown>
-            <materialTemper>SILVER</materialTemper>
-            <reachModifier>0.03</reachModifier>
-            <speedModifier>0.05</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.05</damageModifier>
-            <identifier>SilverHigh</identifier>
-            <materialMeltdown>SILVER</materialMeltdown>
-            <materialTemper>SILVER</materialTemper>
-            <reachModifier>0.03</reachModifier>
-            <speedModifier>0.05</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1</damageModifier>
-            <identifier>RSilver</identifier>
-            <materialMeltdown>REFINED_SILVER</materialMeltdown>
-            <materialTemper>REFINED_SILVER</materialTemper>
-            <reachModifier>0.03</reachModifier>
-            <speedModifier>0.05</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.05</damageModifier>
-            <identifier>RSilverHigh</identifier>
-            <materialMeltdown>REFINED_SILVER</materialMeltdown>
-            <materialTemper>REFINED_SILVER</materialTemper>
-            <reachModifier>0.03</reachModifier>
-            <speedModifier>0.05</speedModifier>
-        </weapon_material>
-	<!-- Silver Material Listings end -->
-
-	<!-- Stalhrim Material Listings end -->
-        <weapon_material>
-            <damageModifier>1.75</damageModifier>
-            <identifier>StalhrimLow</identifier>
-            <materialMeltdown>STALHRIM</materialMeltdown>
-            <materialTemper>STALHRIM</materialTemper>
-            <reachModifier>0.02</reachModifier>
-            <speedModifier>0.02</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.8</damageModifier>
-            <identifier>Stalhrim</identifier>
-            <materialMeltdown>STALHRIM</materialMeltdown>
-            <materialTemper>STALHRIM</materialTemper>
-            <reachModifier>0.02</reachModifier>
-            <speedModifier>0.02</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.85</damageModifier>
-            <identifier>StalhrimHigh</identifier>
-            <materialMeltdown>STALHRIM</materialMeltdown>
-            <materialTemper>STALHRIM</materialTemper>
-            <reachModifier>0.02</reachModifier>
-            <speedModifier>0.02</speedModifier>
-        </weapon_material>
-	<!-- Stalhrim Material Listings end -->
-
-	<!-- Steel Material Listings end -->
-        <weapon_material>
-            <damageModifier>0.95</damageModifier>
-            <identifier>SteelLow</identifier>
-            <materialMeltdown>STEEL</materialMeltdown>
-            <materialTemper>STEEL</materialTemper>
-            <reachModifier>0</reachModifier>
-            <speedModifier>-0.03</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1</damageModifier>
-            <identifier>Steel</identifier>
-            <materialMeltdown>STEEL</materialMeltdown>
-            <materialTemper>STEEL</materialTemper>
-            <reachModifier>0</reachModifier>
-            <speedModifier>-0.03</speedModifier>
-        </weapon_material>
-        <weapon_material>
-            <damageModifier>1.05</damageModifier>
-            <identifier>SteelHigh</identifier>
-            <materialMeltdown>STEEL</materialMeltdown>
-            <materialTemper>STEEL</materialTemper>
-            <reachModifier>0</reachModifier>
-            <speedModifier>-0.03</speedModifier>
-        </weapon_material>
-	<!-- Steel Material Listings end -->
-
-	<!-- Wood Material Listings end -->
+	<!-- None Material Listings start -->
 		<weapon_material>
-            <damageModifier>0.8</damageModifier>5
-			<identifier>Wood</identifier>long bow
-            <materialMeltdown>WOOD</materialMeltdown>
-            <materialTemper>WOOD</materialTemper>
-            <reachModifier>0.0</reachModifier>
-            <speedModifier>0.02</speedModifier>
-        </weapon_material>
+			<damageModifier>0.5</damageModifier>
+			<identifier>None</identifier>
+			<materialMeltdown>NONE</materialMeltdown>
+			<materialTemper>NONE</materialTemper>
+			<reachModifier>0.00</reachModifier>
+			<speedModifier>0.05</speedModifier>
+		</weapon_material>
 		<weapon_material>
-            <damageModifier>0.85</damageModifier>
+			<damageModifier>0.55</damageModifier>
+			<identifier>NoneHigh</identifier>
+			<materialMeltdown>NONE</materialMeltdown>
+			<materialTemper>NONE</materialTemper>
+			<reachModifier>0.00</reachModifier>
+			<speedModifier>0.05</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>2</damageModifier>
+			<identifier>Death</identifier>
+			<materialMeltdown>NONE</materialMeltdown>
+			<materialTemper>NONE</materialTemper>
+			<reachModifier>0.00</reachModifier>
+			<speedModifier>0.00</speedModifier>
+		</weapon_material>
+	<!-- None Material Listings end -->
+
+	<!-- Nord Material Listings start -->
+		<weapon_material>
+			<damageModifier>1.25</damageModifier>
+			<identifier>NordLow</identifier>
+			<materialMeltdown>ADVANCED</materialMeltdown>
+			<materialTemper>ADVANCED</materialTemper>
+			<reachModifier>0.01</reachModifier>
+			<speedModifier>0.02</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.3</damageModifier>
+			<identifier>Nord</identifier>
+			<materialMeltdown>ADVANCED</materialMeltdown>
+			<materialTemper>ADVANCED</materialTemper>
+			<reachModifier>0.01</reachModifier>
+			<speedModifier>0.02</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.35</damageModifier>
+			<identifier>NordHigh</identifier>
+			<materialMeltdown>ADVANCED</materialMeltdown>
+			<materialTemper>ADVANCED</materialTemper>
+			<reachModifier>0.01</reachModifier>
+			<speedModifier>0.02</speedModifier>
+		</weapon_material>
+	<!-- Nord Material Listings end -->
+
+	<!-- Silver Material Listings start -->
+		<weapon_material>
+			<damageModifier>1</damageModifier>
+			<identifier>Silver</identifier>
+			<materialMeltdown>SILVER</materialMeltdown>
+			<materialTemper>SILVER</materialTemper>
+			<reachModifier>0.03</reachModifier>
+			<speedModifier>0.04</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.05</damageModifier>
+			<identifier>SilverHigh</identifier>
+			<materialMeltdown>SILVER</materialMeltdown>
+			<materialTemper>SILVER</materialTemper>
+			<reachModifier>0.03</reachModifier>
+			<speedModifier>0.04</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1</damageModifier>
+			<identifier>RSilver</identifier>
+			<materialMeltdown>REFINED_SILVER</materialMeltdown>
+			<materialTemper>REFINED_SILVER</materialTemper>
+			<reachModifier>0.03</reachModifier>
+			<speedModifier>0.04</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.05</damageModifier>
+			<identifier>RSilverHigh</identifier>
+			<materialMeltdown>REFINED_SILVER</materialMeltdown>
+			<materialTemper>REFINED_SILVER</materialTemper>
+			<reachModifier>0.03</reachModifier>
+			<speedModifier>0.04</speedModifier>
+		</weapon_material>
+	<!-- Silver Material Listings end -->
+
+	<!-- Stalhrim Material Listings start -->
+		<weapon_material>
+			<damageModifier>1.75</damageModifier>
+			<identifier>StalhrimLow</identifier>
+			<materialMeltdown>STALHRIM</materialMeltdown>
+			<materialTemper>STALHRIM</materialTemper>
+			<reachModifier>0.02</reachModifier>
+			<speedModifier>0.04</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.8</damageModifier>
+			<identifier>Stalhrim</identifier>
+			<materialMeltdown>STALHRIM</materialMeltdown>
+			<materialTemper>STALHRIM</materialTemper>
+			<reachModifier>0.02</reachModifier>
+			<speedModifier>0.04</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.85</damageModifier>
+			<identifier>StalhrimHigh</identifier>
+			<materialMeltdown>STALHRIM</materialMeltdown>
+			<materialTemper>STALHRIM</materialTemper>
+			<reachModifier>0.02</reachModifier>
+			<speedModifier>0.04</speedModifier>
+		</weapon_material>
+	<!-- Stalhrim Material Listings end -->
+
+	<!-- Steel Material Listings start -->
+		<weapon_material>
+			<damageModifier>0.95</damageModifier>
+			<identifier>SteelLow</identifier>
+			<materialMeltdown>STEEL</materialMeltdown>
+			<materialTemper>STEEL</materialTemper>
+			<reachModifier>0</reachModifier>
+			<speedModifier>-0.02</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1</damageModifier>
+			<identifier>Steel</identifier>
+			<materialMeltdown>STEEL</materialMeltdown>
+			<materialTemper>STEEL</materialTemper>
+			<reachModifier>0</reachModifier>
+			<speedModifier>-0.02</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.05</damageModifier>
+			<identifier>SteelHigh</identifier>
+			<materialMeltdown>STEEL</materialMeltdown>
+			<materialTemper>STEEL</materialTemper>
+			<reachModifier>0</reachModifier>
+			<speedModifier>-0.02</speedModifier>
+		</weapon_material>
+	<!-- Steel Material Listings end -->
+
+	<!-- Wood Material Listings start -->
+		<weapon_material>
+			<damageModifier>0.8</damageModifier>
+			<identifier>Wood</identifier>
+			<materialMeltdown>WOOD</materialMeltdown>
+			<materialTemper>WOOD</materialTemper>
+			<reachModifier>0.0</reachModifier>
+			<speedModifier>0.01</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>0.85</damageModifier>
 			<identifier>WoodHigh</identifier>
-            <materialMeltdown>WOOD</materialMeltdown>
-            <materialTemper>WOOD</materialTemper>
-            <reachModifier>0.0</reachModifier>
-            <speedModifier>0.02</speedModifier>
-        </weapon_material>
+			<materialMeltdown>WOOD</materialMeltdown>
+			<materialTemper>WOOD</materialTemper>
+			<reachModifier>0.0</reachModifier>
+			<speedModifier>0.01</speedModifier>
+		</weapon_material>
 		<weapon_material>
-            <damageModifier>1</damageModifier>
+			<damageModifier>1</damageModifier>
 			<identifier>Oakwood</identifier>
-            <materialMeltdown>WOOD</materialMeltdown>
-            <materialTemper>WOOD</materialTemper>
-            <reachModifier>0.0</reachModifier>
-            <speedModifier>0.02</speedModifier>
-        </weapon_material>
+			<materialMeltdown>WOOD</materialMeltdown>
+			<materialTemper>WOOD</materialTemper>
+			<reachModifier>0.0</reachModifier>
+			<speedModifier>0.02</speedModifier>
+		</weapon_material>
 		<weapon_material>
-            <damageModifier>1.1</damageModifier>
-			<identifier>Ashwood</identifier> 
-            <materialMeltdown>WOOD</materialMeltdown>
-            <materialTemper>WOOD</materialTemper>
-            <reachModifier>0.0</reachModifier>
-            <speedModifier>0.02</speedModifier>
-        </weapon_material>
+			<damageModifier>1.1</damageModifier>
+			<identifier>Ashwood</identifier>
+			<materialMeltdown>WOOD</materialMeltdown>
+			<materialTemper>WOOD</materialTemper>
+			<reachModifier>0.0</reachModifier>
+			<speedModifier>0.04</speedModifier>
+		</weapon_material>
 		<weapon_material>
-            <damageModifier>1.2</damageModifier>
+			<damageModifier>1.1</damageModifier>
+			<identifier>Steelwood</identifier>
+			<materialMeltdown>STEEL</materialMeltdown>
+			<materialTemper>STEEL</materialTemper>
+			<reachModifier>0.0</reachModifier>
+			<speedModifier>0.03</speedModifier>
+		</weapon_material>
+		<weapon_material>
+			<damageModifier>1.2</damageModifier>
 			<identifier>Strongwood</identifier>
-            <materialMeltdown>WOOD</materialMeltdown>
-            <materialTemper>WOOD</materialTemper>
-            <reachModifier>0.0</reachModifier>
-            <speedModifier>0.02</speedModifier>
-        </weapon_material>
+			<materialMeltdown>WOOD</materialMeltdown>
+			<materialTemper>WOOD</materialTemper>
+			<reachModifier>0.0</reachModifier>
+			<speedModifier>0.04</speedModifier>
+		</weapon_material>
 	<!-- Wood Material Listings end -->
 	</weapon_materials>
 
@@ -4132,6 +5243,10 @@
 			<identifier>Dagger</identifier>
 		</binding>
 		<binding>
+			<substring>dagger</substring>
+			<identifier>Dagger</identifier>
+		</binding>
+		<binding>
 			<substring>Hatchet</substring>
 			<identifier>Hatchet</identifier>
 		</binding>
@@ -4141,6 +5256,10 @@
 		</binding>
 		<binding>
 			<substring>Katana</substring>
+			<identifier>Katana</identifier>
+		</binding>
+		<binding>
+			<substring>katana</substring>
 			<identifier>Katana</identifier>
 		</binding>
 		<binding>
@@ -4160,6 +5279,10 @@
 			<identifier>Mace</identifier>
 		</binding>
 		<binding>
+			<substring>mace</substring>
+			<identifier>Mace</identifier>
+		</binding>
+		<binding>
 			<substring>Morning Star</substring>
 			<identifier>Morning Star</identifier>
 		</binding>
@@ -4172,6 +5295,14 @@
 			<identifier>Shortspear</identifier>
 		</binding>
 		<binding>
+			<substring>Spear</substring>
+			<identifier>Spear</identifier>
+		</binding>
+		<binding>
+			<substring>Lance</substring>
+			<identifier>Spear</identifier>
+		</binding>
+		<binding>
 			<substring>Saber</substring>
 			<identifier>Sabre</identifier>
 		</binding>
@@ -4181,6 +5312,10 @@
 		</binding>
 		<binding>
 			<substring>Scimitar</substring>
+			<identifier>Scimitar</identifier>
+		</binding>
+		<binding>
+			<substring>scimitar</substring>
 			<identifier>Scimitar</identifier>
 		</binding>
 		<binding>
@@ -4196,7 +5331,15 @@
 			<identifier>Tanto</identifier>
 		</binding>
 		<binding>
+			<substring>tanto</substring>
+			<identifier>Tanto</identifier>
+		</binding>
+		<binding>
 			<substring>Wakizashi</substring>
+			<identifier>Wakizashi</identifier>
+		</binding>
+		<binding>
+			<substring>wakizashi</substring>
 			<identifier>Wakizashi</identifier>
 		</binding>
 		<binding>
@@ -4208,8 +5351,12 @@
 			<identifier>Waraxe</identifier>
 		</binding>
 		<binding>
-			<substring>War Axe</substring>
+			<substring>waraxe</substring>
 			<identifier>Waraxe</identifier>
+		</binding>
+		<binding>
+			<substring>War Axe</substring>
+			<identifier>War Axe</identifier>
 		</binding>
 	<!-- Light Weapon bindings end -->
 
@@ -4227,11 +5374,19 @@
 			<identifier>Battleaxe</identifier>
 		</binding>
 		<binding>
+			<substring>battleaxe</substring>
+			<identifier>Battleaxe</identifier>
+		</binding>
+		<binding>
 			<substring>Battle Axe</substring>
 			<identifier>Battleaxe</identifier>
 		</binding>
 		<binding>
 			<substring>Greataxe</substring>
+			<identifier>Battleaxe</identifier>
+		</binding>
+		<binding>
+			<substring>Bardiche</substring>
 			<identifier>Battleaxe</identifier>
 		</binding>
 		<binding>
@@ -4275,10 +5430,6 @@
 			<identifier>Nodachi</identifier>
 		</binding>
 		<binding>
-			<substring>Spear</substring>
-			<identifier>Partisan</identifier>
-		</binding>
-		<binding>
 			<substring>Partisan</substring>
 			<identifier>Partisan</identifier>
 		</binding>
@@ -4294,11 +5445,19 @@
 			<substring>War Hammer</substring>
 			<identifier>Warhammer</identifier>
 		</binding>
+		<binding>
+			<substring>warhammer</substring>
+			<identifier>Warhammer</identifier>
+		</binding>
+		<binding>
+			<substring>Great Morning Star</substring>
+			<identifier>Great Morning Star</identifier>
+		</binding>
 	<!-- Heavy Weapon bindings end -->
 
 	<!-- Ranged Weapon bindings start -->
 		<binding>
-			<substring>Crossbow</substring> 
+			<substring>Crossbow</substring>
 			<identifier>Crossbow</identifier>
 		</binding>
 		<binding>
@@ -4330,6 +5489,10 @@
 
 	<!-- =====================================================Light Weapon bindings start =================================================== -->
 	<!-- Arming Sword bindings start -->
+		<binding>
+			<substring>Legion Sword</substring>
+			<identifier>Arming Sword</identifier>
+		</binding>
 		<binding>
 			<substring>Chillrend</substring>
 			<identifier>Arming Sword</identifier>
@@ -4371,7 +5534,7 @@
 			<identifier>Arming Sword</identifier>
 		</binding>
 		<binding>
-			<substring>Hollow Blade</substring> 
+			<substring>Hollow Blade</substring>
 			<identifier>Arming Sword</identifier>
 		</binding>
 		<binding>
@@ -4399,7 +5562,7 @@
 			<identifier>Arming Sword</identifier>
 		</binding>
 		<binding>
-			<substring> Zahkrii Do Dovahkiin</substring><!-- The leading space is intended do not remove it -->
+			<substring>Zahkrii Do Dovahkiin</substring> <!-- The leading space is intended do not remove it -->
 			<identifier>Arming Sword</identifier>
 		</binding>
 		<binding>
@@ -4412,10 +5575,6 @@
 		</binding>
 		<binding>
 			<substring>Red Eagle's Fury</substring>
-			<identifier>Arming Sword</identifier>
-		</binding>
-		<binding>
-			<substring>Soulrender</substring>
 			<identifier>Arming Sword</identifier>
 		</binding>
 		<binding>
@@ -4567,10 +5726,6 @@
 			<identifier>Arming Sword</identifier>
 		</binding>
 		<binding>
-			<substring>Hopesfire</substring>
-			<identifier>Arming Sword</identifier>
-		</binding>
-		<binding>
 			<substring>Bloodsbane</substring>
 			<identifier>Arming Sword</identifier>
 		</binding>
@@ -4626,11 +5781,111 @@
 			<substring>Dovahfaas</substring>
 			<identifier>Arming Sword</identifier>
 		</binding>
+		<binding>
+			<substring>Dovahkiin Mercenary Blade</substring>
+			<identifier>Arming Sword</identifier>
+		</binding>
+		<binding>
+			<substring>Warglaive</substring>
+			<identifier>Arming Sword</identifier>
+		</binding>
+		<binding>
+			<substring>Eltonbrand</substring>
+			<identifier>Arming Sword</identifier>
+		</binding>
+		<binding>
+			<substring>Farmer's cleaver</substring>
+			<identifier>Arming Sword</identifier>
+		</binding>
+		<binding>
+			<substring>Nobleman's sword</substring>
+			<identifier>Arming Sword</identifier>
+		</binding>
+		<binding>
+			<substring>Thornblade</substring>
+			<identifier>Arming Sword</identifier>
+		</binding>
+		<binding>
+			<substring>Windhelm sword</substring>
+			<identifier>Arming Sword</identifier>
+		</binding>
+		<binding>
+			<substring>Uznahgaar</substring>
+			<identifier>Arming Sword</identifier>
+		</binding>
+		<binding>
+			<substring>Mithrodin I</substring>
+			<identifier>Arming Sword</identifier>
+		</binding>
+		<binding>
+			<substring>The Baron</substring>
+			<identifier>Arming Sword</identifier>
+		</binding>
+		<binding>
+			<substring>The Cluny</substring>
+			<identifier>Arming Sword</identifier>
+		</binding>
+		<binding>
+			<substring>The Vassal</substring>
+			<identifier>Arming Sword</identifier>
+		</binding>
+		<binding>
+			<substring>The Sherwood</substring>
+			<identifier>Arming Sword</identifier>
+		</binding>
+		<binding>
+			<substring>Loner's Sword</substring>
+			<identifier>Arming Sword</identifier>
+		</binding>
+		<binding>
+			<substring>WinterStorm</substring>
+			<identifier>Arming Sword</identifier>
+		</binding>
+		<binding>
+			<substring>Breton Knight Sword</substring>
+			<identifier>Arming Sword</identifier>
+		</binding>
+		<binding>
+			<substring>Black Sting</substring>
+			<identifier>Arming Sword</identifier>
+		</binding>
+		<binding>
+			<substring>Daedric Crescent - Short</substring>
+			<identifier>Arming Sword</identifier>
+		</binding>
+		<binding>
+			<substring>Sword of the Divine Aegis</substring>
+			<identifier>Arming Sword</identifier>
+		</binding>
+		<binding>
+			<substring>Aspect of Strength</substring>
+			<identifier>Arming Sword</identifier>
+		</binding>
+		<binding>
+			<substring>Merblight</substring>
+			<identifier>Arming Sword</identifier>
+		</binding>
+		<binding>
+			<substring>Blessed Blade of Stendarr</substring>
+			<identifier>Arming Sword</identifier>
+		</binding>
 	<!-- Arming Sword bindings end -->
 
 	<!-- Broadsword bindings start -->
 		<binding>
 			<substring>Falchion</substring>
+			<identifier>Broadsword</identifier>
+		</binding>
+		<binding>
+			<substring>Genesis' Rapier</substring>
+			<identifier>Broadsword</identifier>
+		</binding>
+		<binding>
+			<substring>Baskethilt</substring>
+			<identifier>Broadsword</identifier>
+		</binding>
+		<binding>
+			<substring>Shiavonna</substring>
 			<identifier>Broadsword</identifier>
 		</binding>
 	<!-- Broadsword bindings end -->
@@ -4647,9 +5902,29 @@
 			<substring>Walking Stick</substring>
 			<identifier>Club</identifier>
 		</binding>
+		<binding>
+			<substring>Wooden Stick</substring>
+			<identifier>Club</identifier>
+		</binding>
 	<!-- Club bindings end -->
 	
 	<!-- Dagger bindings start -->
+		<binding>
+			<substring>Scout Dagger</substring>
+			<identifier>Dagger</identifier>
+		</binding>
+		<binding>
+			<substring>Scout Reversed Dagger</substring>
+			<identifier>Dagger</identifier>
+		</binding>
+		<binding>
+			<substring>Ice's Stalhrim Spoon of Assassination</substring>
+			<identifier>Dagger</identifier>
+		</binding>
+		<binding>
+			<substring>Sai</substring>
+			<identifier>Dagger</identifier>
+		</binding>
 		<binding>
 			<substring>Hunting Knife</substring>
 			<identifier>Hunting Knife</identifier>
@@ -4827,7 +6102,7 @@
 			<identifier>Dagger</identifier>
 		</binding>
 		<binding>
-			<substring>Black Sting</substring>
+			<substring>Black Sting Dagger</substring>
 			<identifier>Dagger</identifier>
 		</binding>
 		<binding>
@@ -4862,6 +6137,42 @@
 			<substring>Dwemer Repair Tool</substring>
 			<identifier>Dagger</identifier>
 		</binding>
+		<binding>
+			<substring>Dovahkiin Mercenary Dagger</substring>
+			<identifier>Dagger</identifier>
+		</binding>
+		<binding>
+			<substring>Fang of Haynektnamet</substring>
+			<identifier>Dagger</identifier>
+		</binding>
+		<binding>
+			<substring>Nibenay kama</substring>
+			<identifier>Dagger</identifier>
+		</binding>
+		<binding>
+			<substring>Morgul Blade</substring>
+			<identifier>Dagger</identifier>
+		</binding>
+		<binding>
+			<substring>Elven Short Blade</substring>
+			<identifier>Dagger</identifier>
+		</binding>
+		<binding>
+			<substring>HoarFrost</substring>
+			<identifier>Dagger</identifier>
+		</binding>
+		<binding>
+			<substring>Shards of Narsil</substring>
+			<identifier>Dagger</identifier>
+		</binding>
+		<binding>
+			<substring>The Crab Slayer</substring>
+			<identifier>Dagger</identifier>
+		</binding>
+		<binding>
+			<substring>Winterwound</substring>
+			<identifier>Dagger</identifier>
+		</binding>
 	<!-- Dagger bindings end -->
 
 	<!-- Hatchet bindings start -->
@@ -4875,6 +6186,14 @@
 	<!-- Katar bindings end -->
 
 	<!-- Katana bindings start -->
+		<binding>
+			<substring>Akaviri Frostblade of the guardian</substring>
+			<identifier>Katana</identifier>
+		</binding>
+		<binding>
+			<substring>Akaviri Shockblade of the guardian</substring>
+			<identifier>Katana</identifier>
+		</binding>
 		<binding>
 			<substring>Akavirii Sword</substring>
 			<identifier>Katana</identifier>
@@ -4943,12 +6262,40 @@
 			<substring>Cloud Courtblade</substring>
 			<identifier>Katana</identifier>
 		</binding>
+		<binding>
+			<substring>Zatoichi</substring>
+			<identifier>Katana</identifier>
+		</binding>
+		<binding>
+			<substring>Dragon's Strength</substring>
+			<identifier>Katana</identifier>
+		</binding>
+		<binding>
+			<substring>Dragon's Grace</substring>
+			<identifier>Katana</identifier>
+		</binding>
+		<binding>
+			<substring>Ancient Akaviri Dha</substring>
+			<identifier>Katana</identifier>
+		</binding>
 	<!-- Katana bindings end -->
 
 	<!-- Knuckles bindings start -->
 	<!-- Knuckles bindings end -->
 
 	<!-- Longsword bindings start -->
+		<binding>
+			<substring>Scout Sword</substring>
+			<identifier>Longsword</identifier>
+		</binding>
+		<binding>
+			<substring>Duskfang</substring>
+			<identifier>Longsword</identifier>
+		</binding>
+		<binding>
+			<substring>Dawnfang</substring>
+			<identifier>Longsword</identifier>
+		</binding>
 		<binding>
 			<substring>Dawnbreaker</substring>
 			<identifier>Longsword</identifier>
@@ -5034,10 +6381,6 @@
 			<identifier>Longsword</identifier>
 		</binding>
 		<binding>
-			<substring>Luna II</substring>
-			<identifier>Longsword</identifier>
-		</binding>
-		<binding>
 			<substring>Sol</substring>
 			<identifier>Longsword</identifier>
 		</binding>
@@ -5059,7 +6402,7 @@
 		</binding>
 		<binding>
 			<substring>Spider Sword</substring>
-			<identifier>Longsword</identifier> 
+			<identifier>Longsword</identifier>
 		</binding>
 		<binding>
 			<substring>Shadowsting</substring>
@@ -5097,6 +6440,42 @@
 			<substring>Aemer's Mahakaman Sword</substring>
 			<identifier>Longsword</identifier>
 		</binding>
+		<binding>
+			<substring>Dovahkiin Mercenary Sword</substring>
+			<identifier>Longsword</identifier>
+		</binding>
+		<binding>
+			<substring>Ravenbrand Sword</substring>
+			<identifier>Longsword</identifier>
+		</binding>
+		<binding>
+			<substring>Glamdring</substring>
+			<identifier>Longsword</identifier>
+		</binding>
+		<binding>
+			<substring>The Azincourt (1H)</substring>
+			<identifier>Longsword</identifier>
+		</binding>
+		<binding>
+			<substring>Honorblade of Whiterun</substring>
+			<identifier>Longsword</identifier>
+		</binding>
+		<binding>
+			<substring>Shardslayer</substring>
+			<identifier>Longsword</identifier>
+		</binding>
+		<binding>
+			<substring>Mars</substring>
+			<identifier>Longsword</identifier>
+		</binding>
+		<binding>
+			<substring>Venus</substring>
+			<identifier>Longsword</identifier>
+		</binding>
+		<binding>
+			<substring>Vengence</substring>
+			<identifier>Longsword</identifier>
+		</binding>
 	<!-- Longsword bindings end -->
 
 	<!-- Mace bindings start -->
@@ -5114,59 +6493,87 @@
 		</binding>
 		<binding>
 			<substring>Horksbane</substring>
-			<identifier>Mace</identifier> 
+			<identifier>Mace</identifier>
 		</binding>
 		<binding>
-			<substring>Rod</substring> 
+			<substring>Rod</substring>
 			<identifier>Spiked Mace</identifier>
 		</binding>
 		<binding>
 			<substring>War Pick</substring>
-			<identifier>Spiked Mace</identifier> 
+			<identifier>Spiked Mace</identifier>
 		</binding>
 		<binding>
 			<substring>Warpick</substring>
-			<identifier>Mace</identifier> 
+			<identifier>Mace</identifier>
 		</binding>
 		<binding>
 			<substring>Icebreaker</substring>
-			<identifier>Mace</identifier> 
+			<identifier>Mace</identifier>
 		</binding>
 		<binding>
 			<substring>Marshborn Blight</substring>
-			<identifier>Mace</identifier> 
+			<identifier>Mace</identifier>
 		</binding>
 		<binding>
 			<substring>Light of Day</substring>
-			<identifier>Mace</identifier> 
+			<identifier>Mace</identifier>
 		</binding>
 		<binding>
 			<substring>Ironhart's Might</substring>
-			<identifier>Mace</identifier> 
+			<identifier>Mace</identifier>
 		</binding>
 		<binding>
 			<substring>The Giving Star</substring>
-			<identifier>Mace</identifier> 
+			<identifier>Mace</identifier>
 		</binding>
 		<binding>
 			<substring>Bells of Sotha Ehn</substring>
-			<identifier>Mace</identifier> 
+			<identifier>Mace</identifier>
 		</binding>
 		<binding>
 			<substring>Dwemeri Cutting Sphere</substring>
-			<identifier>Mace</identifier> 
+			<identifier>Mace</identifier>
 		</binding>
 		<binding>
 			<substring>Scourge</substring>
-			<identifier>Mace</identifier> 
+			<identifier>Mace</identifier>
 		</binding>
 		<binding>
 			<substring>Sunder</substring>
-			<identifier>Mace</identifier> 
+			<identifier>Mace</identifier>
 		</binding>
 		<binding>
 			<identifier>Mace</identifier>
 			<substring>Truncheon of Submission</substring>
+		</binding>
+		<binding>
+			<identifier>Mace</identifier>
+			<substring>Menog</substring>
+		</binding>
+		<binding>
+			<substring>Mace of Molag Bal</substring>
+			<identifier>Spiked Mace</identifier>
+		</binding>
+		<binding>
+			<substring>Lilith's Obliterator (mace1h</substring>
+			<identifier>Longmace</identifier>
+		</binding>
+		<binding>
+			<substring>Lilith's Ancient Obliterator (mace1h</substring>
+			<identifier>Longmace</identifier>
+		</binding>
+		<binding>
+			<identifier>Mace</identifier>
+			<substring>Scepter</substring>
+		</binding>
+		<binding>
+			<identifier>Mace</identifier>
+			<substring>Hatred's Heart</substring>
+		</binding>
+		<binding>
+			<identifier>Mace</identifier>
+			<substring>Rockshatter</substring>
 		</binding>
 	<!-- Mace bindings end -->
 
@@ -5175,9 +6582,13 @@
 			<substring>Hammer</substring>
 			<identifier>Maul</identifier>
 		</binding>
+		<binding>
+			<substring>hammer</substring>
+			<identifier>Maul</identifier>
+		</binding>
 	<!-- Maul bindings end -->
 	
-	<!-- Morning Star -->
+	<!-- Morning Star bindings start -->
 		<binding>
 			<substring>Morning star</substring>
 			<identifier>Morning Star</identifier>
@@ -5188,26 +6599,46 @@
 		</binding>
 		<binding>
 			<substring>Emfy Mace</substring>
-			<identifier>Morning Star</identifier> 
+			<identifier>Morning Star</identifier>
 		</binding>
-	<!-- Morning Star -->
+		<binding>
+			<substring>Lilith's Evening Star (1h)</substring>
+			<identifier>Morning Star</identifier>
+		</binding>
+		<binding>
+			<substring>Lilith's Ancient Evening Star (1h)</substring>
+			<identifier>Morning Star</identifier>
+		</binding>
+	<!-- Morning Star bindings end -->
 
-	<!-- Saber bindings start -->
+	<!-- Sabre bindings start -->
 		<binding>
 			<substring>Hadhafang</substring>
 			<identifier>Sabre</identifier>
 		</binding>
-	<!-- Saber bindings end -->
-
-	<!-- Scimitar bindings start -->
-		<binding>
-			<substring>Baskethilt</substring>
-			<identifier>Scimitar</identifier>
-		</binding>
 		<binding>
 			<substring>Cutlass</substring>
-			<identifier>Scimitar</identifier>
+			<identifier>Sabre</identifier>
 		</binding>
+		<binding>
+			<substring>Corsair's Sword</substring>
+			<identifier>Sabre</identifier>
+		</binding>
+		<binding>
+			<substring>Hopesfire</substring>
+			<identifier>Sabre</identifier>
+		</binding>
+		<binding>
+			<substring>Argonian Kindjal</substring>
+			<identifier>Sabre</identifier>
+		</binding>
+		<binding>
+			<substring>Khajiit Yatagan</substring>
+			<identifier>Sabre</identifier>
+		</binding>
+	<!-- Sabre bindings end -->
+
+	<!-- Scimitar bindings start -->
 		<binding>
 			<substring>Dremora Badelaire</substring>
 			<identifier>Scimitar</identifier>
@@ -5233,6 +6664,10 @@
 			<identifier>Scimitar</identifier>
 		</binding>
 		<binding>
+			<substring>Soulrender</substring>
+			<identifier>Scimitar</identifier>
+		</binding>
+		<binding>
 			<substring>The Lion Sword</substring>
 			<identifier>Scimitar</identifier>
 		</binding>
@@ -5242,10 +6677,6 @@
 		</binding>
 		<binding>
 			<substring>Rustam</substring>
-			<identifier>Scimitar</identifier>
-		</binding>
-		<binding>
-			<substring>Shiavonna</substring>
 			<identifier>Scimitar</identifier>
 		</binding>
 		<binding>
@@ -5284,8 +6715,19 @@
 			<substring>Rysh</substring>
 			<identifier>Scimitar</identifier>
 		</binding>
+		<binding>
+			<substring>Trueflame</substring>
+			<identifier>Scimitar</identifier>
+		</binding>
 	<!-- Scimitar bindings end -->
-
+	
+	<!-- Shiv bindings start -->
+		<binding>
+			<substring>The Withdrawal</substring>
+			<identifier>Shiv</identifier>
+		</binding>
+	<!-- Shiv bindings end -->
+	
 	<!-- Shortspear bindings start -->
 		<binding>
 			<substring>Pokeblade</substring>
@@ -5302,6 +6744,14 @@
 	<!-- Shortspear bindings end -->
 
 	<!-- Shortsword bindings start -->
+		<binding>
+			<substring>Hagram's Light</substring>
+			<identifier>Shortsword</identifier>
+		</binding>
+		<binding>
+			<substring>Debaser</substring>
+			<identifier>Shortsword</identifier>
+		</binding>
 		<binding>
 			<substring>Nordic Blade</substring>
 			<identifier>Shortsword</identifier>
@@ -5386,6 +6836,22 @@
 			<substring>Trident Blade</substring>
 			<identifier>Shortsword</identifier>
 		</binding>
+		<binding>
+			<substring>Rapier</substring>
+			<identifier>Shortsword</identifier>
+		</binding>
+		<binding>
+			<substring>rapier</substring>
+			<identifier>Shortsword</identifier>
+		</binding>
+		<binding>
+			<substring>Short Terra</substring>
+			<identifier>Shortsword</identifier>
+		</binding>
+		<binding>
+			<substring>Short Black Terra</substring>
+			<identifier>Shortsword</identifier>
+		</binding>
 	<!-- Shortsword bindings end -->
 
 	<!-- Tanto bindings start -->
@@ -5399,6 +6865,30 @@
 		</binding>
 		<binding>
 			<substring>Akaviri Short Saber</substring>
+			<identifier>Tanto</identifier>
+		</binding>
+		<binding>
+			<substring>Short Steel Zatoichi</substring>
+			<identifier>Tanto</identifier>
+		</binding>
+		<binding>
+			<substring>Short Iron Zatoichi</substring>
+			<identifier>Tanto</identifier>
+		</binding>
+		<binding>
+			<substring>Short Ebony  Zatoichi</substring>
+			<identifier>Tanto</identifier>
+		</binding>
+		<binding>
+			<substring>Short Dwarven  Zatoichi</substring>
+			<identifier>Tanto</identifier>
+		</binding>
+		<binding>
+			<substring>Short Orcish Zatoichi</substring>
+			<identifier>Tanto</identifier>
+		</binding>
+		<binding>
+			<substring>Short Elven Zatoichi</substring>
 			<identifier>Tanto</identifier>
 		</binding>
 	<!-- Tanto bindings end -->
@@ -5471,33 +6961,53 @@
 			<substring>Superb Dread Axe</substring>
 			<identifier>Waraxe</identifier>
 		</binding>
+		<binding>
+			<substring>Sickle</substring>
+			<identifier>Waraxe</identifier>
+		</binding>
+		<binding>
+			<substring>Dovahkiin Mercenary Axe</substring>
+			<identifier>Waraxe</identifier>
+		</binding>
+		<binding>
+			<substring>Natat</substring>
+			<identifier>Waraxe</identifier>
+		</binding>
+		<binding>
+			<substring>Lilith's Obliterator (1h</substring>
+			<identifier>Waraxe</identifier>
+		</binding>
+		<binding>
+			<substring>Lilith's Ancient Obliterator (1h</substring>
+			<identifier>Waraxe</identifier>
+		</binding>
 	<!-- Waraxe bindings end -->
 	<!-- =====================================================Light Weapon bindings end =================================================== -->
 
 	<!-- =====================================================Heavy Weapon bindings start ================================================= -->
-	<!-- Bastardsword bindings start -->
+	<!-- Bastard Sword bindings start -->
 		<binding>
 			<substring>Basic Greatsword</substring>
-			<identifier>Bastardsword</identifier>
+			<identifier>Bastard Sword</identifier>
 		</binding>
 		<binding>
 			<substring>Narsil - 2H</substring>
-			<identifier>Bastardsword</identifier>
+			<identifier>Bastard Sword</identifier>
 		</binding>
 		<binding>
 			<substring>Anduril - 2H</substring>
-			<identifier>Bastardsword</identifier>
+			<identifier>Bastard Sword</identifier>
 		</binding>
 		<binding>
 			<substring>Claidhem</substring>
-			<identifier>Bastardsword</identifier>
+			<identifier>Bastard Sword</identifier>
 		</binding>
 		<binding>
 			<substring>Argonian Battleblade</substring>
 			<identifier>Bastard Sword</identifier>
 		</binding>
 		<binding>
-			<substring>Dragonbrand</substring> 
+			<substring>Dragonbrand</substring>
 			<identifier>Bastard Sword</identifier>
 		</binding>
 		<binding>
@@ -5528,11 +7038,39 @@
 			<substring>Jyggalag</substring>
 			<identifier>Bastard Sword</identifier>
 		</binding>
+		<binding>
+			<substring>Ancient Atmoran blade</substring>
+			<identifier>Bastard Sword</identifier>
+		</binding>
+		<binding>
+			<substring>Redguard slasher</substring>
+			<identifier>Bastard Sword</identifier>
+		</binding>
+		<binding>
+			<substring>Replica Heirloom Sword</substring>
+			<identifier>Bastard Sword</identifier>
+		</binding>
+		<binding>
+			<substring>Azuras Bane</substring>
+			<identifier>Bastard Sword</identifier>
+		</binding>
+		<binding>
+			<substring>Luna II</substring>
+			<identifier>Bastard Sword</identifier>
+		</binding>
+		<binding>
+			<substring>Luna 2h</substring>
+			<identifier>Bastard Sword</identifier>
+		</binding>
 	<!-- Bastard Sword bindings end -->
 	
 	<!-- Battleaxe bindings start -->
 		<binding>
 			<substring>Shovel</substring>
+			<identifier>Battleaxe</identifier>
+		</binding>
+		<binding>
+			<substring>Ysgramor Battle Axe</substring>
 			<identifier>Battleaxe</identifier>
 		</binding>
 		<binding>
@@ -5552,14 +7090,6 @@
 			<identifier>Battleaxe</identifier>
 		</binding>
 		<binding>
-			<substring>Wabba Jaxe</substring>
-			<identifier>Battleaxe</identifier>
-		</binding>
-		<binding>
-			<substring>Warchief's Might</substring>
-			<identifier>Battleaxe</identifier>
-		</binding>
-		<binding>
 			<substring>Scythe</substring>
 			<identifier>Battleaxe</identifier>
 		</binding>
@@ -5569,7 +7099,7 @@
 		</binding>
 		<binding>
 			<substring>Balestarius</substring>
-			<identifier>Battleaxe</identifier> 
+			<identifier>Battleaxe</identifier>
 		</binding>
 		<binding>
 			<substring>Hoth's Bonestaff</substring>
@@ -5647,6 +7177,34 @@
 			<substring>The Khajiit's Staff</substring>
 			<identifier>Battleaxe</identifier>
 		</binding>
+		<binding>
+			<substring>Scythe</substring>
+			<identifier>Battleaxe</identifier>
+		</binding>
+		<binding>
+			<substring>Natat 2H</substring>
+			<identifier>Battleaxe</identifier>
+		</binding>
+		<binding>
+			<substring>Hrothmund</substring>
+			<identifier>Battleaxe</identifier>
+		</binding>
+		<binding>
+			<substring>Battlexe</substring>
+			<identifier>Battleaxe</identifier>
+		</binding>
+		<binding>
+			<substring>Cloudcleaver</substring>
+			<identifier>Battleaxe</identifier>
+		</binding>
+		<binding>
+			<substring>Lilith's Obliterator</substring>
+			<identifier>Battleaxe</identifier>
+		</binding>
+		<binding>
+			<substring>Lilith's Ancient Obliterator</substring>
+			<identifier>Battleaxe</identifier>
+		</binding>
 	<!-- Battleaxe bindings end -->
 	
 	<!-- Battlestaff bindings start -->
@@ -5686,6 +7244,22 @@
 	
 	<!-- Greatsword bindings start -->
 		<binding>
+			<substring>Honorblade of Chorrol</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Kilvur</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Shadowrend</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Dawnbreaker Greatsword</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
 			<substring>BiPolar Blade</substring>
 			<identifier>Greatsword</identifier>
 		</binding>
@@ -5698,6 +7272,10 @@
 			<identifier>Greatsword</identifier>
 		</binding>
 		<binding>
+			<substring>claymore</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
 			<substring>Malacath's Cleaver</substring>
 			<identifier>Greatsword</identifier>
 		</binding>
@@ -5707,6 +7285,10 @@
 		</binding>
 		<binding>
 			<substring>Ice Blade of the Monarch</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Ice blade of the Monarch</substring>
 			<identifier>Greatsword</identifier>
 		</binding>
 		<binding>
@@ -5743,6 +7325,18 @@
 		</binding>
 		<binding>
 			<substring>Great Terra</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<bindin>
+			<substring>Great Black Terra</substring>
+			<identifier>Greatsword</identifier>
+		</bindin>
+		<binding>
+			<substring>Great Dragonborn Terra</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Great Black Dragonborn Terra</substring>
 			<identifier>Greatsword</identifier>
 		</binding>
 		<binding>
@@ -5798,20 +7392,28 @@
 			<identifier>Greatsword</identifier>
 		</binding>
 		<binding>
-			<substring>Rune Blade</substring> 
+			<substring>Rune Blade</substring>
 			<identifier>Greatsword</identifier>
 		</binding>
 		<binding>
 			<substring>Great Blade</substring>
-			<identifier>Greatsword</identifier> 
+			<identifier>Greatsword</identifier>
 		</binding>
 		<binding>
-			<substring>Great Crescent</substring> 
-			<identifier>Greatsword</identifier> 
+			<substring>Riders Great Blade</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Great Riders Blade</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Great Crescent</substring>
+			<identifier>Greatsword</identifier>
 		</binding>
 		<binding>
 			<substring>Greyblade</substring>
-			<identifier>Greatsword</identifier> 
+			<identifier>Greatsword</identifier>
 		</binding>
 		<binding>
 			<substring>Ebony Longblade</substring>
@@ -5870,7 +7472,11 @@
 			<identifier>Greatsword</identifier>
 		</binding>
 		<binding>
-			<substring>Daedric Crescent</substring>
+			<substring>Deadric Crescent</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Great Daedric Crescent</substring>
 			<identifier>Greatsword</identifier>
 		</binding>
 		<binding>
@@ -5909,9 +7515,217 @@
 			<substring>Dovahmaar</substring>
 			<identifier>Greatsword</identifier>
 		</binding>
+		<binding>
+			<substring>Silver Chill Greatsword</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Ravenbrand Greatsword</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Haoma 2H</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Rustam 2H</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Gravedigger</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Mournbringer</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Blade of the Rourken</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Mithrodin II</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>The Baron</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>The Great Baron</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Great Cluny</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Great Sherwood</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>The Chieftain</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Blade of the Wicked</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Loner's Greatsword</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>G. Sword</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Black Sting Greatsword</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Atulg's Edge</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>The Giant Slayer</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Great Mars</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Great Venus</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>An - Xileel Cleaver</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>The Ashbringer</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>The Corrupted Ashbringer</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Twilight</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Acuity Blade</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Arcadian Blade</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Bombard Blade</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Cauterus Blade</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Conqueror Blade</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Elenium Blade</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Expedition Blade</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Graceshed Blade</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Krysteel Blade</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Legate Blade</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Linsteel Blade</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Norsteel Blade</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Ostgarath Blade</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Palrada Blade</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Phonic Blade</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Reprisal Blade</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Restless Blade</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Shadsteel Blade</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Sunder Blade</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Umbra Blade</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Unraveler Blade</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Vaunting Blade</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Webrend Blade</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Westonia Blade</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
+		<binding>
+			<substring>Xersteel Blade</substring>
+			<identifier>Greatsword</identifier>
+		</binding>
 	<!-- Greatsword bindings end -->
 	
 	<!-- Halberd bindings start -->
+		<binding>
+			<substring>Lilith's Obliterator (halbert)</substring>
+			<identifier>Halberd</identifier>
+		</binding>
+		<binding>
+			<substring>Lilith's Ancient Obliterator (halbert)</substring>
+			<identifier>Halberd</identifier>
+		</binding>
 	<!-- Halberd bindings end -->
 	
 	<!-- Longmace bindings start -->
@@ -5921,6 +7735,22 @@
 		</binding>
 		<binding>
 			<substring>Great Club</substring>
+			<identifier>Longmace</identifier>
+		</binding>
+		<binding>
+			<substring>Warmace</substring>
+			<identifier>Longmace</identifier>
+		</binding>
+		<binding>
+			<substring>Black Ice</substring>
+			<identifier>Longmace</identifier>
+		</binding>
+		<binding>
+			<substring>Lilith's Obliterator (mace</substring>
+			<identifier>Longmace</identifier>
+		</binding>
+		<binding>
+			<substring>Lilith's Ancient Obliterator (mace</substring>
 			<identifier>Longmace</identifier>
 		</binding>
 	<!-- Longmace bindings end -->
@@ -5939,15 +7769,15 @@
 			<identifier>Nodachi</identifier>
 		</binding>
 		<binding>
-			<substring>Ebony Blade</substring>
-			<identifier>Nodachi</identifier>
-		</binding>
-		<binding>
 			<substring>Akaviri Greatsword</substring>
 			<identifier>Nodachi</identifier>
 		</binding>
 		<binding>
 			<substring>Daito</substring>
+			<identifier>Nodachi</identifier>
+		</binding>
+		<binding>
+			<substring>daito</substring>
 			<identifier>Nodachi</identifier>
 		</binding>
 		<binding>
@@ -5962,7 +7792,19 @@
 	
 	<!-- Partisan bindings start -->
 		<binding>
+			<substring>The Spear of Bitter Mercy</substring>
+			<identifier>Partisan</identifier>
+		</binding>
+		<binding>
+			<substring>Spear of the Snow Prince</substring>
+			<identifier>Partisan</identifier>
+		</binding>
+		<binding>
 			<substring>Hunter's spear</substring>
+			<identifier>Partisan</identifier>
+		</binding>
+		<binding>
+			<substring>Hunter's Spear</substring>
 			<identifier>Partisan</identifier>
 		</binding>
 		<binding>
@@ -5989,12 +7831,36 @@
 			<identifier>Trident</identifier>
 			<substring>Partisan</substring>
 		</binding>
+		<binding>
+			<identifier>Spear Of Thorns</identifier>
+			<substring>Partisan</substring>
+		</binding>
+		<binding>
+			<identifier>Gondorian Spear</identifier>
+			<substring>Partisan</substring>
+		</binding>
+		<binding>
+			<identifier>Spear of the Tower Guard</identifier>
+			<substring>Partisan</substring>
+		</binding>
 	<!-- Partisan bindings end -->
 	
 	<!-- Volendrung bindings start -->
 	<!-- Volendrung bindings end -->
 	
 	<!-- Warhammer bindings start -->
+		<binding>
+			<substring>Ongar's Hammer</substring>
+			<identifier>Warhammer</identifier>
+		</binding>
+		<binding>
+			<substring>Ongar's Kegbreaker</substring>
+			<identifier>Warhammer</identifier>
+		</binding>
+		<binding>
+			<substring>Nerveshatter</substring>
+			<identifier>Warhammer</identifier>
+		</binding>
 		<binding>
 			<substring>Aegisbane</substring>
 			<identifier>Warhammer</identifier>
@@ -6111,31 +7977,49 @@
 			<substring>Hevno Al</substring>
 			<identifier>Warhammer</identifier>
 		</binding>
+		<binding>
+			<substring>Scamp's Hammer</substring>
+			<identifier>Warhammer</identifier>
+		</binding>
+		<binding>
+			<substring>Heavy spiked mace</substring>
+			<identifier>Warhammer</identifier>
+		</binding>
+		<binding>
+			<substring>Staff of Automaton Mastery</substring>
+			<identifier>Warhammer</identifier>
+		</binding>
+		<binding>
+			<substring>Dorana's Hammer</substring>
+			<identifier>Warhammer</identifier>
+		</binding>
+		<binding>
+			<substring>Sulfuras</substring>
+			<identifier>Warhammer</identifier>
+		</binding>
+		<binding>
+			<substring>Greatscepter</substring>
+			<identifier>Warhammer</identifier>
+		</binding>
 	<!-- Warhammer bindings end -->
+	<!-- Great Morning Star bindings start -->
+		<binding>
+			<substring>War Morning Star</substring>
+			<identifier>Great Morning Star</identifier>
+		</binding>
+		<binding>
+			<substring>Lilith's Evening Star (2h)</substring>
+			<identifier>Great Morning Star</identifier>
+		</binding>
+		<binding>
+			<substring>Lilith's Ancient Evening Star (2h)</substring>
+			<identifier>Great Morning Star</identifier>
+		</binding>
+	<!-- Great Morning Star bindings end -->
 	<!-- =====================================================Heavy Weapon bindings end ===================================================== -->
 
 	<!-- =====================================================Ranged Weapon bindings start ================================================== -->
 	<!-- Crossbow bindings start -->
-		<binding>
-			<substring>dwarven rifle</substring>
-			<identifier>Crossbow</identifier>
-		</binding>
-		<binding>
-			<substring>dwarven rifleA</substring>
-			<identifier>Crossbow</identifier>
-		</binding>
-		<binding>
-			<substring>dwarven rifleB</substring>
-			<identifier>Crossbow</identifier>
-		</binding>
-		<binding>
-			<substring>dwarven rifleS</substring>
-			<identifier>Crossbow</identifier>
-		</binding>
-		<binding>
-			<substring>dwarven rifleM</substring>
-			<identifier>Crossbow</identifier>
-		</binding>
 		<binding>
 			<substring>Dwemer Cheiroballistra</substring>
 			<identifier>Crossbow</identifier>
@@ -6145,24 +8029,56 @@
 			<identifier>Crossbow</identifier>
 		</binding>
 		<binding>
-			<substring>Dwemer Shotgun</substring>
-			<identifier>Crossbow</identifier>
-		</binding>
-		<binding>
-			<substring>Harquebus</substring>
-			<identifier>Crossbow</identifier>
-		</binding>
-		<binding>
-			<substring>Arquebus</substring>
-			<identifier>Crossbow</identifier>
-		</binding>
-		<binding>
 			<substring>Dwemer Automatic Projectile Launcher</substring>
+			<identifier>Crossbow</identifier>
+		</binding>
+		<binding>
+			<substring>Aetherial Bolt Launcher</substring>
 			<identifier>Crossbow</identifier>
 		</binding>
 	<!-- Crossbow bindings end -->
 	
 	<!-- Longbow bindings start -->
+		<binding>
+			<substring>Scout Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Bow of Paralysis</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Emerald Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Forged Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>White Falmer Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Dark Falmer Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>MageLight Daedric Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Elven Dragonbone Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Dark Dragonbone Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Bloodcursed Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
 		<binding>
 			<substring>War Bow</substring>
 			<identifier>Longbow</identifier>
@@ -6216,6 +8132,10 @@
 			<identifier>Longbow</identifier>
 		</binding>
 		<binding>
+			<substring>Artisan's Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
 			<substring>Firiniel's End</substring>
 			<identifier>Longbow</identifier>
 		</binding>
@@ -6264,12 +8184,116 @@
 			<identifier>Longbow</identifier>
 		</binding>
 		<binding>
-			<substring>Zephyr</substring>
+			<substring>Vindskjær Bow</substring> <!-- æ is not supported by UTF-8 encoding will need OEM 861 or OEM 865 -->
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Vindskjaer Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Penobscot War Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Bow Zingler</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Carbon Fiber Compound Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Dragon Skin Compound Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Metal Compound Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Predator Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Simple Compound Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Ebony Compound Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Elder Compound Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Wood Compound Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Recurve Elven Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Dwemer Recurve Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Ancient Falmer Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Snowfall</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Bow of the Forgotten Chaos</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>VanNord Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Mystic Elven Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>The Giant's Downfall</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Blood Bow</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Ornate Deathgiver</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Reaper</substring>
+			<identifier>Longbow</identifier>
+		</binding>
+		<binding>
+			<substring>Hatred's Soul</substring>
 			<identifier>Longbow</identifier>
 		</binding>
 	<!-- Longbow bindings end -->
 	
 	<!-- Shortbow bindings start -->
+		<binding>
+			<substring>Argonian Bow</substring>
+			<identifier>Shortbow</identifier>
+		</binding>
+		<binding>
+			<substring>WhiteWood Bow</substring>
+			<identifier>Shortbow</identifier>
+		</binding>
+		<binding>
+			<substring>Zephyr</substring>
+			<identifier>Shortbow</identifier>
+		</binding>
 		<binding>
 			<substring>Svartbough</substring>
 			<identifier>Shortbow</identifier>
@@ -6283,7 +8307,11 @@
 			<identifier>Shortbow</identifier>
 		</binding>
 		<binding>
-			<substring>Dwemer Tool 457</substring>
+			<substring>Dwemer Tool No.457</substring>
+			<identifier>Shortbow</identifier>
+		</binding>
+		<binding>
+			<substring>Gunnar Bow</substring>
 			<identifier>Shortbow</identifier>
 		</binding>
 		<binding>
@@ -6306,8 +8334,59 @@
 			<substring>Noroknos</substring>
 			<identifier>Shortbow</identifier>
 		</binding>
+		<binding>
+			<substring>Dovahkiin Mercenary Bow</substring>
+			<identifier>Shortbow</identifier>
+		</binding>
+		<binding>
+			<substring>Bow of The DarkOne</substring>
+			<identifier>Shortbow</identifier>
+		</binding>
+		<binding>
+			<substring>Throw Javelins</substring>
+			<identifier>Javelin</identifier>
+		</binding>
+		<binding>
+			<substring>Gondorian Bow</substring>
+			<identifier>Shortbow</identifier>
+		</binding>
 	<!-- Shortbow bindings end -->
-	<!-- ======================================== Ranged Weapon bindings end  ========================================= -->
+	
+	<!-- Gun bindings start -->
+		<binding>
+			<substring>dwarven rifle</substring>
+			<identifier>Rifle</identifier>
+		</binding>
+		<binding>
+			<substring>dwarven rifleA</substring>
+			<identifier>Rifle</identifier>
+		</binding>
+		<binding>
+			<substring>dwarven rifleB</substring>
+			<identifier>Rifle</identifier>
+		</binding>
+		<binding>
+			<substring>dwarven rifleS</substring>
+			<identifier>Rifle</identifier>
+		</binding>
+		<binding>
+			<substring>dwarven rifleM</substring>
+			<identifier>Rifle</identifier>
+		</binding>
+		<binding>
+			<substring>Dwemer Shotgun</substring>
+			<identifier>Rifle</identifier>
+		</binding>
+		<binding>
+			<substring>Harquebus</substring>
+			<identifier>Rifle</identifier>
+		</binding>
+		<binding>
+			<substring>Arquebus</substring>
+			<identifier>Rifle</identifier>
+		</binding>
+	<!-- Gun bindings end -->
+	<!-- ======================================== Ranged Weapon bindings end  ======================================= -->
 	<!-- Giant weapon bindings -->
 		<binding>
 			<identifier>Death</identifier>
@@ -6337,6 +8416,26 @@
 			<identifier>Death</identifier>
 			<substring>Giant Skull Club</substring>
 		</binding>
+		<binding>
+			<identifier>Death</identifier>
+			<substring>Giant Old Dwemer Axe</substring>
+		</binding>
+		<binding>
+			<identifier>Death</identifier>
+			<substring>Giant Steel Club</substring>
+		</binding>
+		<binding>
+			<identifier>Death</identifier>
+			<substring>Giant Iron Club</substring>
+		</binding>
+		<binding>
+			<identifier>Death</identifier>
+			<substring>Giant Double Axe</substring>
+		</binding>
+		<binding>
+			<identifier>Death</identifier>
+			<substring>Giant Double Skull</substring>
+		</binding>
 	<!-- Giant weapon bindings -->
 	</weapon_type_bindings>
 
@@ -6345,10 +8444,10 @@
 		<weapon_type>
 			<identifier>Pickaxe</identifier>
 			<baseWeaponType>WARAXE</baseWeaponType>
-			<damageBase>5.1</damageBase>
+			<damageBase>5.0</damageBase>
 			<reachBase>0.95</reachBase>
 			<speedBase>0.95</speedBase>
-			<critDamageFactor>0</critDamageFactor>
+			<critDamageFactor>0.1</critDamageFactor>
 			<meltdownOutput>1</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
 			<bleedTier>ONE</bleedTier>
@@ -6359,10 +8458,10 @@
 		<weapon_type>
 			<identifier>Hatchet</identifier>
 			<baseWeaponType>HATCHET</baseWeaponType>
-			<damageBase>8</damageBase>
+			<damageBase>5.0</damageBase>
 			<reachBase>0.7</reachBase>
-			<speedBase>1.1</speedBase>
-			<critDamageFactor>0.4</critDamageFactor>
+			<speedBase>1.0</speedBase>
+			<critDamageFactor>0.2</critDamageFactor>
 			<meltdownOutput>1</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
 			<bleedTier>ONE</bleedTier>
@@ -6373,6 +8472,20 @@
 		<weapon_type>
 			<identifier>Broadsword</identifier>
 			<baseWeaponType>ARMINGSWORD</baseWeaponType>
+			<damageBase>13.0</damageBase>
+			<reachBase>1.0</reachBase>
+			<speedBase>0.9</speedBase>
+			<critDamageFactor>0.8</critDamageFactor>
+			<meltdownOutput>1</meltdownOutput>
+			<meltdownInput>1</meltdownInput>
+			<bleedTier>ONE</bleedTier>
+			<debuffTier>ONE</debuffTier>
+			<staggerTier>ONE</staggerTier>
+			<weaponClass>BLADE</weaponClass>
+		</weapon_type>
+		<weapon_type>
+			<identifier>Armingsword</identifier>
+			<baseWeaponType>ARMINGSWORD</baseWeaponType>
 			<damageBase>12.0</damageBase>
 			<reachBase>1.0</reachBase>
 			<speedBase>1.0</speedBase>
@@ -6381,29 +8494,15 @@
 			<meltdownInput>1</meltdownInput>
 			<bleedTier>TWO</bleedTier>
 			<debuffTier>ONE</debuffTier>
-			<staggerTier>ONE</staggerTier>
-			<weaponClass>BLADE</weaponClass>
-		</weapon_type>
-		<weapon_type>
-			<identifier>Armingsword</identifier>
-			<baseWeaponType>ARMINGSWORD</baseWeaponType>
-			<damageBase>11.0</damageBase>
-			<reachBase>1.0</reachBase>
-			<speedBase>0.9</speedBase>
-			<critDamageFactor>0.8</critDamageFactor>
-			<meltdownOutput>1</meltdownOutput>
-			<meltdownInput>1</meltdownInput>
-			<bleedTier>TWO</bleedTier>
-			<debuffTier>ONE</debuffTier>
-			<staggerTier>ONE</staggerTier>
+			<staggerTier>ZERO</staggerTier>
 			<weaponClass>BLADE</weaponClass>
 		</weapon_type>
 		<weapon_type>
 			<identifier>Arming Sword</identifier>
 			<baseWeaponType>ARMINGSWORD</baseWeaponType>
-			<damageBase>11.0</damageBase>
+			<damageBase>12.0</damageBase>
 			<reachBase>1.0</reachBase>
-			<speedBase>1.0</speedBase>
+			<speedBase>0.9</speedBase>
 			<critDamageFactor>0.8</critDamageFactor>
 			<meltdownOutput>1</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
@@ -6415,27 +8514,55 @@
 		<weapon_type>
 			<identifier>Waraxe</identifier>
 			<baseWeaponType>WARAXE</baseWeaponType>
-			<damageBase>13.0</damageBase>
+			<damageBase>12.0</damageBase>
 			<reachBase>0.95</reachBase>
 			<speedBase>0.9</speedBase>
 			<critDamageFactor>0.8</critDamageFactor>
 			<meltdownOutput>1</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
 			<bleedTier>ONE</bleedTier>
-			<debuffTier>ONE</debuffTier>
-			<staggerTier>TWO</staggerTier>
+			<debuffTier>TWO</debuffTier>
+			<staggerTier>ONE</staggerTier>
+			<weaponClass>BLUNT_BLADE</weaponClass>
+		</weapon_type>
+		<weapon_type>
+			<identifier>War Axe</identifier>
+			<baseWeaponType>WARAXE</baseWeaponType>
+			<damageBase>12.0</damageBase>
+			<reachBase>0.95</reachBase>
+			<speedBase>0.9</speedBase>
+			<critDamageFactor>0.8</critDamageFactor>
+			<meltdownOutput>1</meltdownOutput>
+			<meltdownInput>1</meltdownInput>
+			<bleedTier>ONE</bleedTier>
+			<debuffTier>TWO</debuffTier>
+			<staggerTier>ONE</staggerTier>
 			<weaponClass>BLUNT_BLADE</weaponClass>
 		</weapon_type>
 		<weapon_type>
 			<identifier>Shortspear</identifier>
 			<baseWeaponType>SHORTSPEAR</baseWeaponType>
-			<damageBase>10.0</damageBase>
-			<reachBase>1.3</reachBase>
-			<speedBase>0.95</speedBase>
+			<damageBase>12.0</damageBase>
+			<reachBase>1.2</reachBase>
+			<speedBase>0.9</speedBase>
 			<critDamageFactor>1.5</critDamageFactor>
 			<meltdownOutput>1</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
-			<bleedTier>TWO</bleedTier>
+			<bleedTier>ONE</bleedTier>
+			<debuffTier>ONE</debuffTier>
+			<staggerTier>ONE</staggerTier>
+			<weaponClass>PIERCING</weaponClass>
+		</weapon_type>
+		<weapon_type>
+			<identifier>Spear</identifier>
+			<baseWeaponType>SHORTSPEAR</baseWeaponType>
+			<damageBase>13.0</damageBase>
+			<reachBase>1.3</reachBase>
+			<speedBase>0.9</speedBase>
+			<critDamageFactor>1.5</critDamageFactor>
+			<meltdownOutput>1</meltdownOutput>
+			<meltdownInput>1</meltdownInput>
+			<bleedTier>ONE</bleedTier>
 			<debuffTier>ONE</debuffTier>
 			<staggerTier>ONE</staggerTier>
 			<weaponClass>PIERCING</weaponClass>
@@ -6444,13 +8571,13 @@
 			<identifier>Mace</identifier>
 			<baseWeaponType>MACE</baseWeaponType>
 			<damageBase>13.0</damageBase>
-			<reachBase>0.88</reachBase>
-			<speedBase>0.82</speedBase>
+			<reachBase>0.95</reachBase>
+			<speedBase>0.85</speedBase>
 			<critDamageFactor>0.3</critDamageFactor>
 			<meltdownOutput>1</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
 			<bleedTier>ZERO</bleedTier>
-			<debuffTier>TWO</debuffTier>
+			<debuffTier>ZERO</debuffTier>
 			<staggerTier>TWO</staggerTier>
 			<weaponClass>BLUNT</weaponClass>
 		</weapon_type>
@@ -6458,12 +8585,12 @@
 			<identifier>Spiked Mace</identifier>
 			<baseWeaponType>MACE</baseWeaponType>
 			<damageBase>13.0</damageBase>
-			<reachBase>0.88</reachBase>
-			<speedBase>0.82</speedBase>
+			<reachBase>0.95</reachBase>
+			<speedBase>0.8</speedBase>
 			<critDamageFactor>0.4</critDamageFactor>
 			<meltdownOutput>1</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
-			<bleedTier>TWO</bleedTier>
+			<bleedTier>ONE</bleedTier>
 			<debuffTier>ONE</debuffTier>
 			<staggerTier>TWO</staggerTier>
 			<weaponClass>BLUNT_PIERCING</weaponClass>
@@ -6471,37 +8598,37 @@
 		<weapon_type>
 			<identifier>Morning Star</identifier>
 			<baseWeaponType>MACE</baseWeaponType>
-			<damageBase>14.0</damageBase>
-			<reachBase>0.9</reachBase>
+			<damageBase>13.0</damageBase>
+			<reachBase>1.0</reachBase>
 			<speedBase>0.8</speedBase>
-			<critDamageFactor>0.5</critDamageFactor>
+			<critDamageFactor>0.75</critDamageFactor>
 			<meltdownOutput>1</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
-			<bleedTier>TWO</bleedTier>
-			<debuffTier>TWO</debuffTier>
+			<bleedTier>ONE</bleedTier>
+			<debuffTier>ONE</debuffTier>
 			<staggerTier>TWO</staggerTier>
 			<weaponClass>BLUNT_PIERCING</weaponClass>
 		</weapon_type>
 		<weapon_type>
 			<identifier>Club</identifier>
 			<baseWeaponType>CLUB</baseWeaponType>
-			<damageBase>9.0</damageBase>
-			<reachBase>0.95</reachBase>
-			<speedBase>0.89</speedBase>
+			<damageBase>12.0</damageBase>
+			<reachBase>0.9</reachBase>
+			<speedBase>0.95</speedBase>
 			<critDamageFactor>0.3</critDamageFactor>
 			<meltdownOutput>1</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
 			<bleedTier>ZERO</bleedTier>
-			<debuffTier>TWO</debuffTier>
+			<debuffTier>ZERO</debuffTier>
 			<staggerTier>TWO</staggerTier>
 			<weaponClass>BLUNT</weaponClass>
 		</weapon_type>
 		<weapon_type>
 			<identifier>Spiked Club</identifier>
 			<baseWeaponType>CLUB</baseWeaponType>
-			<damageBase>9.0</damageBase>
-			<reachBase>0.95</reachBase>
-			<speedBase>0.85</speedBase>
+			<damageBase>12.0</damageBase>
+			<reachBase>0.9</reachBase>
+			<speedBase>0.9</speedBase>
 			<critDamageFactor>0.4</critDamageFactor>
 			<meltdownOutput>1</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
@@ -6513,57 +8640,57 @@
 		<weapon_type>
 			<identifier>Maul</identifier>
 			<baseWeaponType>MAUL</baseWeaponType>
-			<damageBase>14.0</damageBase>
+			<damageBase>12.0</damageBase>
 			<reachBase>0.88</reachBase>
-			<speedBase>0.77</speedBase>
+			<speedBase>0.8</speedBase>
 			<critDamageFactor>0.4</critDamageFactor>
 			<meltdownOutput>1</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
 			<bleedTier>ZERO</bleedTier>
-			<debuffTier>THREE</debuffTier>
+			<debuffTier>ONE</debuffTier>
 			<staggerTier>TWO</staggerTier>
 			<weaponClass>BLUNT</weaponClass>
 		</weapon_type>
 		<weapon_type>
 			<identifier>Katana</identifier>
 			<baseWeaponType>KATANA</baseWeaponType>
-			<damageBase>10.0</damageBase>
-			<reachBase>0.98</reachBase>
-			<speedBase>1.1</speedBase>
-			<critDamageFactor>1.1</critDamageFactor>
+			<damageBase>12.0</damageBase>
+			<reachBase>1.0</reachBase>
+			<speedBase>1.0</speedBase>
+			<critDamageFactor>1.05</critDamageFactor>
 			<meltdownOutput>1</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
 			<bleedTier>THREE</bleedTier>
 			<debuffTier>ZERO</debuffTier>
-			<staggerTier>ONE</staggerTier>
+			<staggerTier>ZERO</staggerTier>
 			<weaponClass>BLADE</weaponClass>
 		</weapon_type>
 		<weapon_type>
 			<identifier>Longsword</identifier>
 			<baseWeaponType>LONGSWORD</baseWeaponType>
-			<damageBase>11.0</damageBase>
-			<reachBase>1.06</reachBase>
+			<damageBase>12.0</damageBase>
+			<reachBase>1.1</reachBase>
 			<speedBase>1.0</speedBase>
-			<critDamageFactor>1</critDamageFactor>
+			<critDamageFactor>1.0</critDamageFactor>
 			<meltdownOutput>1</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
 			<bleedTier>TWO</bleedTier>
 			<debuffTier>ONE</debuffTier>
-			<staggerTier>ONE</staggerTier>
+			<staggerTier>ZERO</staggerTier>
 			<weaponClass>BLADE</weaponClass>
 		</weapon_type>
 		<weapon_type>
 			<identifier>Wakizashi</identifier>
 			<baseWeaponType>WAKIZASHI</baseWeaponType>
-			<damageBase>9.0</damageBase>
+			<damageBase>11.0</damageBase>
 			<reachBase>0.83</reachBase>
 			<speedBase>1.15</speedBase>
-			<critDamageFactor>1.5</critDamageFactor>
+			<critDamageFactor>1.25</critDamageFactor>
 			<meltdownOutput>1</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
 			<bleedTier>TWO</bleedTier>
-			<debuffTier>ZERO</debuffTier>
-			<staggerTier>ONE</staggerTier>
+			<debuffTier>ONE</debuffTier>
+			<staggerTier>ZERO</staggerTier>
 			<weaponClass>BLADE_PIERCING</weaponClass>
 		</weapon_type>
 		<weapon_type>
@@ -6571,82 +8698,82 @@
 			<baseWeaponType>SABRE</baseWeaponType>
 			<damageBase>12.0</damageBase>
 			<reachBase>0.85</reachBase>
-			<speedBase>0.85</speedBase>
+			<speedBase>1.1</speedBase>
 			<critDamageFactor>1.0</critDamageFactor>
 			<meltdownOutput>1</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
 			<bleedTier>TWO</bleedTier>
-			<debuffTier>ONE</debuffTier>
-			<staggerTier>ONE</staggerTier>
+			<debuffTier>ZERO</debuffTier>
+			<staggerTier>ZERO</staggerTier>
 			<weaponClass>BLADE</weaponClass>
 		</weapon_type>
 		<weapon_type>
 			<identifier>Scimitar</identifier>
 			<baseWeaponType>SCIMITAR</baseWeaponType>
-			<damageBase>11.0</damageBase>
+			<damageBase>13.0</damageBase>
 			<reachBase>0.95</reachBase>
 			<speedBase>0.95</speedBase>
 			<critDamageFactor>1.0</critDamageFactor>
 			<meltdownOutput>1</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
-			<bleedTier>TWO</bleedTier>
-			<debuffTier>ONE</debuffTier>
-			<staggerTier>ONE</staggerTier>
+			<bleedTier>THREE</bleedTier>
+			<debuffTier>ZERO</debuffTier>
+			<staggerTier>ZERO</staggerTier>
 			<weaponClass>BLADE</weaponClass>
 		</weapon_type>
 		<weapon_type>
 			<identifier>Shortsword</identifier>
 			<baseWeaponType>SHORTSWORD</baseWeaponType>
-			<damageBase>9.0</damageBase>
+			<damageBase>11.0</damageBase>
 			<reachBase>0.8</reachBase>
-			<speedBase>1.12</speedBase>
+			<speedBase>1.1</speedBase>
 			<critDamageFactor>1.2</critDamageFactor>
 			<meltdownOutput>1</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
 			<bleedTier>ONE</bleedTier>
 			<debuffTier>TWO</debuffTier>
-			<staggerTier>ONE</staggerTier>
-			<weaponClass>BLADE</weaponClass>
+			<staggerTier>ZERO</staggerTier>
+			<weaponClass>BLADE_PIERCING</weaponClass>
 		</weapon_type>
 		<weapon_type>
 			<identifier>Tanto</identifier>
 			<baseWeaponType>TANTO</baseWeaponType>
 			<damageBase>7.5</damageBase>
 			<reachBase>0.65</reachBase>
-			<speedBase>1.22</speedBase>
-			<critDamageFactor>1.5</critDamageFactor>
+			<speedBase>1.1</speedBase>
+			<critDamageFactor>1.2</critDamageFactor>
 			<meltdownOutput>1</meltdownOutput>
 			<meltdownInput>2</meltdownInput>
 			<bleedTier>TWO</bleedTier>
-			<debuffTier>ZERO</debuffTier>
+			<debuffTier>ONE</debuffTier>
 			<staggerTier>ZERO</staggerTier>
 			<weaponClass>BLADE_PIERCING</weaponClass>
 		</weapon_type>
 		<weapon_type>
 			<identifier>Dagger</identifier>
 			<baseWeaponType>DAGGER</baseWeaponType>
-			<damageBase>8.0</damageBase>
+			<damageBase>7.5</damageBase>
 			<reachBase>0.6</reachBase>
 			<speedBase>1.2</speedBase>
-			<critDamageFactor>1.75</critDamageFactor>
+			<critDamageFactor>1.3</critDamageFactor>
 			<meltdownOutput>1</meltdownOutput>
 			<meltdownInput>2</meltdownInput>
 			<bleedTier>TWO</bleedTier>
-			<debuffTier>ZERO</debuffTier>
+			<debuffTier>ONE</debuffTier>
 			<staggerTier>ZERO</staggerTier>
 			<weaponClass>BLADE_PIERCING</weaponClass>
 		</weapon_type>
 		<weapon_type>
 			<identifier>Shiv</identifier>
 			<baseWeaponType>DAGGER</baseWeaponType>
-			<damageBase>7.0</damageBase>
+			<damageBase>6.0</damageBase>
 			<reachBase>0.5</reachBase>
 			<speedBase>1.2</speedBase>
-			<critDamageFactor>2</critDamageFactor>
+			<critDamageFactor>2.0</critDamageFactor>
 			<meltdownOutput>1</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
 			<bleedTier>THREE</bleedTier>
-			<debuffTier>ZERO</debuffTier>
+			<debuffTier>ONE</debuffTier>
 			<staggerTier>ZERO</staggerTier>
 			<weaponClass>PIERCING</weaponClass>
 		</weapon_type>
@@ -6660,7 +8787,7 @@
 			<meltdownOutput>1</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
 			<bleedTier>ONE</bleedTier>
-			<debuffTier>ZERO</debuffTier>
+			<debuffTier>ONE</debuffTier>
 			<staggerTier>ZERO</staggerTier>
 			<weaponClass>BLADE_PIERCING</weaponClass>
 		</weapon_type>
@@ -6673,8 +8800,8 @@
 			<critDamageFactor>0.75</critDamageFactor>
 			<meltdownOutput>1</meltdownOutput>
 			<meltdownInput>2</meltdownInput>
-			<bleedTier>ONE</bleedTier>
-			<debuffTier>ONE</debuffTier>
+			<bleedTier>TWO</bleedTier>
+			<debuffTier>ZERO</debuffTier>
 			<staggerTier>ZERO</staggerTier>
 			<weaponClass>BLADE</weaponClass>
 		</weapon_type>
@@ -6687,7 +8814,7 @@
 			<critDamageFactor>1.5</critDamageFactor>
 			<meltdownOutput>1</meltdownOutput>
 			<meltdownInput>2</meltdownInput>
-			<bleedTier>TWO</bleedTier>
+			<bleedTier>ONE</bleedTier>
 			<debuffTier>ONE</debuffTier>
 			<staggerTier>ZERO</staggerTier>
 			<weaponClass>PIERCING</weaponClass>
@@ -6702,7 +8829,7 @@
 			<meltdownOutput>1</meltdownOutput>
 			<meltdownInput>2</meltdownInput>
 			<bleedTier>ONE</bleedTier>
-			<debuffTier>ONE</debuffTier>
+			<debuffTier>ZERO</debuffTier>
 			<staggerTier>ONE</staggerTier>
 			<weaponClass>BLUNT</weaponClass>
 		</weapon_type>
@@ -6710,22 +8837,22 @@
 		<weapon_type>
 			<identifier>Battleaxe</identifier>
 			<baseWeaponType>BATTLEAXE</baseWeaponType>
-			<damageBase>17.0</damageBase>
+			<damageBase>25.0</damageBase>
 			<reachBase>1.15</reachBase>
 			<speedBase>0.85</speedBase>
 			<critDamageFactor>0.7</critDamageFactor>
 			<meltdownOutput>2</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
 			<bleedTier>TWO</bleedTier>
-			<debuffTier>TWO</debuffTier>
+			<debuffTier>THREE</debuffTier>
 			<staggerTier>TWO</staggerTier>
 			<weaponClass>BLUNT_BLADE</weaponClass>
 		</weapon_type>
 		<weapon_type>
 			<identifier>Partisan</identifier>
 			<baseWeaponType>PARTISAN</baseWeaponType>
-			<damageBase>15.0</damageBase>
-			<reachBase>1.35</reachBase>
+			<damageBase>25.0</damageBase>
+			<reachBase>1.3</reachBase>
 			<speedBase>0.95</speedBase>
 			<critDamageFactor>0.8</critDamageFactor>
 			<meltdownOutput>2</meltdownOutput>
@@ -6738,57 +8865,71 @@
 		<weapon_type>
 			<identifier>Halberd</identifier>
 			<baseWeaponType>HALBERD</baseWeaponType>
-			<damageBase>22.0</damageBase>
+			<damageBase>26.0</damageBase>
 			<reachBase>1.15</reachBase>
 			<speedBase>0.7</speedBase>
 			<critDamageFactor>0.8</critDamageFactor>
 			<meltdownOutput>2</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
 			<bleedTier>TWO</bleedTier>
-			<debuffTier>THREE</debuffTier>
-			<staggerTier>THREE</staggerTier>
+			<debuffTier>TWO</debuffTier>
+			<staggerTier>TWO</staggerTier>
 			<weaponClass>ALL</weaponClass>
 		</weapon_type>
 		<weapon_type>
 			<identifier>Warhammer</identifier>
 			<baseWeaponType>WARHAMMER</baseWeaponType>
-			<damageBase>20.0</damageBase>
+			<damageBase>25.0</damageBase>
 			<reachBase>1.1</reachBase>
 			<speedBase>0.78</speedBase>
 			<critDamageFactor>0.5</critDamageFactor>
 			<meltdownOutput>2</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
 			<bleedTier>ZERO</bleedTier>
-			<debuffTier>THREE</debuffTier>
+			<debuffTier>ONE</debuffTier>
 			<staggerTier>THREE</staggerTier>
 			<weaponClass>BLUNT</weaponClass>
 		</weapon_type>
 		<weapon_type>
-			<identifier>Volendrung</identifier>
+			<identifier>Great Morning Star</identifier>
 			<baseWeaponType>WARHAMMER</baseWeaponType>
-			<damageBase>22.0</damageBase>
+			<damageBase>25.0</damageBase>
 			<reachBase>1.1</reachBase>
-			<speedBase>0.82</speedBase>
-			<critDamageFactor>0.5</critDamageFactor>
+			<speedBase>0.75</speedBase>
+			<critDamageFactor>0.75</critDamageFactor>
 			<meltdownOutput>2</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
-			<bleedTier>ZERO</bleedTier>
-			<debuffTier>THREE</debuffTier>
+			<bleedTier>TWO</bleedTier>
+			<debuffTier>TWO</debuffTier>
+			<staggerTier>THREE</staggerTier>
+			<weaponClass>BLUNT_PIERCING</weaponClass>
+		</weapon_type>
+		<weapon_type>
+			<identifier>Volendrung</identifier>
+			<baseWeaponType>WARHAMMER</baseWeaponType>
+			<damageBase>26.0</damageBase>
+			<reachBase>1.1</reachBase>
+			<speedBase>0.82</speedBase>
+			<critDamageFactor>0.6</critDamageFactor>
+			<meltdownOutput>2</meltdownOutput>
+			<meltdownInput>1</meltdownInput>
+			<bleedTier>ONE</bleedTier>
+			<debuffTier>TWO</debuffTier>
 			<staggerTier>THREE</staggerTier>
 			<weaponClass>BLUNT_PIERCING</weaponClass>
 		</weapon_type>
 		<weapon_type>
 			<identifier>Longmace</identifier>
 			<baseWeaponType>LONGMACE</baseWeaponType>
-			<damageBase>16.0</damageBase>
+			<damageBase>24.0</damageBase>
 			<reachBase>1.2</reachBase>
 			<speedBase>0.85</speedBase>
-			<critDamageFactor>0.8</critDamageFactor>
+			<critDamageFactor>0.5</critDamageFactor>
 			<meltdownOutput>2</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
-			<bleedTier>ONE</bleedTier>
-			<debuffTier>THREE</debuffTier>
-			<staggerTier>THREE</staggerTier>
+			<bleedTier>ZERO</bleedTier>
+			<debuffTier>ZERO</debuffTier>
+			<staggerTier>TWO</staggerTier>
 			<weaponClass>BLUNT</weaponClass>
 		</weapon_type>
 		<weapon_type>
@@ -6800,59 +8941,59 @@
 			<critDamageFactor>0.5</critDamageFactor>
 			<meltdownOutput>0</meltdownOutput>
 			<meltdownInput>0</meltdownInput>
-			<bleedTier>TWO</bleedTier>
+			<bleedTier>THREE</bleedTier>
 			<debuffTier>THREE</debuffTier>
 			<staggerTier>THREE</staggerTier>
-			<weaponClass>BLUNT</weaponClass>
+			<weaponClass>BLUNT_BLADE</weaponClass>
 		</weapon_type>
 		<weapon_type>
 			<identifier>Battlestaff</identifier>
 			<baseWeaponType>BATTLESTAFF</baseWeaponType>
-			<damageBase>13.0</damageBase>
+			<damageBase>22.0</damageBase>
 			<reachBase>1.2</reachBase>
-			<speedBase>1.0</speedBase>
+			<speedBase>1.1</speedBase>
 			<critDamageFactor>0.5</critDamageFactor>
 			<meltdownOutput>2</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
 			<bleedTier>ZERO</bleedTier>
-			<debuffTier>TWO</debuffTier>
+			<debuffTier>ZERO</debuffTier>
 			<staggerTier>TWO</staggerTier>
 			<weaponClass>BLUNT</weaponClass>
 		</weapon_type>
 		<weapon_type>
 			<identifier>Greatsword</identifier>
 			<baseWeaponType>GREATSWORD</baseWeaponType>
-			<damageBase>17.0</damageBase>
+			<damageBase>25.0</damageBase>
 			<reachBase>1.2</reachBase>
-			<speedBase>0.85</speedBase>
+			<speedBase>0.9</speedBase>
 			<critDamageFactor>0.9</critDamageFactor>
 			<meltdownOutput>2</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
-			<bleedTier>THREE</bleedTier>
+			<bleedTier>TWO</bleedTier>
 			<debuffTier>TWO</debuffTier>
-			<staggerTier>THREE</staggerTier>
+			<staggerTier>ONE</staggerTier>
 			<weaponClass>BLUNT_BLADE</weaponClass>
 		</weapon_type>
 		<weapon_type>
 			<identifier>Bastard Sword</identifier>
 			<baseWeaponType>BASTARDSWORD</baseWeaponType>
-			<damageBase>16.0</damageBase>
-			<reachBase>1.0</reachBase>
-			<speedBase>0.98</speedBase>
-			<critDamageFactor>1.1</critDamageFactor>
+			<damageBase>24.0</damageBase>
+			<reachBase>1.1</reachBase>
+			<speedBase>1.0</speedBase>
+			<critDamageFactor>0.9</critDamageFactor>
 			<meltdownOutput>2</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
-			<bleedTier>THREE</bleedTier>
+			<bleedTier>TWO</bleedTier>
 			<debuffTier>TWO</debuffTier>
-			<staggerTier>TWO</staggerTier>
+			<staggerTier>ONE</staggerTier>
 			<weaponClass>BLADE</weaponClass>
 		</weapon_type>
 		<weapon_type>
 			<identifier>Nodachi</identifier>
 			<baseWeaponType>NODACHI</baseWeaponType>
-			<damageBase>18.0</damageBase>
+			<damageBase>25.0</damageBase>
 			<reachBase>1.15</reachBase>
-			<speedBase>0.92</speedBase>
+			<speedBase>0.95</speedBase>
 			<critDamageFactor>0.9</critDamageFactor>
 			<meltdownOutput>2</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
@@ -6865,7 +9006,7 @@
 		<weapon_type>
 			<identifier>Shortbow</identifier>
 			<baseWeaponType>SHORTBOW</baseWeaponType>
-			<damageBase>10.5</damageBase>
+			<damageBase>12.0</damageBase>
 			<reachBase>1.0</reachBase>
 			<speedBase>1.0</speedBase>
 			<critDamageFactor>1.3</critDamageFactor>
@@ -6879,7 +9020,7 @@
 		<weapon_type>
 			<identifier>Longbow</identifier>
 			<baseWeaponType>LONGBOW</baseWeaponType>
-			<damageBase>13.5</damageBase>
+			<damageBase>18.0</damageBase>
 			<reachBase>1.0</reachBase>
 			<speedBase>0.6</speedBase>
 			<critDamageFactor>1.5</critDamageFactor>
@@ -6893,15 +9034,43 @@
 		<weapon_type>
 			<identifier>Crossbow</identifier>
 			<baseWeaponType>CROSSBOW</baseWeaponType>
-			<damageBase>16.5</damageBase>
+			<damageBase>19.0</damageBase>
 			<reachBase>1.0</reachBase>
 			<speedBase>0.8</speedBase>
-			<critDamageFactor>1.75</critDamageFactor>
+			<critDamageFactor>1.7</critDamageFactor>
 			<meltdownOutput>2</meltdownOutput>
 			<meltdownInput>1</meltdownInput>
 			<bleedTier>TWO</bleedTier>
 			<debuffTier>THREE</debuffTier>
 			<staggerTier>TWO</staggerTier>
+			<weaponClass>PIERCING</weaponClass>
+		</weapon_type>
+		<weapon_type>
+			<identifier>Rifle</identifier>
+			<baseWeaponType>CROSSBOW</baseWeaponType>
+			<damageBase>20.0</damageBase>
+			<reachBase>1.0</reachBase>
+			<speedBase>0.8</speedBase>
+			<critDamageFactor>2.0</critDamageFactor>
+			<meltdownOutput>2</meltdownOutput>
+			<meltdownInput>1</meltdownInput>
+			<bleedTier>THREE</bleedTier>
+			<debuffTier>THREE</debuffTier>
+			<staggerTier>ONE</staggerTier>
+			<weaponClass>PIERCING</weaponClass>
+		</weapon_type>
+		<weapon_type>
+			<identifier>Javelin</identifier> <!-- Spears By Soolie -->
+			<baseWeaponType>SHORTBOW</baseWeaponType>
+			<damageBase>10.0</damageBase>
+			<reachBase>1.0</reachBase>
+			<speedBase>1.0</speedBase>
+			<critDamageFactor>1.0</critDamageFactor>
+			<meltdownOutput>1</meltdownOutput>
+			<meltdownInput>1</meltdownInput>
+			<bleedTier>TWO</bleedTier>
+			<debuffTier>ONE</debuffTier>
+			<staggerTier>ONE</staggerTier>
 			<weaponClass>PIERCING</weaponClass>
 		</weapon_type>
 	</weapon_types>
@@ -6925,6 +9094,107 @@
 	<reforge_exclusions>
 	<!-- Prevents PaMa from making Reforge and Breakdown recipes for items. Primarily intended for Quest items -->
 		<exclusion>
+			<text>DBM</text>
+			<target>EDID</target>
+			<type>CONTAINS</type>
+		</exclusion>
+		<exclusion>
+			<text>Ceremonial Axe</text>
+			<target>NAME</target>
+			<type>CONTAINS</type>
+		</exclusion>
+		<exclusion>
+			<text>Shiv</text>
+			<target>NAME</target>
+			<type>EQUALS</type>
+		</exclusion>
+		<exclusion>
+			<text>Ceremonial Sword</text>
+			<target>NAME</target>
+			<type>CONTAINS</type>
+		</exclusion>
+		<exclusion>
+			<text>Phantom Sword</text>
+			<target>NAME</target>
+			<type>CONTAINS</type>
+		</exclusion>
+		<exclusion>
+			<text>Queen Freydis's Sword</text>
+			<target>NAME</target>
+			<type>CONTAINS</type>
+		</exclusion>
+		<exclusion>
+			<text>Rusty Mace</text>
+			<target>NAME</target>
+			<type>CONTAINS</type>
+		</exclusion>
+		<exclusion>
+			<text>Gharol's Iron Sword</text>
+			<target>NAME</target>
+			<type>CONTAINS</type>
+		</exclusion>
+		<exclusion>
+			<text>FFRiften16HarraldSword</text> <!-- Steel sword used for Quest:Bring It! -->
+			<target>EDID</target>
+			<type>EQUALS</type>
+		</exclusion>
+		<exclusion>
+			<text>Vilkas's Sword</text>
+			<target>NAME</target>
+			<type>CONTAINS</type>
+		</exclusion>
+ 		<exclusion>
+			<text>Blade of the Wicked</text>
+			<target>NAME</target>
+			<type>CONTAINS</type>
+		</exclusion>
+		<exclusion>
+			<text>Herp</text>
+			<target>NAME</target>
+			<type>CONTAINS</type>
+		</exclusion>
+		<exclusion>
+			<text>DB</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>NPC</text>
+			<target>NAME</target>
+			<type>CONTAINS</type>
+		</exclusion>
+		<exclusion>
+			<text>_00Giant</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>_00Spriggan</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>Pickaxe</text>
+			<target>EDID</target>
+			<type>CONTAINS</type>
+		</exclusion>
+		<exclusion>
+			<text>Woodcutter</text>
+			<target>EDID</target>
+			<type>CONTAINS</type>
+		</exclusion>
+		<exclusion>
+			<text>Lydia's</text>
+			<target>NAME</target>
+			<type>CONTAINS</type>
+		</exclusion>
+	<!-- Artifacts -->
+		<exclusion>
+			<text>Dawnbreaker</text>
+			<target>NAME</target>
+			<type>CONTAINS</type>
+		</exclusion>
+		<exclusion>
 			<text>Longhammer</text>
 			<target>NAME</target>
 			<type>CONTAINS</type>
@@ -6941,16 +9211,6 @@
 		</exclusion>
 		<exclusion>
 			<text>Balgruuf's Greatsword</text>
-			<target>NAME</target>
-			<type>CONTAINS</type>
-		</exclusion>
-		<exclusion>
-			<text>Ceremonial Axe</text>
-			<target>NAME</target>
-			<type>CONTAINS</type>
-		</exclusion>
-		<exclusion>
-			<text>Ceremonial Sword</text>
 			<target>NAME</target>
 			<type>CONTAINS</type>
 		</exclusion>
@@ -6985,22 +9245,7 @@
 			<type>CONTAINS</type>
 		</exclusion>
 		<exclusion>
-			<text>Phantom Sword</text>
-			<target>NAME</target>
-			<type>CONTAINS</type>
-		</exclusion>
-		<exclusion>
-			<text>Queen Freydis's Sword</text>
-			<target>NAME</target>
-			<type>CONTAINS</type>
-		</exclusion>
-		<exclusion>
 			<text>Red Eagle</text>
-			<target>NAME</target>
-			<type>CONTAINS</type>
-		</exclusion>
-		<exclusion>
-			<text>Rusty Mace</text>
 			<target>NAME</target>
 			<type>CONTAINS</type>
 		</exclusion>
@@ -7010,17 +9255,7 @@
 			<type>CONTAINS</type>
 		</exclusion>
 		<exclusion>
-			<text>FFRiften16HarraldSword</text> <!-- Steel sword used for Quest:Bring It! -->
-			<target>EDID</target>
-			<type>EQUALS</type>
-		</exclusion>
-		<exclusion>
 			<text>The Rueful Axe</text>
-			<target>NAME</target>
-			<type>CONTAINS</type>
-		</exclusion>
-		<exclusion>
-			<text>Vilkas's Sword</text>
 			<target>NAME</target>
 			<type>CONTAINS</type>
 		</exclusion>
@@ -7030,19 +9265,9 @@
 			<type>CONTAINS</type>
 		</exclusion>
 		<exclusion>
-			<text>Herp</text>
-			<target>NAME</target>
-			<type>CONTAINS</type>
-		</exclusion>
-		<exclusion>
 			<text>Chillrend</text>
 			<target>NAME</target>
 			<type>CONTAINS</type>
-		</exclusion>
-		<exclusion>
-			<text>DB</text>
-			<target>EDID</target>
-			<type>STARTSWITH</type>
 		</exclusion>
 		<exclusion>
 			<text>Harkon</text>
@@ -7054,47 +9279,13 @@
 			<target>EDID</target>
 			<type>CONTAINS</type>
 		</exclusion>
-		<exclusion>
-			<text>NPC</text>
-			<target>NAME</target>
-			<type>CONTAINS</type>
-		</exclusion>
-		<exclusion>
-			<text>_00Giant</text>
-			<target>EDID</target>
-			<type>STARTSWITH</type>
-		</exclusion>
-		<exclusion>
-			<text>_00Spriggan</text>
-			<target>EDID</target>
-			<type>STARTSWITH</type>
-		</exclusion>
+	<!-- Artifacts -->
+	<!-- Giant weapon bindings -->
 		<exclusion>
 			<text>_00FireGiant</text>
 			<target>EDID</target>
 			<type>STARTSWITH</type>
 		</exclusion>
-		<exclusion>
-			<text>Pickaxe</text>
-			<target>EDID</target>
-			<type>CONTAINS</type>
-		</exclusion>
-		<exclusion>
-			<text>Woodcutter</text>
-			<target>EDID</target>
-			<type>CONTAINS</type>
-		</exclusion>
-		<exclusion>
-			<text>Replica</text>
-			<target>EDID</target>
-			<type>CONTAINS</type>
-		</exclusion>
-		<exclusion>
-			<text>Replica</text>
-			<target>NAME</target>
-			<type>CONTAINS</type>
-		</exclusion>
-	<!-- Giant weapon bindings -->
 		<exclusion>
 			<text>Giant Club</text>
 			<target>NAME</target>
@@ -7127,6 +9318,21 @@
 		</exclusion>
 		<exclusion>
 			<text>Giant Skull Club</text>
+			<target>NAME</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>Giant Old</text>
+			<target>NAME</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>Giant Steel Club</text>
+			<target>NAME</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>Giant Iron Club</text>
 			<target>NAME</target>
 			<type>STARTSWITH</type>
 		</exclusion>
@@ -7171,7 +9377,7 @@
 			<type>STARTSWITH</type>
 		</exclusion>
 	<!-- Wheels Of Lull-->
-	<!-- Brhuce: Legacy also affects Blackreach Railroad-->
+	<!-- Brhuce: Legacy also affects Blackreach Railroad and Dwemer Spectres-->
 		<exclusion>
 			<text>_tw_</text>
 			<target>EDID</target>
@@ -7270,12 +9476,12 @@
 			<type>STARTSWITH</type>
 		</exclusion>
 		<exclusion>
-			<text>Zth_</text> 
+			<text>Zth_</text>
 			<target>EDID</target>
 			<type>STARTSWITH</type>
 		</exclusion>
 		<exclusion>
-			<text>ZW_</text> 
+			<text>ZW_</text>
 			<target>EDID</target>
 			<type>STARTSWITH</type>
 		</exclusion>
@@ -7447,6 +9653,331 @@
 			<type>CONTAINS</type>
 		</exclusion>
 	<!-- Dovamaar and Dovahfaas -->
+	<!-- SkyRe Races -->
+		<exclusion>
+			<text>xxxRacialDarkElfAncestorSword</text>
+			<target>EDID</target>
+			<type>EQUALS</type>
+		</exclusion>
+	<!-- SkyRe Races -->
+	<!-- Skyrim Knights -->
+		<exclusion>
+			<text>Uznahgaar</text>
+			<target>NAME</target>
+			<type>CONTAINS</type>
+		</exclusion>
+	<!-- Skyrim Knights -->
+	<!-- Knight of Thorns Armor and Spear of Thorns -->
+		<exclusion>
+			<text>ThornsSpear</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+	<!-- Knight of Thorns Armor and Spear of Thorns -->
+	<!-- Much Ado about Snow Elves – A Tragedy! Act I -->
+		<exclusion>
+			<text>Moth's</text>
+			<target>NAME</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>ZZZ</text>
+			<target>NAME</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>Snowfall</text>
+			<target>NAME</target>
+			<type>EQUALS</type>
+		</exclusion>
+		<exclusion>
+			<text>WinterStorm</text>
+			<target>NAME</target>
+			<type>EQUALS</type>
+		</exclusion>
+		<exclusion>
+			<text>Black Ice</text>
+			<target>NAME</target>
+			<type>EQUALS</type>
+		</exclusion>
+		<exclusion>
+			<text>HoarFrost</text>
+			<target>NAME</target>
+			<type>EQUALS</type>
+		</exclusion>
+	<!-- Much Ado about Snow Elves – A Tragedy! Act I -->
+	<!-- The Hanging Gardens -->
+		<exclusion>
+			<text>_bh</text>
+			<target>EDID</target>
+			<type>CONTAINS</type>
+		</exclusion>
+	<!-- The Hanging Gardens -->
+	<!-- Moon and Star -->
+		<exclusion>
+			<text>MAS</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+	<!-- Moon and Star -->
+	<!-- Companion Valfar -->
+		<exclusion>
+			<text>OS_CV</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+	<!-- Companion Valfar -->
+	<!-- Sulfuras - The Reclaimed Hand -->
+		<exclusion>
+			<text>Sulfuras</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+	<!-- Sulfuras - The Reclaimed Hand -->
+	<!-- The Grey Cowl of Nocturnal -->
+		<exclusion>
+			<text>manny_GF_Weapon</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+	<!-- The Grey Cowl of Nocturnal -->
+	<!-- Rigmor of Bruma -->
+		<exclusion>
+			<text>Rigmor_</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>CasiusVaron</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+	<!-- Rigmor of Bruma -->
+	<!-- Campfire -->
+		<exclusion>
+			<text>_Camp_</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+	<!-- Campfire -->
+	<!-- Immersive Weapons -->
+		<exclusion>
+			<text>IWCAfterslash</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>IWCAssassin</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>IWAzurasMoon</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>IWCBiPolarBlade</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>IWCBladeOfWoe</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>IWCChillrend</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>IWChrysamere</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>IWCDawnbreaker</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>IWCEbonyBlade</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>IWForkofHorripilation</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>IWGoldbrand</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>IWIceBladeoftheMonarch</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>IWJustice</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>IWAevarStoneSingerMace</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>IWCMaceofMolagBal</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>IWMalacathsCleaver</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>IWCMehrunesRazor</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>IWCNightingale</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>IWPenUmbraSword</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>IWCPokebladeSword</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>IWCRuefulAxe</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>IWShadowsting</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>IWSithiss</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>IWCSpearblade</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>IWCSplitblade</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>IWCVolendrung</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>IWWabba</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+	<!-- Immersive Weapons -->
+	<!-- The Ashbringers -->
+		<exclusion>
+			<text>Ashbringer</text>
+			<target>EDID</target>
+			<type>EQUALS</type>
+		</exclusion>
+		<exclusion>
+			<text>CorruptedAshbringer</text>
+			<target>EDID</target>
+			<type>EQUALS</type>
+		</exclusion>
+	<!-- The Ashbringers -->
+	<!-- The Shrouded Lair - A Vampire Home -->
+		<exclusion>
+			<text>000SLVampDagger</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>000SLBow02</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>000BloodSwordSwordSL</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>000BloodDaggerSL</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>000BloodGreatswordSL</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>000BloodWaraxeSL</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>000BloodBowSL</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>000BloodMaceSL</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>000BloodBattleaxeSL</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>000BloodWarhammerSL</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+	<!-- The Shrouded Lair - A Vampire Home -->
+	<!-- Skyfall Estate Buildable -->
+		<exclusion>
+			<text>aaaReaperBow</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>aaaSFSword</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+		<exclusion>
+			<text>aaaGibsonsDagger</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+	<!-- Skyfall Estate Buildable -->
 	</reforge_exclusions>
 
 </ns2:weapons>

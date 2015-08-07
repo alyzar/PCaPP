@@ -5,18 +5,26 @@
 		<ammunition_type>
 			<identifier>Standard Arrow</identifier>
 			<type>ARROW</type>
-			<damageBase>10</damageBase>
+			<damageBase>13</damageBase>
 			<rangeBase>60000</rangeBase>
 			<speedBase>4900</speedBase>
-			<gravityBase>0.1</gravityBase>
+			<gravityBase>0.3</gravityBase>
 		</ammunition_type>
 		<ammunition_type>
 			<identifier>Standard Bolt</identifier>
 			<type>BOLT</type>
-			<damageBase>15</damageBase>
+			<damageBase>17</damageBase>
 			<rangeBase>80000</rangeBase>
 			<speedBase>5500</speedBase>
 			<gravityBase>0.05</gravityBase>
+		</ammunition_type>
+		<ammunition_type>
+			<identifier>Standard Javelin</identifier>
+			<type>ARROW</type>
+			<damageBase>20</damageBase>
+			<rangeBase>20000</rangeBase>
+			<speedBase>2400</speedBase>
+			<gravityBase>1.0</gravityBase>
 		</ammunition_type>
 	</ammunition_types>
 
@@ -29,17 +37,92 @@
 			<identifier>Standard Bolt</identifier>
 			<substring>Bolt</substring>
 		</binding>
+		<binding>
+			<identifier>Standard Javelin</identifier>
+			<substring>Javelin</substring>
+		</binding>
 	</ammunition_type_bindings>
 
 	<ammunition_modifiers>
-	<!-- Hunterborn modifiers start -->
+	<!-- PerMa default modifiers start -->
 		<ammunition_modifier>
-			<identifier>Crude</identifier>
+			<identifier>Strong</identifier>
+			<damageModifier>4</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>-20</speedModifier>
+			<gravityModifier>0.03</gravityModifier>
+		</ammunition_modifier>
+		<ammunition_modifier>
+			<identifier>Strongest</identifier>
+			<damageModifier>8</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>-30</speedModifier>
+			<gravityModifier>0.05</gravityModifier>
+		</ammunition_modifier>
+		<ammunition_modifier>
+			<identifier>Poisoned</identifier>
+			<damageModifier>0</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>-10</speedModifier>
+			<gravityModifier>0.02</gravityModifier>
+		</ammunition_modifier>
+		<ammunition_modifier>
+			<identifier>Fire</identifier>
+			<damageModifier>-2</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>10</speedModifier>
+			<gravityModifier>-0.02</gravityModifier>
+		</ammunition_modifier>
+		<ammunition_modifier>
+			<identifier>Frost</identifier>
+			<damageModifier>-2</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>10</speedModifier>
+			<gravityModifier>-0.02</gravityModifier>
+		</ammunition_modifier>
+		<ammunition_modifier>
+			<identifier>Shock</identifier>
+			<damageModifier>-2</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>10</speedModifier>
+			<gravityModifier>-0.02</gravityModifier>
+		</ammunition_modifier>
+		<ammunition_modifier>
+			<identifier>Barbed</identifier>
+			<damageModifier>2</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>10</speedModifier>
+			<gravityModifier>0.02</gravityModifier>
+		</ammunition_modifier>
+		<ammunition_modifier>
+			<identifier>Explosive</identifier>
 			<damageModifier>-3</damageModifier>
-			<rangeModifier>-50</rangeModifier>
-			<speedModifier>-25</speedModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>-50</speedModifier>
 			<gravityModifier>0.2</gravityModifier>
 		</ammunition_modifier>
+		<ammunition_modifier>
+			<identifier>Timebomb</identifier>
+			<damageModifier>-5</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>-50</speedModifier>
+			<gravityModifier>0.2</gravityModifier>
+		</ammunition_modifier>
+		<ammunition_modifier>
+			<identifier>Lightsource</identifier>
+			<damageModifier>-5</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>-50</speedModifier>
+			<gravityModifier>0.1</gravityModifier>
+		</ammunition_modifier>
+		<ammunition_modifier>
+			<identifier>Noisemaker</identifier>
+			<damageModifier>-3</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>-20</speedModifier>
+			<gravityModifier>0.1</gravityModifier>
+		</ammunition_modifier>
+	<!-- PerMa default modifiers end -->
 		<ammunition_modifier>
 			<identifier>Cruel</identifier>
 			<damageModifier>1</damageModifier>
@@ -47,114 +130,6 @@
 			<speedModifier>75</speedModifier>
 			<gravityModifier>0.03</gravityModifier>
 		</ammunition_modifier>
-		<ammunition_modifier>
-			<identifier>Hunter</identifier>
-			<damageModifier>2</damageModifier>
-			<rangeModifier>100</rangeModifier>
-			<speedModifier>25</speedModifier>
-			<gravityModifier>0.025</gravityModifier>
-		</ammunition_modifier>
-		<ammunition_modifier>
-			<identifier>Honed</identifier>
-			<damageModifier>3</damageModifier>
-			<rangeModifier>0</rangeModifier>
-			<speedModifier>-50</speedModifier>
-			<gravityModifier>0.02</gravityModifier>
-		</ammunition_modifier>
-		<ammunition_modifier>
-			<identifier>Stalker</identifier>
-			<damageModifier>4</damageModifier>
-			<rangeModifier>-100</rangeModifier>
-			<speedModifier>50</speedModifier>
-			<gravityModifier>0.03</gravityModifier>
-		</ammunition_modifier>
-		<ammunition_modifier>
-			<identifier>Perfect</identifier>
-			<damageModifier>5</damageModifier>
-			<rangeModifier>0</rangeModifier>
-			<speedModifier>10</speedModifier>
-			<gravityModifier>0.01</gravityModifier>
-		</ammunition_modifier>
-	<!-- Hunterborn modifiers end -->
-	<!-- PerMa default modifiers start -->
-		<ammunition_modifier>
-			<identifier>Strong</identifier>
-			<damageModifier>4</damageModifier>
-			<rangeModifier>0</rangeModifier>
-			<speedModifier>-50</speedModifier>
-			<gravityModifier>0.03</gravityModifier>
-		</ammunition_modifier>
-		<ammunition_modifier>
-			<identifier>Strongest</identifier>
-			<damageModifier>8</damageModifier>
-			<rangeModifier>0</rangeModifier>
-			<speedModifier>-80</speedModifier>
-			<gravityModifier>0.07</gravityModifier>
-		</ammunition_modifier>
-		<ammunition_modifier>
-			<identifier>Poisoned</identifier>
-			<damageModifier>0</damageModifier>
-			<rangeModifier>0</rangeModifier>
-			<speedModifier>-130</speedModifier>
-			<gravityModifier>0.09</gravityModifier>
-		</ammunition_modifier>
-		<ammunition_modifier>
-			<identifier>Fire</identifier>
-			<damageModifier>-2</damageModifier>
-			<rangeModifier>0</rangeModifier>
-			<speedModifier>-50</speedModifier>
-			<gravityModifier>0.02</gravityModifier>
-		</ammunition_modifier>
-		<ammunition_modifier>
-			<identifier>Frost</identifier>
-			<damageModifier>-2</damageModifier>
-			<rangeModifier>0</rangeModifier>
-			<speedModifier>-50</speedModifier>
-			<gravityModifier>0.02</gravityModifier>
-		</ammunition_modifier>
-		<ammunition_modifier>
-			<identifier>Shock</identifier>
-			<damageModifier>-2</damageModifier>
-			<rangeModifier>0</rangeModifier>
-			<speedModifier>-50</speedModifier>
-			<gravityModifier>0.02</gravityModifier>
-		</ammunition_modifier>
-		<ammunition_modifier>
-			<identifier>Barbed</identifier>
-			<damageModifier>2</damageModifier>
-			<rangeModifier>0</rangeModifier>
-			<speedModifier>-50</speedModifier>
-			<gravityModifier>0.022</gravityModifier>
-		</ammunition_modifier>
-		<ammunition_modifier>
-			<identifier>Explosive</identifier>
-			<damageModifier>-3</damageModifier>
-			<rangeModifier>-100</rangeModifier>
-			<speedModifier>-250</speedModifier>
-			<gravityModifier>0.2</gravityModifier>
-		</ammunition_modifier>
-		<ammunition_modifier>
-			<identifier>Timebomb</identifier>
-			<damageModifier>-5</damageModifier>
-			<rangeModifier>-100</rangeModifier>
-			<speedModifier>-200</speedModifier>
-			<gravityModifier>0.3</gravityModifier>
-		</ammunition_modifier>
-		<ammunition_modifier>
-			<identifier>Lightsource</identifier>
-			<damageModifier>-5</damageModifier>
-			<rangeModifier>0</rangeModifier>
-			<speedModifier>-10</speedModifier>
-			<gravityModifier>0.005</gravityModifier>
-		</ammunition_modifier>
-		<ammunition_modifier>
-			<identifier>Noisemaker</identifier>
-			<damageModifier>-3</damageModifier>
-			<rangeModifier>-50</rangeModifier>
-			<speedModifier>-10</speedModifier>
-			<gravityModifier>0.01</gravityModifier>
-		</ammunition_modifier>
-	<!-- PerMa default modifiers end -->
 	<!-- Nock to Tip -->
 		<ammunition_modifier>
 			<identifier>Fletched</identifier>
@@ -164,9 +139,19 @@
 			<gravityModifier>0</gravityModifier>
 		</ammunition_modifier>
 	<!-- Nock to Tip -->
+	<!-- Bosmer Armor -->
+		<ammunition_modifier>
+			<identifier>Elder</identifier>
+			<damageModifier>2</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>0</speedModifier>
+			<gravityModifier>0</gravityModifier>
+		</ammunition_modifier>
+	<!-- Bosmer Armor -->
 	</ammunition_modifiers>
 
 	<ammunition_modifier_bindings>
+	<!-- PerMa -->
 		<binding>
 			<identifier>Explosive</identifier>
 			<substring>Explosive</substring>
@@ -211,36 +196,17 @@
 			<identifier>Noisemaker</identifier>
 			<substring>Noisemaker</substring>
 		</binding>
-		<binding>
-			<identifier>Crude</identifier>
-			<substring>Crude</substring>
-		</binding>
+	<!-- PerMa -->
 		<binding>
 			<identifier>Cruel</identifier>
 			<substring>Cruel</substring>
 		</binding>
-		<binding>
-			<identifier>Honed</identifier>
-			<substring>Honed</substring>
-		</binding>
-		<binding>
-			<identifier>Hunter</identifier>
-			<substring>Hunter</substring>
-		</binding>
-		<binding>
-			<identifier>Stalker</identifier>
-			<substring>Stalker</substring>
-		</binding>
-		<binding>
-			<identifier>Perfect</identifier>
-			<substring>Perfect</substring>
-		</binding>
-		<!-- Nock to Tip -->
+	<!-- Nock to Tip -->
 		<binding>
 			<identifier>Fletched</identifier>
 			<substring>Fletched</substring>
 		</binding>
-		<!-- Nock to Tip -->
+	<!-- Nock to Tip -->
 	</ammunition_modifier_bindings>
 
 	<ammunition_materials>
@@ -249,7 +215,7 @@
 			<identifier>Practice</identifier>
 			<damageModifier>-5</damageModifier>
 			<rangeModifier>0</rangeModifier>
-			<speedModifier>75</speedModifier>
+			<speedModifier>0</speedModifier>
 			<gravityModifier>0</gravityModifier>
 			<multiply>false</multiply>
 		</ammunition_material>
@@ -257,96 +223,184 @@
 			<identifier>Wood</identifier>
 			<damageModifier>0</damageModifier>
 			<rangeModifier>0</rangeModifier>
-			<speedModifier>0</speedModifier>
-			<gravityModifier>0</gravityModifier>
+			<speedModifier>10</speedModifier>
+			<gravityModifier>0.01</gravityModifier>
 			<multiply>true</multiply>
 		</ammunition_material>
 		<ammunition_material>
 			<identifier>WoodNoMult</identifier>
 			<damageModifier>0</damageModifier>
 			<rangeModifier>0</rangeModifier>
-			<speedModifier>0</speedModifier>
-			<gravityModifier>0</gravityModifier>
+			<speedModifier>10</speedModifier>
+			<gravityModifier>0.01</gravityModifier>
 			<multiply>false</multiply>
+		</ammunition_material>
+		<ammunition_material>
+			<identifier>WoodH</identifier>
+			<damageModifier>2</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>10</speedModifier>
+			<gravityModifier>0.02</gravityModifier>
+			<multiply>true</multiply>
 		</ammunition_material>
 		<ammunition_material>
 			<identifier>Forsworn</identifier>
 			<damageModifier>3</damageModifier>
 			<rangeModifier>0</rangeModifier>
-			<speedModifier>0</speedModifier>
-			<gravityModifier>0.22</gravityModifier>
+			<speedModifier>15</speedModifier>
+			<gravityModifier>0.03</gravityModifier>
 			<multiply>true</multiply>
+		</ammunition_material>
+		<ammunition_material>
+			<identifier>ForswornNoMult</identifier>
+			<damageModifier>3</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>15</speedModifier>
+			<gravityModifier>0.03</gravityModifier>
+			<multiply>false</multiply>
 		</ammunition_material>
 		<ammunition_material>
 			<identifier>Falmer</identifier>
 			<damageModifier>4</damageModifier>
 			<rangeModifier>0</rangeModifier>
-			<speedModifier>-300</speedModifier>
-			<gravityModifier>0.29</gravityModifier>
+			<speedModifier>20</speedModifier>
+			<gravityModifier>0.04</gravityModifier>
 			<multiply>true</multiply>
+		</ammunition_material>
+		<ammunition_material>
+			<identifier>FalmerNoMult</identifier>
+			<damageModifier>4</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>20</speedModifier>
+			<gravityModifier>0.04</gravityModifier>
+			<multiply>false</multiply>
 		</ammunition_material>
 		<ammunition_material>
 			<identifier>FalmerH</identifier>
 			<damageModifier>5</damageModifier>
 			<rangeModifier>0</rangeModifier>
-			<speedModifier>-300</speedModifier>
-			<gravityModifier>0.29</gravityModifier>
+			<speedModifier>20</speedModifier>
+			<gravityModifier>0.05</gravityModifier>
 			<multiply>true</multiply>
 		</ammunition_material>
 		<ammunition_material>
 			<identifier>Ancient Nord</identifier>
 			<damageModifier>2</damageModifier>
 			<rangeModifier>0</rangeModifier>
-			<speedModifier>-150</speedModifier>
-			<gravityModifier>0.24</gravityModifier>
+			<speedModifier>250</speedModifier>
+			<gravityModifier>0.02</gravityModifier>
 			<multiply>true</multiply>
+		</ammunition_material>
+		<ammunition_material>
+			<identifier>Ancient NordNoMult</identifier>
+			<damageModifier>2</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>25</speedModifier>
+			<gravityModifier>0.02</gravityModifier>
+			<multiply>false</multiply>
 		</ammunition_material>
 		<ammunition_material>
 			<identifier>Elven</identifier>
 			<damageModifier>7</damageModifier>
 			<rangeModifier>0</rangeModifier>
-			<speedModifier>200</speedModifier>
-			<gravityModifier>0.16</gravityModifier>
+			<speedModifier>30</speedModifier>
+			<gravityModifier>0.06</gravityModifier>
 			<multiply>true</multiply>
+		</ammunition_material>
+		<ammunition_material>
+			<identifier>ElvenNoMult</identifier>
+			<damageModifier>7</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>30</speedModifier>
+			<gravityModifier>0.06</gravityModifier>
+			<multiply>false</multiply>
 		</ammunition_material>
 		<ammunition_material>
 			<identifier>Noldor</identifier>
 			<damageModifier>6.5</damageModifier> <!-- 0.5 higher than Elven-->
 			<rangeModifier>0</rangeModifier>
-			<speedModifier>-100</speedModifier>
-			<gravityModifier>0.35</gravityModifier>
+			<speedModifier>30</speedModifier>
+			<gravityModifier>0.06</gravityModifier>
 			<multiply>true</multiply>
+		</ammunition_material>
+		<ammunition_material>
+			<identifier>Corundum</identifier>
+			<damageModifier>8</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>35</speedModifier>
+			<gravityModifier>0.08</gravityModifier>
+			<multiply>true</multiply>
+		</ammunition_material>
+		<ammunition_material>
+			<identifier>CorundumNoMult</identifier>
+			<damageModifier>8</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>35</speedModifier>
+			<gravityModifier>0.08</gravityModifier>
+			<multiply>false</multiply>
 		</ammunition_material>
 		<ammunition_material>
 			<identifier>Nordic</identifier>
 			<damageModifier>8</damageModifier>
 			<rangeModifier>0</rangeModifier>
-			<speedModifier>-175</speedModifier>
-			<gravityModifier>0.26</gravityModifier>
+			<speedModifier>35</speedModifier>
+			<gravityModifier>0.08</gravityModifier>
 			<multiply>true</multiply>
+		</ammunition_material>
+		<ammunition_material>
+			<identifier>NordicNoMult</identifier>
+			<damageModifier>8</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>35</speedModifier>
+			<gravityModifier>0.08</gravityModifier>
+			<multiply>false</multiply>
 		</ammunition_material>
 		<ammunition_material>
 			<identifier>Glass</identifier>
 			<damageModifier>10</damageModifier>
 			<rangeModifier>0</rangeModifier>
 			<speedModifier>400</speedModifier>
-			<gravityModifier>0.12</gravityModifier>
+			<gravityModifier>0.1</gravityModifier>
 			<multiply>true</multiply>
+		</ammunition_material>
+		<ammunition_material>
+			<identifier>GlassNoMult</identifier>
+			<damageModifier>10</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>40</speedModifier>
+			<gravityModifier>0.1</gravityModifier>
+			<multiply>false</multiply>
 		</ammunition_material>
 		<ammunition_material>
 			<identifier>Dragonscale</identifier>
 			<damageModifier>13</damageModifier>
 			<rangeModifier>0</rangeModifier>
-			<speedModifier>300</speedModifier>
-			<gravityModifier>0.2</gravityModifier>
+			<speedModifier>50</speedModifier>
+			<gravityModifier>0.13</gravityModifier>
 			<multiply>true</multiply>
+		</ammunition_material>
+		<ammunition_material>
+			<identifier>DragonscaleNoMult</identifier>
+			<damageModifier>13</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>50</speedModifier>
+			<gravityModifier>0.13</gravityModifier>
+			<multiply>false</multiply>
 		</ammunition_material>
 		<ammunition_material>
 			<identifier>RNoldor</identifier>
 			<damageModifier>13.5</damageModifier>
 			<rangeModifier>0</rangeModifier>
-			<speedModifier>-100</speedModifier>
-			<gravityModifier>0.35</gravityModifier>
+			<speedModifier>50</speedModifier>
+			<gravityModifier>0.13</gravityModifier>
+			<multiply>true</multiply>
+		</ammunition_material>
+		<ammunition_material>
+			<identifier>Ancient Falmer</identifier>
+			<damageModifier>9</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>35</speedModifier>
+			<gravityModifier>0.09</gravityModifier>
 			<multiply>true</multiply>
 		</ammunition_material>
 	<!-- Heavy materials -->
@@ -354,81 +408,161 @@
 			<identifier>Iron</identifier>
 			<damageModifier>1</damageModifier>
 			<rangeModifier>0</rangeModifier>
-			<speedModifier>-150</speedModifier>
-			<gravityModifier>0.24</gravityModifier>
+			<speedModifier>-5</speedModifier>
+			<gravityModifier>0.01</gravityModifier>
 			<multiply>true</multiply>
+		</ammunition_material>
+		<ammunition_material>
+			<identifier>IronNoMult</identifier>
+			<damageModifier>1</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>-5</speedModifier>
+			<gravityModifier>0.01</gravityModifier>
+			<multiply>false</multiply>
 		</ammunition_material>
 		<ammunition_material>
 			<identifier>Steel</identifier>
 			<damageModifier>2</damageModifier>
 			<rangeModifier>0</rangeModifier>
-			<speedModifier>-175</speedModifier>
-			<gravityModifier>0.26</gravityModifier>
+			<speedModifier>-10</speedModifier>
+			<gravityModifier>0.02</gravityModifier>
 			<multiply>true</multiply>
+		</ammunition_material>
+		<ammunition_material>
+			<identifier>SteelNoMult</identifier>
+			<damageModifier>2</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>-10</speedModifier>
+			<gravityModifier>0.02</gravityModifier>
+			<multiply>false</multiply>
 		</ammunition_material>
 		<ammunition_material>
 			<identifier>Silver</identifier>
 			<damageModifier>2</damageModifier>
-			<rangeModifier>50</rangeModifier>
-			<speedModifier>25</speedModifier>
-			<gravityModifier>0.2</gravityModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>5</speedModifier>
+			<gravityModifier>0.02</gravityModifier>
 			<multiply>true</multiply>
+		</ammunition_material>
+		<ammunition_material>
+			<identifier>SilverNoMult</identifier>
+			<damageModifier>2</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>5</speedModifier>
+			<gravityModifier>0.02</gravityModifier>
+			<multiply>false</multiply>
 		</ammunition_material>
 		<ammunition_material>
 			<identifier>Skyforge</identifier>
 			<damageModifier>4.5</damageModifier>
 			<rangeModifier>0</rangeModifier>
-			<speedModifier>-175</speedModifier>
-			<gravityModifier>0.26</gravityModifier>
+			<speedModifier>-15</speedModifier>
+			<gravityModifier>0.04</gravityModifier>
 			<multiply>true</multiply>
+		</ammunition_material>
+		<ammunition_material>
+			<identifier>SkyforgeNoMult</identifier>
+			<damageModifier>4.5</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>-15</speedModifier>
+			<gravityModifier>0.04</gravityModifier>
+			<multiply>false</multiply>
 		</ammunition_material>
 		<ammunition_material>
 			<identifier>Dwarven</identifier>
 			<damageModifier>6</damageModifier>
 			<rangeModifier>0</rangeModifier>
-			<speedModifier>-210</speedModifier>
-			<gravityModifier>0.28</gravityModifier>
+			<speedModifier>-20</speedModifier>
+			<gravityModifier>0.06</gravityModifier>
 			<multiply>true</multiply>
+		</ammunition_material>
+		<ammunition_material>
+			<identifier>DwarvenNoMult</identifier>
+			<damageModifier>6</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>-20</speedModifier>
+			<gravityModifier>0.06</gravityModifier>
+			<multiply>false</multiply>
 		</ammunition_material>
 		<ammunition_material>
 			<identifier>Orcish</identifier>
 			<damageModifier>9</damageModifier>
 			<rangeModifier>0</rangeModifier>
-			<speedModifier>-240</speedModifier>
-			<gravityModifier>0.3</gravityModifier>
+			<speedModifier>-25</speedModifier>
+			<gravityModifier>0.09</gravityModifier>
 			<multiply>true</multiply>
+		</ammunition_material>
+		<ammunition_material>
+			<identifier>OrcishNoMult</identifier>
+			<damageModifier>9</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>-25</speedModifier>
+			<gravityModifier>0.09</gravityModifier>
+			<multiply>false</multiply>
 		</ammunition_material>
 		<ammunition_material>
 			<identifier>Nord Hero</identifier>
 			<damageModifier>10</damageModifier>
 			<rangeModifier>0</rangeModifier>
-			<speedModifier>300</speedModifier>
-			<gravityModifier>0.2</gravityModifier>
+			<speedModifier>-30</speedModifier>
+			<gravityModifier>0.1</gravityModifier>
 			<multiply>true</multiply>
+		</ammunition_material>
+		<ammunition_material>
+			<identifier>Nord HeroNoMult</identifier>
+			<damageModifier>10</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>-30</speedModifier>
+			<gravityModifier>0.1</gravityModifier>
+			<multiply>false</multiply>
 		</ammunition_material>
 		<ammunition_material>
 			<identifier>Ebony</identifier>
 			<damageModifier>11</damageModifier>
 			<rangeModifier>0</rangeModifier>
-			<speedModifier>-255</speedModifier>
-			<gravityModifier>0.32</gravityModifier>
+			<speedModifier>-35</speedModifier>
+			<gravityModifier>0.11</gravityModifier>
 			<multiply>true</multiply>
+		</ammunition_material>
+		<ammunition_material>
+			<identifier>EbonyNoMult</identifier>
+			<damageModifier>11</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>-35</speedModifier>
+			<gravityModifier>0.11</gravityModifier>
+			<multiply>false</multiply>
 		</ammunition_material>
 		<ammunition_material>
 			<identifier>Stalhrim</identifier>
 			<damageModifier>12</damageModifier>
 			<rangeModifier>0</rangeModifier>
-			<speedModifier>-255</speedModifier>
-			<gravityModifier>0.32</gravityModifier>
+			<speedModifier>-40</speedModifier>
+			<gravityModifier>0.12</gravityModifier>
 			<multiply>true</multiply>
+		</ammunition_material>
+		<ammunition_material>
+			<identifier>StalhrimNoMult</identifier>
+			<damageModifier>12</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>-40</speedModifier>
+			<gravityModifier>0.12</gravityModifier>
+			<multiply>false</multiply>
 		</ammunition_material>
 		<ammunition_material>
 			<identifier>Dragonbone</identifier>
 			<damageModifier>14</damageModifier>
 			<rangeModifier>0</rangeModifier>
-			<speedModifier>300</speedModifier>
-			<gravityModifier>0.2</gravityModifier>
+			<speedModifier>-45</speedModifier>
+			<gravityModifier>0.14</gravityModifier>
 			<multiply>true</multiply>
+		</ammunition_material>
+		<ammunition_material>
+			<identifier>DragonboneNoMult</identifier>
+			<damageModifier>14</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>-45</speedModifier>
+			<gravityModifier>0.14</gravityModifier>
+			<multiply>false</multiply>
 		</ammunition_material>
 		<ammunition_material>
 			<identifier>Bound</identifier>
@@ -442,13 +576,91 @@
 			<identifier>Daedric</identifier>
 			<damageModifier>15</damageModifier>
 			<rangeModifier>0</rangeModifier>
-			<speedModifier>-300</speedModifier>
-			<gravityModifier>0.34</gravityModifier>
+			<speedModifier>-50</speedModifier>
+			<gravityModifier>0.15</gravityModifier>
 			<multiply>true</multiply>
 		</ammunition_material>
+		<ammunition_material>
+			<identifier>DaedricNoMult</identifier>
+			<damageModifier>15</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>-50</speedModifier>
+			<gravityModifier>0.15</gravityModifier>
+			<multiply>false</multiply>
+		</ammunition_material>
+	<!-- Hunterborn modifiers start -->
+		<ammunition_material>
+			<identifier>Crude</identifier>
+			<damageModifier>-1</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>-25</speedModifier>
+			<gravityModifier>0.01</gravityModifier>
+			<multiply>true</multiply>
+		</ammunition_material>
+		<ammunition_material>
+			<identifier>Hunter</identifier>
+			<damageModifier>1</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>10</speedModifier>
+			<gravityModifier>0.01</gravityModifier>
+			<multiply>true</multiply>
+		</ammunition_material>
+		<ammunition_material>
+			<identifier>Honed</identifier>
+			<damageModifier>3</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>20</speedModifier>
+			<gravityModifier>0.02</gravityModifier>
+			<multiply>true</multiply>
+		</ammunition_material>
+		<ammunition_material>
+			<identifier>Stalker</identifier>
+			<damageModifier>5</damageModifier>
+			<rangeModifier>-100</rangeModifier>
+			<speedModifier>30</speedModifier>
+			<gravityModifier>0.03</gravityModifier>
+			<multiply>true</multiply>
+		</ammunition_material>
+		<ammunition_material>
+			<identifier>Perfect</identifier>
+			<damageModifier>7</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>40</speedModifier>
+			<gravityModifier>0.04</gravityModifier>
+			<multiply>true</multiply>
+		</ammunition_material>
+	<!-- Hunterborn modifiers end -->
+	<!--  Elemental Arrows -->
+		<ammunition_material>
+			<identifier>Steam</identifier>
+			<damageModifier>57</damageModifier>
+			<rangeModifier>0</rangeModifier>
+			<speedModifier>1800</speedModifier>
+			<gravityModifier>0.40</gravityModifier>
+			<multiply>false</multiply>
+		</ammunition_material>
+	<!--  Elemental Arrows -->
 	</ammunition_materials>
 
 	<ammunition_material_bindings>
+	<!-- Default variant blockers start -->
+		<binding>
+			<identifier>WoodNoMult</identifier>
+			<substring>test</substring>
+		</binding>
+		<binding>
+			<identifier>WoodNoMult</identifier>
+			<substring>Test</substring>
+		</binding>
+		<binding>
+			<identifier>WoodNoMult</identifier>
+			<substring>TEST</substring>
+		</binding>
+		<binding>
+			<identifier>SteelNoMult</identifier>
+			<substring>Steel Bolt TEST</substring>
+		</binding>
+	<!-- Default variant blockers end -->
 	<!-- Default start -->
 		<binding>
 			<identifier>Ancient Nord</identifier>
@@ -461,6 +673,10 @@
 		<binding>
 			<identifier>Bound</identifier>
 			<substring>Bound</substring>
+		</binding>
+		<binding>
+			<identifier>Corundum</identifier>
+			<substring>Corundum</substring>
 		</binding>
 		<binding>
 			<identifier>Daedric</identifier>
@@ -477,6 +693,10 @@
 		<binding>
 			<identifier>Ebony</identifier>
 			<substring>Ebony</substring>
+		</binding>
+		<binding>
+			<identifier>Elven</identifier>
+			<substring>Bosmer</substring>
 		</binding>
 		<binding>
 			<identifier>Elven</identifier>
@@ -555,6 +775,14 @@
 			<substring>Steel</substring>
 		</binding>
 		<binding>
+			<identifier>Stormcloak</identifier>
+			<substring>Steel</substring>
+		</binding>
+		<binding>
+			<identifier>Imperial</identifier>
+			<substring>Steel</substring>
+		</binding>
+		<binding>
 			<identifier>Skyforge</identifier>
 			<substring>Skyforge</substring>
 		</binding>
@@ -567,15 +795,15 @@
 			<substring>Bone</substring>
 		</binding>
 		<binding>
-			<identifier>Wood</identifier>
+			<identifier>WoodNoMult</identifier>
 			<substring>Riekling</substring>
 		</binding>
 		<binding>
-			<identifier>Wood</identifier>
+			<identifier>WoodNoMult</identifier>
 			<substring>Stone</substring>
 		</binding>
 		<binding>
-			<identifier>Wood</identifier>
+			<identifier>WoodNoMult</identifier>
 			<substring>Torch</substring>
 		</binding>
 		<binding>
@@ -585,10 +813,6 @@
 		<binding>
 			<identifier>Wood</identifier>
 			<substring>Wooden</substring>
-		</binding>
-		<binding>
-			<identifier>WoodNoMult</identifier>
-			<substring>Mudcrab</substring>
 		</binding>
 	<!-- Default end -->
 	<!-- PerMa start -->
@@ -613,6 +837,32 @@
 			<substring>Water</substring>
 		</binding>
 	<!-- PerMa end -->
+	<!-- Hunterborn -->
+		<binding>
+			<identifier>Crude</identifier>
+			<substring>Crude Bone</substring>
+		</binding>
+		<binding>
+			<identifier>Hunter</identifier>
+			<substring>Hunter's Bone</substring>
+		</binding>
+		<binding>
+			<identifier>Honed</identifier>
+			<substring>Honed Bone</substring>
+		</binding>
+		<binding>
+			<identifier>Stalker</identifier>
+			<substring>Stalker's Bone</substring>
+		</binding>
+		<binding>
+			<identifier>Perfect</identifier>
+			<substring>Perfect Bone</substring>
+		</binding>
+		<binding>
+			<identifier>WoodNoMult</identifier>
+			<substring>Mudcrab</substring>
+		</binding>
+	<!-- Hunterborn -->
 	<!-- Noldor Content Pack start -->
 		<binding>
 			<identifier>Noldor</identifier>
@@ -652,7 +902,7 @@
 	<!-- Sands of Time Ammo end -->
 		<binding>
 			<identifier>Steel</identifier>
-			<substring>Paladin</substring> 
+			<substring>Paladin</substring>
 		</binding>
 		<binding>
 			<identifier>None</identifier>
@@ -741,25 +991,184 @@
 			<substring>Dovahkiin</substring>
 		</binding>
 	<!-- WEAPONIZER -->
+	<!-- Compound Bow Collection-Redux -->
+		<binding>
+			<identifier>Ebony</identifier>
+			<substring>Black Dragon</substring>
+		</binding>
+	<!-- Compound Bow Collection-Redux -->
+	<!-- Much Ado about Snow Elves – A Tragedy! Act I -->
+		<binding>
+			<identifier>Ancient Falmer</identifier>
+			<substring>Ancient Falmer</substring>
+		</binding>
+	<!-- Much Ado about Snow Elves – A Tragedy! Act I -->
+	<!-- Breton Knight -->
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Breton Knight</substring>
+		</binding>
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Breton Knighl</substring> <!-- how it actually appears in the esp -->
+		</binding>
+	<!-- Breton Knight -->
+	<!-- The Grey Cowl of Nocturnal -->
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Arrow of Extrication</substring>
+		</binding>
+	<!-- The Grey Cowl of Nocturnal -->
+	<!-- Rigmor of Bruma -->
+		<binding>
+			<identifier>Iron</identifier>
+			<substring>Long Bow Arrow</substring>
+		</binding>
+	<!-- Rigmor of Bruma -->
+	<!-- Elemental Arrows -->
+		<binding>
+			<identifier>SteelNoMult</identifier>
+			<substring>Flaming Arrows</substring>
+		</binding>
+		<binding>
+			<identifier>SteelNoMult</identifier>
+			<substring>Frost Arrows</substring>
+		</binding>
+		<binding>
+			<identifier>SteelNoMult</identifier>
+			<substring>Shock Arrows</substring>
+		</binding>
+		<binding>
+			<identifier>SteelNoMult</identifier>
+			<substring>Quake Arrows</substring>
+		</binding>
+		<binding>
+			<identifier>SteelNoMult</identifier>
+			<substring>Swarm Arrows</substring>
+		</binding>
+		<binding>
+			<identifier>SteelNoMult</identifier>
+			<substring>Gem Arrows</substring>
+		</binding>
+		<binding>
+			<identifier>SteelNoMult</identifier>
+			<substring>Gust Arrows</substring>
+		</binding>
+		<binding>
+			<identifier>SteelNoMult</identifier>
+			<substring>Gust Arrows</substring>
+		</binding>
+		<binding>
+			<identifier>SteelNoMult</identifier>
+			<substring>Ash Rock Arrows</substring>
+		</binding>
+		<binding>
+			<identifier>SteelNoMult</identifier>
+			<substring>Crimson Flame Arrows</substring>
+		</binding>
+		<binding>
+			<identifier>SteelNoMult</identifier>
+			<substring>Flaming Bolt</substring>
+		</binding>
+		<binding>
+			<identifier>SteelNoMult</identifier>
+			<substring>Gem Bolts</substring>
+		</binding>
+		<binding>
+			<identifier>SteelNoMult</identifier>
+			<substring>Cobalt Frost Arrows</substring>
+		</binding>
+		<binding>
+			<identifier>SteelNoMult</identifier>
+			<substring>Thunderbolt Arrows</substring>
+		</binding>
+		<binding>
+			<identifier>SteelNoMult</identifier>
+			<substring>Magebreaker Arrows</substring>
+		</binding>
+		<binding>
+			<identifier>SteelNoMult</identifier>
+			<substring>Trick Arrows</substring>
+		</binding>
+		<binding>
+			<identifier>Steam</identifier>
+			<substring>Steam Arrows</substring>
+		</binding>
+	<!-- Elemental Arrows -->
+	<!-- VanNord -->
+		<binding>
+			<identifier>NordicNoMult</identifier>
+			<substring>VanNord</substring>
+		</binding>
+	<!-- VanNord -->
+	<!-- Mystic Elven -->
+		<binding>
+			<identifier>DaedricNoMult</identifier>
+			<substring>Mystic Elven</substring>
+		</binding>
+	<!-- Mystic Elven -->
+	<!-- Cynder Arrows -->
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Cynder</substring>
+		</binding>
+	<!-- Cynder Arrows -->
+	<!-- Merp's Gondorian Armor -->
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Gondorian</substring>
+		</binding>
+	<!-- Merp's Gondorian Armor -->
+	<!-- More Interesting Loot -->
+		<binding>
+			<identifier>DwarvenNoMult</identifier>
+			<substring>Dwarven Arrow, Exploding (Fire)</substring>
+		</binding>
+		<binding>
+			<identifier>DwarvenNoMult</identifier>
+			<substring>Dwarven Arrow, Exploding (Frost)</substring>
+		</binding>
+		<binding>
+			<identifier>DwarvenNoMult</identifier>
+			<substring>Dwarven Arrow, Exploding (Shock)</substring>
+		</binding>
+	<!-- More Interesting Loot -->
+	<!-- Legacy of Dragonborn -->
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Steel Arrow</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Daedric Arrow</substring>
+		</binding>
+	<!-- Legacy of Dragonborn -->
+	<!-- Scout Armor -->
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Scout Arrow</substring>
+		</binding>
+	<!-- Scout Armor -->
 	</ammunition_material_bindings>
 
 	<ammunition_exclusions_multiplication>
 <!-- Exclusion target = NAME, EDID, FORMID -->
 <!-- Exclusion type = EQUALS, EQUALS_IGNORECASE, CONTAINS -->
+<!-- Section is depreciated -->
+		<exclusion>
+			<text>Test</text>
+			<target>EDID</target>
+			<type>CONTAINS</type>
+		</exclusion>
+		<exclusion>
+			<text>TEST</text>
+			<target>EDID</target>
+			<type>CONTAINS</type>
+		</exclusion>
 		<exclusion>
 			<text>MQ</text>
 			<target>EDID</target>
 			<type>STARTSWITH</type>
-		</exclusion>
-		<exclusion>
-			<text>Bound</text>
-			<target>EDID</target>
-			<type>CONTAINS</type>
-		</exclusion>
-		<exclusion>
-			<text>bound</text>
-			<target>EDID</target>
-			<type>CONTAINS</type>
 		</exclusion>
 		<exclusion>
 			<text>of Fire</text>
@@ -828,6 +1237,20 @@
 			<type>CONTAINS</type>
 		</exclusion>
 	<!-- EggOver -->
+	<!-- SkyRe Races -->
+		<exclusion>
+			<text>xxxRacialWoodElf</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+	<!-- SkyRe Races -->
+	<!-- The Grey Cowl of Nocturnal -->
+		<exclusion>
+			<text>manny_GF_Ammo_ExtricationArrow</text>
+			<target>EDID</target>
+			<type>STARTSWITH</type>
+		</exclusion>
+	<!-- The Grey Cowl of Nocturnal -->
 	</ammunition_exclusions_multiplication>
 
 	</ns2:ammunition>
