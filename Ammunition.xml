@@ -662,16 +662,6 @@
 		</binding>
 	<!-- Default variant blockers end -->
 	<!-- Default start -->
-		<!-- Legacy of Dragonborn -->
-		<binding>
-			<identifier>Steel</identifier>
-			<substring>Steel Arrow</substring>
-		</binding>
-		<binding>
-			<identifier>Daedric</identifier>
-			<substring>Daedric Arrow</substring>
-		</binding>
-	<!-- Legacy of Dragonborn -->
 		<binding>
 			<identifier>Ancient Nord</identifier>
 			<substring>Ancient Nord</substring>
@@ -1143,6 +1133,22 @@
 			<substring>Dwarven Arrow, Exploding (Shock)</substring>
 		</binding>
 	<!-- More Interesting Loot -->
+	<!-- Legacy of Dragonborn -->
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Steel Arrow</substring>
+		</binding>
+		<binding>
+			<identifier>Daedric</identifier>
+			<substring>Daedric Arrow</substring>
+		</binding>
+	<!-- Legacy of Dragonborn -->
+	<!-- Scout Armor -->
+		<binding>
+			<identifier>Steel</identifier>
+			<substring>Scout Arrow</substring>
+		</binding>
+	<!-- Scout Armor -->
 	</ammunition_material_bindings>
 
 	<ammunition_exclusions_multiplication>
